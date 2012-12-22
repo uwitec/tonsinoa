@@ -3,6 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonSinOA", "TonSinOA\TonSinOA.csproj", "{6C288F72-7A2A-49F5-A19C-31B9514547F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerDAL", "SQLServerDAL\SQLServerDAL.csproj", "{0EF10F5B-06F5-428D-BF95-9467AE30A299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "DBUtility\DBUtility.csproj", "{EC5359FB-0495-4909-B1CB-23BCC6C23386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{C51D199C-8158-441A-930F-45FCC9BF0213}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{813C5561-2A70-43EA-B6E7-82FB562E3F83}"
+	ProjectSection(SolutionItems) = preProject
+		DLL\AjaxPro.2.dll = DLL\AjaxPro.2.dll
+		DLL\Jayrock.Json.dll = DLL\Jayrock.Json.dll
+		DLL\log4net.dll = DLL\log4net.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +28,22 @@ Global
 		{6C288F72-7A2A-49F5-A19C-31B9514547F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C288F72-7A2A-49F5-A19C-31B9514547F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C288F72-7A2A-49F5-A19C-31B9514547F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF10F5B-06F5-428D-BF95-9467AE30A299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF10F5B-06F5-428D-BF95-9467AE30A299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF10F5B-06F5-428D-BF95-9467AE30A299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF10F5B-06F5-428D-BF95-9467AE30A299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5359FB-0495-4909-B1CB-23BCC6C23386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5359FB-0495-4909-B1CB-23BCC6C23386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5359FB-0495-4909-B1CB-23BCC6C23386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5359FB-0495-4909-B1CB-23BCC6C23386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51D199C-8158-441A-930F-45FCC9BF0213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51D199C-8158-441A-930F-45FCC9BF0213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51D199C-8158-441A-930F-45FCC9BF0213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51D199C-8158-441A-930F-45FCC9BF0213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
