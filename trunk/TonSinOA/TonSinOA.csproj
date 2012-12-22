@@ -48,8 +48,41 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="js\jquery-1.4.1.js" />
-    <Content Include="js\jquery-1.4.1.min.js" />
+    <Content Include="fullCalandarTest.aspx" />
+    <Content Include="js\artDialog\artDialog.source.js" />
+    <Content Include="js\artDialog\iframeTools.source.js" />
+    <Content Include="js\artDialog\jquery.artDialog.source.js" />
+    <Content Include="js\artDialog\skins\blue.css" />
+    <Content Include="js\artDialog\skins\blue\bg.png" />
+    <Content Include="js\artDialog\skins\blue\bg2.png" />
+    <Content Include="js\artDialog\skins\blue\bg_css3.png" />
+    <Content Include="js\artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\close.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\e.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\n.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\s.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\se.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="js\artDialog\skins\blue\ie6\w.png" />
+    <Content Include="js\artDialog\skins\blue\_notes\dwsync.xml" />
+    <Content Include="js\artDialog\skins\default.css" />
+    <Content Include="js\artDialog\skins\icons\error.png" />
+    <Content Include="js\artDialog\skins\icons\face-sad.png" />
+    <Content Include="js\artDialog\skins\icons\face-smile.png" />
+    <Content Include="js\artDialog\skins\icons\loading.gif" />
+    <Content Include="js\artDialog\skins\icons\question.png" />
+    <Content Include="js\artDialog\skins\icons\succeed.png" />
+    <Content Include="js\artDialog\skins\icons\warning.png" />
+    <Content Include="js\artDialog\skins\icons\_notes\dwsync.xml" />
+    <Content Include="js\fullcalendar\fullcalendar.css" />
+    <Content Include="js\fullcalendar\fullcalendar.js" />
+    <Content Include="js\fullcalendar\fullcalendar.min.js" />
+    <Content Include="js\fullcalendar\fullcalendar.print.css" />
+    <Content Include="js\fullcalendar\gcal.js" />
+    <Content Include="js\jquery.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -66,10 +99,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="fullCalandarTest.aspx.cs">
+      <DependentUpon>fullCalandarTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fullCalandarTest.aspx.designer.cs">
+      <DependentUpon>fullCalandarTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js\artDialog\skins\icons\Thumbs.db" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
