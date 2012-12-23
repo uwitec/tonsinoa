@@ -46,12 +46,12 @@ function BuildBottomPanel()
         tbar: 
         new Ext.StatusBar
         ({
-            defaultText: '状态',id: 'basic-statusbar',defaultIconCls: '',border:false,frame:false,
+            defaultText: '当前用户: <font color="black">admin</font>', id: 'basic-statusbar', defaultIconCls: '', border: false, frame: false,
             items: 
             [
                   '','-',
                  {xtype: 'label',text: '推荐分辨率:1024*768以上'}, '-',
-                 {id: 'sb_btnMessage',width:100,text:'公告(0)',handler:showMessage }, '-',
+//                 {id: 'sb_btnMessage',width:100,text:'公告(0)',handler:showMessage }, '-',
                  {id: 'basic-button',text: '刷新',handler:function(){} },
                   '-', clock, ' ', ' '
             ],

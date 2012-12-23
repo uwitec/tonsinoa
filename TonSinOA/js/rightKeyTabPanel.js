@@ -4,7 +4,7 @@
     tabs.on("contextmenu",function(_tabs,_tab,e)
     {
         //右键
-        if(_tab.title&&_tab.title=="首页")
+        if(_tab.title&&_tab.title=="工作台")
         {
             return;
         }
@@ -28,7 +28,7 @@
                             {
                                 if(_tabs.items.items[i].id!=_tab.id)
                                 {
-                                    if(_tabs.items.items[i].title&&_tabs.items.items[i].title=="首页")
+                                    if (_tabs.items.items[i].title && _tabs.items.items[i].title == "工作台")
                                     {
                                         continue;
                                     }
