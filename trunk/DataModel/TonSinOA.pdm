@@ -1589,7 +1589,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o9">
 <a:CreationDate>1356182588</a:CreationDate>
 <a:ModificationDate>1356187251</a:ModificationDate>
-<a:Rect>((-19283,-9264), (-10117,-2542))</a:Rect>
+<a:Rect>((-19687,-9264), (-9713,-2542))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1612,7 +1612,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o11">
 <a:CreationDate>1356187376</a:CreationDate>
 <a:ModificationDate>1356187376</a:ModificationDate>
-<a:Rect>((-2886,-6403), (3338,-2404))</a:Rect>
+<a:Rect>((-5136,-6403), (5588,-2404))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1660,7 +1660,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o15">
 <a:CreationDate>1356187380</a:CreationDate>
 <a:ModificationDate>1356187380</a:ModificationDate>
-<a:Rect>((5364,11147), (13088,15146))</a:Rect>
+<a:Rect>((2364,11147), (16088,15146))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1683,7 +1683,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o17">
 <a:CreationDate>1356188388</a:CreationDate>
 <a:ModificationDate>1356188513</a:ModificationDate>
-<a:Rect>((6827,-14787), (14551,-10788))</a:Rect>
+<a:Rect>((3827,-14787), (17551,-10788))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1741,12 +1741,12 @@ LABL 0 新宋体,8,N</a:FontList>
 <c:Tables>
 <o:Table Id="o6">
 <a:ObjectID>9370E50C-1CA3-4EFE-9C58-A5F314B129F9</a:ObjectID>
-<a:Name>OA_TB_SM_Department</a:Name>
+<a:Name>部门信息表(OA_TB_SM_Department)</a:Name>
 <a:Code>OA_TB_SM_Department</a:Code>
 <a:CreationDate>1356180516</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356191749</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241595</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>部门信息表</a:Comment>
 <c:Columns>
 <o:Column Id="o21">
@@ -1846,12 +1846,12 @@ LABL 0 新宋体,8,N</a:FontList>
 </o:Table>
 <o:Table Id="o8">
 <a:ObjectID>CE3C1993-5BB6-434B-8922-D1A63B141521</a:ObjectID>
-<a:Name>OA_TB_SM_User</a:Name>
+<a:Name>用户信息表(OA_TB_SM_User)</a:Name>
 <a:Code>OA_TB_SM_User</a:Code>
 <a:CreationDate>1356181989</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356187503</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241746</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>用户信息表</a:Comment>
 <c:Columns>
 <o:Column Id="o29">
@@ -1910,12 +1910,12 @@ LABL 0 新宋体,8,N</a:FontList>
 </o:Table>
 <o:Table Id="o10">
 <a:ObjectID>0F66AAD2-FD56-43AB-B7FD-387F54086C13</a:ObjectID>
-<a:Name>OA_TB_SM_Duty</a:Name>
+<a:Name>职务信息表(OA_TB_SM_Duty)</a:Name>
 <a:Code>OA_TB_SM_Duty</a:Code>
 <a:CreationDate>1356182588</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356187511</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241828</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>职务信息表</a:Comment>
 <c:Columns>
 <o:Column Id="o34">
@@ -1983,42 +1983,42 @@ LABL 0 新宋体,8,N</a:FontList>
 </o:Table>
 <o:Table Id="o12">
 <a:ObjectID>9507B485-0C35-4464-9130-AF81DEE3C79F</a:ObjectID>
-<a:Name>OA_TB_SM_Notice</a:Name>
+<a:Name>通知公告表(OA_TB_SM_Notice)</a:Name>
 <a:Code>OA_TB_SM_Notice</a:Code>
 <a:CreationDate>1356187376</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356187721</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241785</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>通知公告表</a:Comment>
 </o:Table>
 <o:Table Id="o14">
 <a:ObjectID>B0B15FBF-DD4C-4B56-A364-D2E1711150F3</a:ObjectID>
-<a:Name>OA_TB_SM_DocType</a:Name>
+<a:Name>文档分类表(OA_TB_SM_DocType)</a:Name>
 <a:Code>OA_TB_SM_DocType</a:Code>
 <a:CreationDate>1356187378</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356188466</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241842</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>文档分类表</a:Comment>
 </o:Table>
 <o:Table Id="o16">
 <a:ObjectID>C83089B5-11A7-449E-A7C4-C5FE7D22D6C9</a:ObjectID>
-<a:Name>OA_TB_SM_ReportType</a:Name>
+<a:Name>报告总结分类表(OA_TB_SM_ReportType)</a:Name>
 <a:Code>OA_TB_SM_ReportType</a:Code>
 <a:CreationDate>1356187380</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356188451</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241760</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>报告总结分类表</a:Comment>
 </o:Table>
 <o:Table Id="o18">
 <a:ObjectID>0DBA1F2B-A2A7-49A1-BECA-CA9AF43C737B</a:ObjectID>
-<a:Name>OA_TB_SM_NoticeType</a:Name>
+<a:Name>通知公告分类表(OA_TB_SM_NoticeType)</a:Name>
 <a:Code>OA_TB_SM_NoticeType</a:Code>
 <a:CreationDate>1356188388</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1356188434</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1356241774</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:Comment>通知公告分类表</a:Comment>
 </o:Table>
 </c:Tables>
