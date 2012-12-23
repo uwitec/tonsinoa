@@ -130,7 +130,7 @@
            var panel_north = new Ext.Panel(
     {
         id: "panel_north", region: "north", title: "", border: false, html: '', height: 25, buttonAlign: 'right',
-        margin: '0 0 0 0', tbar: toolbar, bbar: toolbar1
+        margin: '0 0 0 0', tbar: toolbar
     });
            //中间
            var tabpanel = new Ext.TabPanel(
