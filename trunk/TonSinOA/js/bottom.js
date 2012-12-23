@@ -63,7 +63,7 @@ function BuildBottomPanel()
                     {
 		                Ext.TaskMgr.start
 		                ({
-		                    run: function(){Ext.fly(clock.getEl()).update(new Date().format('G:i:s A'));},interval: 1000
+		                    run: function () { Ext.fly(clock.getEl()).update(new Date().format('Y-m-d H:i:s')); }, interval: 1000
 		                });
                     }
                 }
