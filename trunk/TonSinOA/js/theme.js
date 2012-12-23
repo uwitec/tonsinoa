@@ -7,7 +7,7 @@ function makeCookie() {
 //            ['green', '绿色'],
 //            ['pink', '粉色'],
 //            ['purple', '紫色'],
-//            ['olive', '橄榄绿'],
+//          / ['olive', '橄榄绿'],
             ['slate', '暗蓝色']
         ];
     this.cbThemes = new Ext.form.ComboBox
