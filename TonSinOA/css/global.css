@@ -1,19 +1,24 @@
-/* 全局CSS定义 */
-html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0; }
-body {height:100%;-webkit-text-size-adjust:none;}
-div {text-align:left;}
-body{font:12px/1.5em "\5b8b\4f53","Arial Narrow";color:#333;}
-li{list-style-type:none;}
-h1, h2, h3, h4, h5, h6{font-size:100%;}
-address, cite, em{font-style:normal;}
-fieldset, img {border:0;}
-label,button{cursor: pointer;}
-select,input,textarea{ font-size:12px; line-height:1.2em; vertical-align: middle;
-    margin: 0;
+body
+{
+	margin: 0;
+	background-color: #E8F1F8;
+	font-size: 12px;
+	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;
+	padding: 0;
+	height: 100%;
+	width:100%;
 }
-a{color:#333;text-decoration:none;}
-.clear{ clear:both;}
-.show{display:block;}
-.hidden{display:none;}
-a,area {blr:expression(this.onFocus=this.blur()) } /*针对IE浏览器*/ 
-:focus {outline-style: none; }  /*针对火狐浏览器*/
+
+div, span, td
+{
+	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;
+}
+a:link, a:visited
+{
+	text-decoration: none;
+	color: #333;
+}
+input
+{
+	border: solid 1px #3C7FB1;	
+}
