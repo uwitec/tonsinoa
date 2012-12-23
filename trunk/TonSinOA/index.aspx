@@ -16,6 +16,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <script type="text/javascript" language="javascript">
+        if ((typeof Range !== "undefined") && !Range.prototype.createContextualFragment) {
+            Range.prototype.createContextualFragment = function (html) {
+                var frag = document.createDocumentFragment(), div = document.createElement("div");
+                frag.appendChild(div);
+                div.outerHTML = html;
+                return frag;
+            };
+        }
+</script>
    <script type="text/javascript">
        function BuildTree() {
            //上面
