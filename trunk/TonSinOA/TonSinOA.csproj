@@ -142,6 +142,11 @@
     <Content Include="images\icons\lock_go.png" />
     <Content Include="images\icons\setting.png" />
     <Content Include="images\icons\user.png" />
+    <Content Include="images\menus\bangong.png" />
+    <Content Include="images\menus\baogao.gif" />
+    <Content Include="images\menus\bbs.gif" />
+    <Content Include="images\menus\flow.gif" />
+    <Content Include="images\menus\system.png" />
     <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
     <Content Include="js\artDialog\artDialog.source.js" />

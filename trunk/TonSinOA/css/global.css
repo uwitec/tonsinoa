@@ -22,3 +22,54 @@ input
 {
 	border: solid 1px #3C7FB1;	
 }
+
+.system_icon
+{
+	background-image: url(../images/menus/system.png);
+}
+.workdate_icon
+{
+	background-image: url(../images/icons/calendar.png);
+}
+.workbaogao_icon
+{
+    width:16px;
+    height:16px;
+	background-image: url(../images/menus/baogao.gif);
+}
+.project_icon
+{
+	background-image: url(../images/menus/flow.gif);
+}
+.bbs_icon
+{
+	background-image: url(../images/menus/bbs.gif);
+}
+.peixun_icon
+{
+	background-image: url(images/menus/hrm/profile-create.png);
+}
+.tongji_icon
+{
+	background-image: url(images/menus/chart_organisation.png);
+}
+.gongcheng_icon
+{
+	background-image: url(images/menus/gongcheng.png);
+}
+.gongzuo_icon
+{
+	background-image: url(images/menus/rizhi.png);
+}
+.weidang_icon
+{
+	background-image: url(../images/menus/bangong.png);
+}
+.jingyin_icon
+{
+	background-image: url(images/menus/customer/product.png);
+}
+.kaohe_icon
+{
+	background-image: url(images/menus/admin/car_apply.png);
+}
