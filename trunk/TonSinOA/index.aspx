@@ -7,6 +7,7 @@
     <title></title>
     <link href="js/extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
     <script src="js/extjs/adapter/ext/ext-base.js" type="text/javascript"></script>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
     <script src="js/extjs/ext-all.js" type="text/javascript"></script>
     <script src="js/bottom.js" type="text/javascript"></script>
     <script src="js/rightKeyTabPanel.js" type="text/javascript"></script>
@@ -164,7 +165,7 @@
            var loadPanelWest = function (init) {
                Ext.Ajax.request(
         {
-            url: 'Main.aspx?method=GetData',
+            url: 'Ajax/MemuTree.ashx?Param=0',
             success: function (response, options) {
                 try {
                     var panWestMenu = Ext.getCmp("panWestMenu");
@@ -177,17 +178,17 @@
                         }
                     }
 
-                    var toolBars1 = Ext.getCmp("toolbars1");
+                   // var toolBars1 = Ext.getCmp("toolbars1");
                     var toolBars = Ext.getCmp("toolbars");
                     var menusArray = Ext.util.JSON.decode(response.responseText);
                     for (var j = 0; j < menusArray.length; j++) {
                         var mp = CreateMenuPanel(menusArray[j].TypeTitle, menusArray[j].TypeID, menusArray[j].icon,
                         menusArray[j].iconCls);
                         panWestMenu.add(mp);
-                        if (init == "load") {
-                            var tempBtn = CreteButton(menusArray[j].TypeTitle, menusArray[j].TypeID, menusArray[j].icon);
-                            toolBars1.addItem(tempBtn);
-                        }
+//                        if (init == "load") {
+//                            var tempBtn = CreteButton(menusArray[j].TypeTitle, menusArray[j].TypeID, menusArray[j].icon);
+//                            toolBars1.addItem(tempBtn);
+//                        }
                     }
                     panWestMenu.doLayout();
                 }
@@ -209,7 +210,7 @@
                     appendOnly: true
                 },
                 loader: new Ext.tree.TreeLoader({
-                    dataUrl: "Main.aspx"
+                    dataUrl: "Ajax/MemuTree.ashx?Param=1"
                 }), root: new Ext.tree.AsyncTreeNode({
                     id: TypeID, text: title, draggable: false, scope: this, scripts: true, expanded: true
                 }), listeners:
