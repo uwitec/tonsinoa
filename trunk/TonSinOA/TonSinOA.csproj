@@ -47,7 +47,14 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="images\icons\calendar.png" />
+    <Content Include="images\icons\email.png" />
+    <Content Include="images\icons\house.png" />
+    <Content Include="images\icons\key.png" />
+    <Content Include="images\icons\layers.png" />
+    <Content Include="images\icons\lock_go.png" />
+    <Content Include="images\icons\user.png" />
+    <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
     <Content Include="js\artDialog\artDialog.source.js" />
     <Content Include="js\artDialog\iframeTools.source.js" />
@@ -77,12 +84,15 @@
     <Content Include="js\artDialog\skins\icons\succeed.png" />
     <Content Include="js\artDialog\skins\icons\warning.png" />
     <Content Include="js\artDialog\skins\icons\_notes\dwsync.xml" />
+    <Content Include="js\bottom.js" />
     <Content Include="js\fullcalendar\fullcalendar.css" />
     <Content Include="js\fullcalendar\fullcalendar.js" />
     <Content Include="js\fullcalendar\fullcalendar.min.js" />
     <Content Include="js\fullcalendar\fullcalendar.print.css" />
     <Content Include="js\fullcalendar\gcal.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\rightKeyTabPanel.js" />
+    <Content Include="js\theme.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -92,12 +102,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="index.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="fullCalandarTest.aspx.cs">
       <DependentUpon>fullCalandarTest.aspx</DependentUpon>
