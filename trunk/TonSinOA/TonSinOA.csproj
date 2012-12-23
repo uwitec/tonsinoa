@@ -135,10 +135,12 @@
     <Content Include="css\global.css" />
     <Content Include="images\icons\calendar.png" />
     <Content Include="images\icons\email.png" />
+    <Content Include="images\icons\first.gif" />
     <Content Include="images\icons\house.png" />
     <Content Include="images\icons\key.png" />
     <Content Include="images\icons\layers.png" />
     <Content Include="images\icons\lock_go.png" />
+    <Content Include="images\icons\setting.png" />
     <Content Include="images\icons\user.png" />
     <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
@@ -171,6 +173,7 @@
     <Content Include="js\artDialog\skins\icons\warning.png" />
     <Content Include="js\artDialog\skins\icons\_notes\dwsync.xml" />
     <Content Include="js\bottom.js" />
+    <Content Include="js\comm.js" />
     <Content Include="js\extjs\adapter\ext\ext-base.js" />
     <Content Include="js\extjs\adapter\jquery\ext-jquery-adapter.js" />
     <Content Include="js\extjs\adapter\jquery\jquery.js" />

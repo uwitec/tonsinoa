@@ -75,8 +75,8 @@
                      month: '月视图',
                      basicWeek: '周视图',
                      basicDay: '日视图',
-                     agendaWeek: '议事周视图',
-                     agendaDay: '议事日视图',
+                     agendaWeek: '周视图',
+                     agendaDay: '日视图',
                      today: '今天'
                  },
                  aspectRatio: 2,
@@ -166,7 +166,7 @@
                  art.dialog.open('newschedule.html', {
                      title: '添加日程',
                      lock: true,
-                     width: 300,
+                     width: 500,
                      height: 400,
                      fixed: true, //固定定位
                      //background: '#600', // 背景色

@@ -7,11 +7,82 @@
     <title></title>
     <link href="js/extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
     <script src="js/extjs/adapter/ext/ext-base.js" type="text/javascript"></script>
+    <link href="js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <link href="css/global.css" rel="stylesheet" type="text/css" />
     <script src="js/extjs/ext-all.js" type="text/javascript"></script>
     <script src="js/bottom.js" type="text/javascript"></script>
     <script src="js/rightKeyTabPanel.js" type="text/javascript"></script>
     <script src="js/theme.js" type="text/javascript"></script>
+    <script src="js/comm.js" type="text/javascript"></script>
+    <script src="js/artDialog/artDialog.source.js" type="text/javascript"></script>
+    <script src="js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        .x-panel-body p
+        {
+            margin: 5px;
+        }
+        .x-column-layout-ct .x-panel
+        {
+            margin-bottom: 5px;
+        }
+        .x-column-layout-ct .x-panel-dd-spacer
+        {
+            margin-bottom: 5px;
+        }
+        .settings
+        {
+            background-image: url(../shared/icons/fam/folder_wrench.png) !important;
+        }
+        .nav
+        {
+            background-image: url(../shared/icons/fam/folder_go.png) !important;
+        }
+        .panel_icon
+        {
+            background-image: url(images/icons/first.gif);
+        }
+        .my_icon
+        {
+            background-image: url(../Controls/images/plugin.gif);
+        }
+        .x-tree-node div.menu-node
+        {
+            background: #eee url(cmp-bg.gif) repeat-x;
+            margin-top: 1px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ccc;
+            padding-top: 2px;
+            padding-bottom: 1px;
+            font-weight: bold;
+        }
+        .menu-node .x-tree-node-icon
+        {
+        }
+        .menu-node2
+        {
+            border: 1px solid #fff;
+            background-image: url(../Content/icons/bullet_green.png);
+            background-repeat: no-repeat;
+            padding-right: 20px;
+            background-position: 1px 1px;
+        }
+        .no-node-icon
+        {
+            display: none;
+        }
+        .menu-node2 .x-tree-ec-icon
+        {
+        }
+        .error
+        {
+            background-image: url(../Content/icons/exclamation.gif);
+        }
+        .information
+        {
+            background-image: url(../Content/icons/calendar_view_month.png) !important;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -38,19 +109,19 @@
         },
         "->",
         {
-            xtype: "tbbutton", minWidth: 80, text: "短消息  [<span style=\"color: red\" id=\"mailcount\">0</span>]",
+            xtype: "tbbutton", minWidth: 80, text: "消息  [<span style=\"color: red\" id=\"mailcount\">0</span>]",
             cls: "x-btn-text-icon", icon: "Images/icons/email.png",
             handler: function (btn, e) {
                 var tabs = tabpanels;
                 for (var i = 0; i < tabs.items.length; i++) {
-                    if (tabs.items.items[i].title == "短消息") {
+                    if (tabs.items.items[i].title == "消息") {
                         tabs.activate(tabs.items.items[i]);
                         return;
                     }
                 }
                 tabs.add(
                 {
-                    title: '短消息', id: "PanelArticleViewID_01", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='../general/sms/receive.aspx'></iframe>",
+                    title: '消息', id: "PanelArticleViewID_01", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='../general/sms/receive.aspx'></iframe>",
                     closable: true
                 });
                 tabs.activate('PanelArticleViewID_01');
@@ -69,7 +140,7 @@
                 }
                 tabs.add(
                 {
-                    title: '日程安排', id: "PanelArticleViewID_02", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='calendar/manage/arrange.aspx'></iframe>",
+                    title: '日程安排', id: "PanelArticleViewID_02", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='fullCalandarTest.aspx'></iframe>",
                     closable: true
                 });
                 tabs.activate('PanelArticleViewID_02');
@@ -77,19 +148,19 @@
         },
         "-",
         {
-            xtype: "tbbutton", minWidth: 80, text: "在线用户  [<span style=\"color: red\" id=\"spnOnLineUserCount\">0</span>]",
+            xtype: "tbbutton", minWidth: 80, text: "公告通知  [<span style=\"color: red\" id=\"spnOnLineUserCount\">0</span>]",
             cls: "x-btn-text-icon", icon: "Images/icons/user.png",
             handler: function (btn, e) {
                 var tabs = tabpanels;
                 for (var i = 0; i < tabs.items.length; i++) {
-                    if (tabs.items.items[i].title == "在线用户") {
+                    if (tabs.items.items[i].title == "公告通知") {
                         tabs.activate(tabs.items.items[i]);
                         return;
                     }
                 }
                 tabs.add(
                 {
-                    title: '在线用户', id: "PanelArticleViewID_03", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='../general/ipanel/user_online.aspx'></iframe>",
+                    title: '公告通知', id: "PanelArticleViewID_03", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='../general/ipanel/user_online.aspx'></iframe>",
                     closable: true
                 });
                 tabs.activate('PanelArticleViewID_03');
@@ -120,7 +191,7 @@
             handler: function (btn, e) {
                 JsHelper.Confirm("您确认要退出系统吗？", function (btn) {
                     if (btn == 'yes') {
-                        parent.location = "../relogin.aspx";
+                        parent.location = "index.aspx";
                     }
                 });
             }
@@ -175,7 +246,7 @@
            var loadPanelWest = function (init) {
                Ext.Ajax.request(
         {
-            url: 'Ajax/MemuTree.ashx?Param=0',
+            url: 'Ajax/MemuTree.ashx?p=root',
             success: function (response, options) {
                 try {
                     var panWestMenu = Ext.getCmp("panWestMenu");
@@ -220,7 +291,7 @@
                     appendOnly: true
                 },
                 loader: new Ext.tree.TreeLoader({
-                    dataUrl: "Ajax/MemuTree.ashx?Param=1"
+                    dataUrl: "Ajax/MemuTree.ashx"
                 }), root: new Ext.tree.AsyncTreeNode({
                     id: TypeID, text: title, draggable: false, scope: this, scripts: true, expanded: true
                 }), listeners:

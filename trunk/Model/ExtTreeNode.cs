@@ -27,5 +27,7 @@ namespace TonSinOA.Model
         public string TypeEName { get; set; }
         public string TypeID { get; set; }
         public string TypeTitle { get; set; }
+        public string iconCls { get; set; }
+       public string action { get; set; }
     }
 }
