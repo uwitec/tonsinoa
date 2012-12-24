@@ -19,6 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{813C5561-2A7
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataModel", "DataModel", "{56BADA6C-E875-45D2-872E-84B57B5A33B5}"
+	ProjectSection(SolutionItems) = preProject
+		DataModel\TonSinOA.pdm = DataModel\TonSinOA.pdm
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
