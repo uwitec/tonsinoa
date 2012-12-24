@@ -154,14 +154,15 @@ namespace TonSinOA.DAL
 					new SqlParameter("@ParentID", SqlDbType.Int,4),
 					new SqlParameter("@Remark", SqlDbType.VarChar,200),
 					new SqlParameter("@State", SqlDbType.Int,4),
-					new SqlParameter("@Creator", SqlDbType.Int,4)};
+					new SqlParameter("@ModifyTime", SqlDbType.DateTime,4),
+					new SqlParameter("@ModityUesrID", SqlDbType.Int,4)};
                 parameters[0].Value = model.DepID;
                 parameters[1].Value = model.DepName;
                 parameters[2].Value = model.ParentID;
                 parameters[3].Value = model.Remark;
                 parameters[4].Value = model.State;
-                parameters[5].Value = model.Creator;
-
+                parameters[5].Value = model.Created;
+                parameters[6].Value = model.Creator;
                 Mssql.ExecuteProc(procName, parameters, out rowsAffected);
                 if (rowsAffected > 0)
                 {
@@ -190,7 +191,7 @@ namespace TonSinOA.DAL
             LogBuilder log = new LogBuilder();
 
             #region 日志信息
-            log.Desc = "更新部门";
+            log.Desc = "删除部门";
 
             log.Method = MethodBase.GetCurrentMethod().Name;
             log.Path = MethodBase.GetCurrentMethod().DeclaringType.FullName;
