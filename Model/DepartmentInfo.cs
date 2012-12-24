@@ -10,7 +10,7 @@ namespace TonSinOA.Model
     /// </summary>
     public class DepartmentInfo
     {
-
+        public int RowId { get; set; }
         /// <summary>
         /// DepID
         /// </summary>

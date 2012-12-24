@@ -51,6 +51,7 @@
     <Compile Include="LogBuilder.cs" />
     <Compile Include="MyLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlComponents.cs" />
     <Compile Include="StringHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
