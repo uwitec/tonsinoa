@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <link href="js/extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
     <script src="js/extjs/adapter/ext/ext-base.js" type="text/javascript"></script>
     <link href="js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
