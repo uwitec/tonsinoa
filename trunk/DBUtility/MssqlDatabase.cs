@@ -343,6 +343,17 @@ namespace TonSinOA.DBUtility
             Adpt.Fill(ds);
             this.Close();
         }
+        public DataSet ExecuteProcDs(string procName, SqlParameter[] prams)
+        {
+            SqlDataAdapter Adpt = new SqlDataAdapter();
+
+            Adpt.SelectCommand = CreateCommand(procName, prams);
+
+            DataSet ds = new DataSet("DataSet");
+            Adpt.Fill(ds);
+            this.Close();
+            return ds;
+        }
 
         public void ExecuteProc(string procName, out DataSet ds)
         {
@@ -365,7 +376,17 @@ namespace TonSinOA.DBUtility
             Adpt.Fill(dt);
             this.Close();
         }
+        public DataTable ExecuteProcDt(string procName, SqlParameter[] prams)
+        {
+            SqlDataAdapter Adpt = new SqlDataAdapter();
 
+            Adpt.SelectCommand = CreateCommand(procName, null);
+
+            DataTable dt = new DataTable("DataTable");
+            Adpt.Fill(dt);
+            this.Close();
+            return dt;
+        }
         public void ExecuteProc(string procName, SqlParameter[] prams, out DataTable dt)
         {
             SqlDataAdapter Adpt = new SqlDataAdapter();
@@ -378,7 +399,7 @@ namespace TonSinOA.DBUtility
             this.Close();
         }
 
-        public object ExecuteProc(string procName, SqlParameter[] prams)
+        public object ExecuteProcVal(string procName, SqlParameter[] prams)
         {
             SqlCommand cmd = CreateCommand(procName, prams);
             return cmd.ExecuteScalar();

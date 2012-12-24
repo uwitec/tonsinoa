@@ -101,7 +101,7 @@ namespace TonSinOA.DBUtility
         /// <param name="procName">存储过程的名称</param>
         /// <param name="prams">存储过程所需参数</param>
         /// <returns>返回存储过程返回值</returns>
-        object ExecuteProc(string procName, SqlParameter[] prams);
+        object ExecuteProcVal(string procName, SqlParameter[] prams);
 
 
 
