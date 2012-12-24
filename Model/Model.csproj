@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExtTreeNode.cs" />
+    <Compile Include="DepartmentInfo.cs" />
+    <Compile Include="DocTypeInfo.cs" />
+    <Compile Include="DutyInfo.cs" />
+    <Compile Include="NoticeInfo.cs" />
+    <Compile Include="TypeCodeInfo.cs" />
+    <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
