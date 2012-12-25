@@ -8,10 +8,12 @@ body
 	height: 100%;
 	width:100%;
 }
-
+TABLE {
+	font-size: 12px
+}
 div, span, td
 {
-	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;
+	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;font-size: 12px;
 }
 a:link, a:visited
 {
