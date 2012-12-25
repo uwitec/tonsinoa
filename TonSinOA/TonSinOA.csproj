@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNetPager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -602,6 +605,7 @@
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
     <Content Include="Remark.txt" />
+    <Content Include="SystemManager\AddDept.aspx" />
     <Content Include="SystemManager\DepartManger.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -630,6 +634,13 @@
       <DependentUpon>fullCalandarTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManager\AddDept.aspx.cs">
+      <DependentUpon>AddDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\AddDept.aspx.designer.cs">
+      <DependentUpon>AddDept.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\DepartManger.aspx.cs">
       <DependentUpon>DepartManger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -645,6 +656,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ajax\MemuTree.ashx" />
+    <Content Include="App_Themes\Default\Default.skin" />
     <None Include="css\easyui\default\images\Thumbs.db" />
     <None Include="js\artDialog\skins\icons\Thumbs.db" />
     <None Include="js\extjs\resources\images\default\form\clear-trigger.psd" />

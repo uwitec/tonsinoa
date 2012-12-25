@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{813C5561-2A70-43EA-B6E7-82FB562E3F83}"
 	ProjectSection(SolutionItems) = preProject
 		DLL\AjaxPro.2.dll = DLL\AjaxPro.2.dll
+		DLL\AspNetPager.dll = DLL\AspNetPager.dll
 		DLL\Jayrock.Json.dll = DLL\Jayrock.Json.dll
 		DLL\log4net.dll = DLL\log4net.dll
 	EndProjectSection
