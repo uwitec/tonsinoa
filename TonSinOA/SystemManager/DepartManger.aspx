@@ -10,7 +10,6 @@
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
-    <script src="../js/jquery.easyui.min.js" type="text/javascript"></script>
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
     <script type="text/javascript">
