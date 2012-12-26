@@ -617,7 +617,11 @@
     <Content Include="js\theme.js" />
     <Content Include="Remark.txt" />
     <Content Include="SystemManager\AddDept.aspx" />
-    <Content Include="SystemManager\DepartManger.aspx" />
+    <Content Include="SystemManager\AddDuty.aspx" />
+    <Content Include="SystemManager\DepartManager.aspx" />
+    <Content Include="SystemManager\DutyManager.aspx" />
+    <Content Include="SystemManager\EditDept.aspx" />
+    <Content Include="SystemManager\EditDuty.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -652,12 +656,40 @@
     <Compile Include="SystemManager\AddDept.aspx.designer.cs">
       <DependentUpon>AddDept.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SystemManager\DepartManger.aspx.cs">
-      <DependentUpon>DepartManger.aspx</DependentUpon>
+    <Compile Include="SystemManager\AddDuty.aspx.cs">
+      <DependentUpon>AddDuty.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SystemManager\DepartManger.aspx.designer.cs">
-      <DependentUpon>DepartManger.aspx</DependentUpon>
+    <Compile Include="SystemManager\AddDuty.aspx.designer.cs">
+      <DependentUpon>AddDuty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\DepartManager.aspx.cs">
+      <DependentUpon>DepartManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DepartManager.aspx.designer.cs">
+      <DependentUpon>DepartManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\DutyManager.aspx.cs">
+      <DependentUpon>DutyManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DutyManager.aspx.designer.cs">
+      <DependentUpon>DutyManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditDept.aspx.cs">
+      <DependentUpon>EditDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditDept.aspx.designer.cs">
+      <DependentUpon>EditDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditDuty.aspx.cs">
+      <DependentUpon>EditDuty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditDuty.aspx.designer.cs">
+      <DependentUpon>EditDuty.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddDept.aspx.cs" Inherits="TonSinOA.SystemManager.AddDept" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditDuty.aspx.cs" Inherits="TonSinOA.SystemManager.EditDuty" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -24,7 +24,7 @@
                     <table border="0" cellpadding="3" cellspacing="1" style="width: 100%; background-color: #d6eef1">
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White">
-                                部门名称：
+                                职务名称：
 
                             </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
@@ -35,15 +35,19 @@
                         </tr>
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White;">
-                                上级部门：</td>
+                                所属部门：</td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <asp:TextBox ID="TextBox2" runat="server" Width="115px"></asp:TextBox>
-                                <input id="Button1" type="button" value="选择" />
+                              <asp:DropDownList ID="DropDownList1" runat="server" Width="120px">
+                                    <asp:ListItem Selected="True">教学部</asp:ListItem>
+                                    <asp:ListItem>销售部</asp:ListItem>
+                                    <asp:ListItem>客服部</asp:ListItem>
+                                    <asp:ListItem>技术部</asp:ListItem>
+                                </asp:DropDownList>
                             </td>
                         </tr>
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White; ">
-                                部门描述：</td>
+                                描述：</td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
                                 <textarea id="TextArea1" name="S1"></textarea></td>
                         </tr>
