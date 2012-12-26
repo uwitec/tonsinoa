@@ -618,10 +618,13 @@
     <Content Include="Remark.txt" />
     <Content Include="SystemManager\AddDept.aspx" />
     <Content Include="SystemManager\AddDuty.aspx" />
+    <Content Include="SystemManager\AddUser.aspx" />
     <Content Include="SystemManager\DepartManager.aspx" />
     <Content Include="SystemManager\DutyManager.aspx" />
     <Content Include="SystemManager\EditDept.aspx" />
     <Content Include="SystemManager\EditDuty.aspx" />
+    <Content Include="SystemManager\EditUser.aspx" />
+    <Content Include="SystemManager\UserManager.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -663,6 +666,13 @@
     <Compile Include="SystemManager\AddDuty.aspx.designer.cs">
       <DependentUpon>AddDuty.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SystemManager\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\DepartManager.aspx.cs">
       <DependentUpon>DepartManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -690,6 +700,20 @@
     </Compile>
     <Compile Include="SystemManager\EditDuty.aspx.designer.cs">
       <DependentUpon>EditDuty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\UserManager.aspx.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\UserManager.aspx.designer.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
