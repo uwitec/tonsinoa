@@ -24,7 +24,73 @@ input
 {
 	border: solid 1px #3C7FB1;	
 }
+.envthp
+{
+	margin-top: 4px;
+	border: 1px solid #c6c6c6;
+}
 
+table.dataTable td, table.dataTable th
+{
+	color: #555555;
+	border-bottom: 1px solid #DDDDDD;
+	line-height: 16px;
+	line-height: 18px;
+	padding: 3px 7px 3px 6px;
+	padding: 2px 7px 2px 6px;
+	white-space: nowrap;
+}
+table.dataTable td
+{
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+}
+table.dataTable tr.dataTableHead td
+{
+	height: 27px;
+	line-height: 27px;
+	padding: 0 7px 0 6px;
+	border-left: #D6D6D6 0px solid;
+	border-bottom: #C6C6C6 0px solid;
+	background: url(../images/th.gif) no-repeat left top;
+	font-weight: bold;
+}
+table.dataTable
+{
+	border: 1px solid #C6C6C6;
+	border-collapse: collapse;
+	background: url(../Images/thbg.gif) #FFFFFF repeat-x left top;
+	table-layout: fixed;
+}
+/*----------选项卡*/
+.tabs_head { background: url(../images/option_tabs.gif) repeat-x 0 0; margin:0px 0px 10px 0px;}
+.tabs_head h1 { background: url(../images/option_tabs.gif) no-repeat 0 -40px; color: #6774A8; line-height: 40px; font-size: 14px; padding-left: 18px; margin: 0; }
+.tabs_head .actions { background: url(../images/option_tabs.gif) no-repeat 100% -80px;}
+.tabs_head .actions { text-align: left; padding-left: 5px; padding-top: 9px;  padding-right: 9px;}
+.tabs_head .actions tr { background-image: none; }
+.tabs_head .actions td { color: #6774A8; cursor:pointer; font-weight:normal; text-align: center; padding: 0 10px; height: 30px; line-height:30px; }
+.tabs_head .actions td.active { cursor:default; font-weight:bold; background: #FFFFFF; border: solid #AACCEE; border-width: 1px 1px 0; }
+.tabs_head .actions td a { color: #6774A8;}
+.tabs_head .actions td a:hover { text-decoration: none; }
+.tabs_table { width: 100%; border-collapse: collapse; border: solid; border-color: #AACCEE; border-width: 0px 1px 1px; }
+.tabs_table th { background: #FFFFFF; color: #6774A8; border-bottom: 1px solid #AACCEE; padding: 5px 1px 5px 1px; font-weight: bold;}
+.tabs_table td { border: 1px solid #D8DDE5; padding: 3px 5px 3px 5px; font-family: Georgia, "Times New Roman", Times, serif; }
+
+
+/*----------提示表格*/
+.helptable { margin:0px 0 5px 0; width: 100%; background: #FDFFF2 url(../images/help_info.gif) no-repeat 0 0; border: 1px dotted #DBDDD3; padding: 15px 10px 10px 10px;}
+.helptable td { padding: 15px 15px 15px 35px; line-height: 18px; }
+.helptable ul { padding: 0; margin: 0 0 0 2em; }
+
+
+.btnsubmit1 { cursor:pointer; color: #00599B; background: url(../images/btn_submit1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+.btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+.btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+.btncancel2 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+
+
+#AspNetPager1 {margin-top:5px;margin-bottom:5px;}
 .system_icon
 {
 	background-image: url(../images/menus/system.png);

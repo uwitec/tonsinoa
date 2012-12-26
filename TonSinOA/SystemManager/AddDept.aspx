@@ -52,9 +52,9 @@
                                
                             </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <asp:Button ID="Button2" runat="server" Text="保 存" />
+                                <asp:Button ID="Button2" runat="server" Text="保 存" CssClass="btnsubmit1" />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:Button ID="Button3" runat="server" Text="关 闭" OnClientClick="art.dialog.close();return false;" />
+                                <asp:Button ID="Button3" runat="server" Text="关 闭" CssClass="btnsubmit1" OnClientClick="art.dialog.close();return false;" />
                             </td>
                         </tr>
                     </table>
