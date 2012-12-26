@@ -13,5 +13,10 @@ namespace TonSinOA.SystemManager
         {
 
         }
+
+        protected void AspNetPager1_PageChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
