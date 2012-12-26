@@ -56,9 +56,9 @@ namespace TonSinOA.Ajax
                          break;
                      case "6":
                          
-                         nodes.Add(new ExtTreeNode { TypeTitle = "部门设置", TypeEName = "部门设置", text = "部门设置", TypeID = "601", id = "601", IsRoot = false, leaf = true, PID = node,  action="SystemManager/DepartManger.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "职位设置", TypeEName = "职位设置", text = "职位设置", TypeID = "602", id = "602", IsRoot = false, leaf = true, PID = node });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "用户管理", TypeEName = "用户管理", text = "用户管理", TypeID = "603", id = "603", IsRoot = false, leaf = true, PID = node });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "部门设置", TypeEName = "部门设置", text = "部门设置", TypeID = "601", id = "601", IsRoot = false, leaf = true, PID = node,  action="SystemManager/DepartManager.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "职位设置", TypeEName = "职位设置", text = "职位设置", TypeID = "602", id = "602", IsRoot = false, leaf = true, PID = node, action = "SystemManager/DutyManager.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "用户管理", TypeEName = "用户管理", text = "用户管理", TypeID = "603", id = "603", IsRoot = false, leaf = true, PID = node, action = "SystemManager/UserManager.aspx" });
                          nodes.Add(new ExtTreeNode { TypeTitle = "公告/通知管理", TypeEName = "公告/通知管理", text = "公告/通知管理", TypeID = "604", id = "604", IsRoot = false, leaf = true, PID = node });
                          nodes.Add(new ExtTreeNode { TypeTitle = "文档分类管理", TypeEName = "文档分类管理", text = "文档分类管理", TypeID = "605", id = "605", IsRoot = false, leaf = true, PID = node });
                          nodes.Add(new ExtTreeNode { TypeTitle = "报告/总结分类管理", TypeEName = "报告/总结分类管理", text = "报告/总结分类管理", TypeID = "605", id = "605", IsRoot = false, leaf = true, PID = node });

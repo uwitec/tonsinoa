@@ -23,6 +23,8 @@ namespace TonSinOA.Model
         /// DepID
         /// </summary>
         public int DepID { get; set; }
+        
+        public string DepName { get; set; }
         /// <summary>
         /// Remark
         /// </summary>

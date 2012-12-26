@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DepartManger.aspx.cs" Inherits="TonSinOA.SystemManager.DepartManger" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DepartManager.aspx.cs" Inherits="TonSinOA.SystemManager.DepartManger" %>
 
 <%@ Register assembly="AspNetPager" namespace="Wuqi.Webdiyer" tagprefix="webdiyer" %>
 
@@ -14,30 +14,20 @@
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
     <script type="text/javascript">
 
-        $(function () {
-//            $('#dgDeptView').datagrid({
-//                url: 'datagrid_data2.json',
-//                title: 'DataGrid - ContextMenu',
-//                width: 'auto',
-//                height: 'auto',
-//                fitColumns: true,
-//                columns: [[
-//					{ field: 'rowid', title: '序号', width: 80 },
-//					{ field: 'depname', title: '部门名称', width: 120 },
-//					{ field: 'listprice', title: 'List Price', width: 80, align: 'right' },
-//					{ field: 'unitcost', title: 'Unit Cost', width: 80, align: 'right' },
-//					{ field: 'attr1', title: 'Attribute', width: 250 },
-//					{ field: 'status', title: 'Status', width: 60, align: 'center' }
-//				]]
-//            });
-        });
+
         function addDept() {
 
             art.dialog.open('SystemManager/AddDept.aspx', {
                 title: '添加部门',
                 lock: true,
-                width: 500,
-                height: 400,
+                fixed: true //固定定位
+            });
+        }
+        function EditDept(id) {
+
+            art.dialog.open('SystemManager/EditDept.aspx?ID='+id, {
+                title: '编辑部门',
+                lock: true,
                 fixed: true //固定定位
             });
         }
@@ -107,7 +97,7 @@
                                                             </td>
                                                           
                                                             <td align="center">
-                                                                <a href="EditDept.aspx?id=<%#Eval("DepID") %>">编辑</a> |
+                                                                <a href="#" onclick='<%# "EditDept("+ Eval("DepID")+")"%>'>编辑</a> |
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" BorderWidth="0" 
                                                 CausesValidation="false" CommandArgument='<%# Eval("DepID") %>' 
                                                 CommandName="Delete" OnClientClick="return confirm('您确定要删除此部门吗？')">删除</asp:LinkButton>
