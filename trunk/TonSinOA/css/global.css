@@ -61,12 +61,23 @@ input
 }
 .dv
 {
+    text-align: center;
     margin:5px 10px;
 }
 .envthp
 {
 	margin-top: 4px;
 	border: 1px solid #c6c6c6;
+}
+.tableground
+{
+    width:100%;
+    background-color:#d6eef1;
+}
+.tableground td
+{
+    height:30px;
+    white-space: nowrap; background-color: White;
 }
 table.dataTable td, table.dataTable th
 {
