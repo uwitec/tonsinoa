@@ -6,7 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>部门设置</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>

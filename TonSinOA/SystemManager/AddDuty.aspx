@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>添加职务</title>
 <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript">
