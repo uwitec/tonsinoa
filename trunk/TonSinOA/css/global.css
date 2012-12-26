@@ -1,3 +1,8 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
 body
 {
 	margin: 0;
@@ -24,12 +29,43 @@ input
 {
 	border: solid 1px #3C7FB1;	
 }
+
+.right
+{
+	border: 0px solid #aaaaaa;
+	border-left: none;
+	font-family: "宋体";
+	font-size: 12px;
+}
+.right1
+{
+	background: url(../images/ht17_03.gif) repeat-x;
+	margin: 7px;
+}
+.right1 h1 img
+{
+	float: left;
+	height: 512px;
+}
+.right2
+{
+	float: left;
+	margin-top: 10px;
+}
+.right2 ul li
+{
+	width: 62px;
+	float: left;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-top: 2px;
+	background: url(../images/ht18_03.gif) no-repeat;
+}
 .envthp
 {
 	margin-top: 4px;
 	border: 1px solid #c6c6c6;
 }
-
 table.dataTable td, table.dataTable th
 {
 	color: #555555;
