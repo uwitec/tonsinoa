@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSet>
+	<Table>
+		<RowId>1</RowId>
+		<State>启用</State>
+		<DepName>外教部</DepName>
+		<DutyName>工程师</DutyName>
+		<UserAccount>alili</UserAccount>
+		<UserName>李明</UserName>
+		<UserID>1</UserID>
+		<Remark>dfdfdf</Remark>
+	</Table>
+  <Table>
+    <RowId>2</RowId>
+    <State>启用</State>
+    <DepName>外教部</DepName>
+    <DutyName>工程师</DutyName>
+    <UserAccount>alili</UserAccount>
+    <UserName>李明</UserName>
+    <UserID>2</UserID>
+    <Remark>dfdfdf</Remark>
+  </Table>
+  <Table>
+    <RowId>3</RowId>
+    <State>启用</State>
+    <DepName>外教部</DepName>
+    <DutyName>工程师</DutyName>
+    <UserAccount>alili</UserAccount>
+    <UserName>李明</UserName>
+    <UserID>3</UserID>
+    <Remark>dfdfdf</Remark>
+  </Table>
+  <Table>
+    <RowId>4</RowId>
+    <State>禁用</State>
+    <DepName>外教部</DepName>
+    <DutyName>aaaa</DutyName>
+    <UserAccount>alili</UserAccount>
+    <UserName>fdfdfd</UserName>
+    <UserID>4</UserID>
+    <Remark>dfdfdf</Remark>
+  </Table>
+</DataSet>

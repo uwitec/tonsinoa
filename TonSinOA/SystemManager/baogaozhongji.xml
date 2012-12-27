@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSet>
+	<Table>
+		<RowID>1</RowID>
+		<ReportName>工作总结</ReportName>
+		<ReportID>1</ReportID>
+	</Table>
+<Table>
+		<RowID>1</RowID>
+		<ReportName>工作报告</ReportName>
+		<ReportID>2</ReportID>
+	</Table>
+	<Table>
+		<RowID>1</RowID>
+		<ReportName>听评课</ReportName>
+		<ReportID>3</ReportID>
+	</Table>
+</DataSet>
