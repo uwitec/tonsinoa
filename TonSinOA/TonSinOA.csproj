@@ -638,6 +638,7 @@
     <Content Include="SystemManager\DutyManager.aspx" />
     <Content Include="SystemManager\EditDept.aspx" />
     <Content Include="SystemManager\EditDuty.aspx" />
+    <Content Include="SystemManager\EditNotice.aspx" />
     <Content Include="SystemManager\EditUser.aspx" />
     <Content Include="SystemManager\notice.xml" />
     <Content Include="SystemManager\NoticeManager.aspx" />
@@ -734,6 +735,13 @@
     </Compile>
     <Compile Include="SystemManager\EditDuty.aspx.designer.cs">
       <DependentUpon>EditDuty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditNotice.aspx.cs">
+      <DependentUpon>EditNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditNotice.aspx.designer.cs">
+      <DependentUpon>EditNotice.aspx</DependentUpon>
     </Compile>
     <Compile Include="SystemManager\EditUser.aspx.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
