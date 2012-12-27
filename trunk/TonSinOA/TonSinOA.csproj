@@ -631,12 +631,15 @@
     <Content Include="SystemManager\AddDept.aspx" />
     <Content Include="SystemManager\AddDuty.aspx" />
     <Content Include="SystemManager\AddUser.aspx" />
+    <Content Include="SystemManager\baogaozhongji.xml" />
     <Content Include="SystemManager\DepartManager.aspx" />
     <Content Include="SystemManager\DutyManager.aspx" />
     <Content Include="SystemManager\EditDept.aspx" />
     <Content Include="SystemManager\EditDuty.aspx" />
     <Content Include="SystemManager\EditUser.aspx" />
+    <Content Include="SystemManager\notice.xml" />
     <Content Include="SystemManager\UserManager.aspx" />
+    <Content Include="SystemManager\User.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -649,6 +652,7 @@
     <Compile Include="Ajax\MemuTree.ashx.cs">
       <DependentUpon>MemuTree.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>index.aspx</DependentUpon>

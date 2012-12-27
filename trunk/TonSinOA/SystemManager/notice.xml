@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<DataSet>
+	<Table>
+		<RowID>1</RowID>
+		<Title>测试通知</Title>
+		<NoticeID>1</NoticeID>
+		<TypeName>通知</TypeName>
+		<TypeID>1</TypeID>
+	</Table>
+	<Table>
+		<RowID>2</RowID>
+		<Title>测试通知2</Title>
+		<NoticeID>2</NoticeID>
+		<TypeName>通知</TypeName>
+		<TypeID>1</TypeID>
+	</Table>
+	<Table>
+		<RowID>3</RowID>
+		<Title>测试公告</Title>
+		<NoticeID>3</NoticeID>
+		<TypeName>公告</TypeName>
+		<TypeID>2</TypeID>
+	</Table>
+	<Table>
+		<RowID>3</RowID>
+		<Title>测试公告</Title>
+		<NoticeID>4</NoticeID>
+		<TypeName>公告</TypeName>
+		<TypeID>2</TypeID>
+	</Table>
+</DataSet>
