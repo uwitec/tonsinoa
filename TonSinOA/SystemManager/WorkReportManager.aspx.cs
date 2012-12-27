@@ -22,8 +22,8 @@ namespace TonSinOA.SystemManager
             DataSet ds = new DataSet();
             ds.ReadXml(Server.MapPath("~/SystemManager/baogaozhongji.xml"));
 
-          //  this.dgNoticeView.DataSource = ds;
-            //this.dgNoticeView.DataBind();
+            this.dgReportView.DataSource = ds;
+            this.dgReportView.DataBind();
         }
     }
 }

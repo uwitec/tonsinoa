@@ -61,8 +61,8 @@ namespace TonSinOA.Ajax
                          nodes.Add(new ExtTreeNode { TypeTitle = "用户管理", TypeEName = "用户管理", text = "用户管理", TypeID = "603", id = "603", IsRoot = false, leaf = true, PID = node, action = "SystemManager/UserManager.aspx" });
                          nodes.Add(new ExtTreeNode { TypeTitle = "公告/通知管理", TypeEName = "公告/通知管理", text = "公告/通知管理", TypeID = "604", id = "604", IsRoot = false, leaf = true, PID = node, action = "SystemManager/NoticeManager.aspx" });
                          nodes.Add(new ExtTreeNode { TypeTitle = "文档分类管理", TypeEName = "文档分类管理", text = "文档分类管理", TypeID = "605", id = "605", IsRoot = false, leaf = true, PID = node, action = "SystemManager/DocClassManager.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "报告/总结分类管理", TypeEName = "报告/总结分类管理", text = "报告/总结分类管理", TypeID = "605", id = "605", IsRoot = false, leaf = true, PID = node, action = "SystemManager/WorkReportManager.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "修改密码", TypeEName = "修改密码", text = "修改密码", TypeID = "606", id = "606", IsRoot = false, leaf = true, PID = node, action = "SystemManager/ChangePwd.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "报告/总结分类管理", TypeEName = "报告/总结分类管理", text = "报告/总结分类管理", TypeID = "606", id = "606", IsRoot = false, leaf = true, PID = node, action = "SystemManager/WorkReportManager.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "修改密码", TypeEName = "修改密码", text = "修改密码", TypeID = "607", id = "607", IsRoot = false, leaf = true, PID = node, action = "SystemManager/ChangePwd.aspx" });
                          break;
                      default: break;
                  }
