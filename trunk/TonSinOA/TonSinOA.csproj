@@ -633,11 +633,14 @@
     <Content Include="SystemManager\AddUser.aspx" />
     <Content Include="SystemManager\baogaozhongji.xml" />
     <Content Include="SystemManager\DepartManager.aspx" />
+    <Content Include="SystemManager\DocClassManager.aspx" />
     <Content Include="SystemManager\DutyManager.aspx" />
     <Content Include="SystemManager\EditDept.aspx" />
     <Content Include="SystemManager\EditDuty.aspx" />
     <Content Include="SystemManager\EditUser.aspx" />
     <Content Include="SystemManager\notice.xml" />
+    <Content Include="SystemManager\NoticeManager.aspx" />
+    <Content Include="SystemManager\WorkReportManager.aspx" />
     <Content Include="SystemManager\UserManager.aspx" />
     <Content Include="SystemManager\User.xml" />
     <Content Include="Web.config" />
@@ -696,6 +699,13 @@
     <Compile Include="SystemManager\DepartManager.aspx.designer.cs">
       <DependentUpon>DepartManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SystemManager\DocClassManager.aspx.cs">
+      <DependentUpon>DocClassManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DocClassManager.aspx.designer.cs">
+      <DependentUpon>DocClassManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\DutyManager.aspx.cs">
       <DependentUpon>DutyManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -724,6 +734,20 @@
     <Compile Include="SystemManager\EditUser.aspx.designer.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SystemManager\NoticeManager.aspx.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\NoticeManager.aspx.designer.cs">
+      <DependentUpon>NoticeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\WorkReportManager.aspx.cs">
+      <DependentUpon>WorkReportManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\WorkReportManager.aspx.designer.cs">
+      <DependentUpon>WorkReportManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\UserManager.aspx.cs">
       <DependentUpon>UserManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -734,6 +758,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Bbs\" />
     <Folder Include="FileManager\" />
     <Folder Include="ProjectManager\" />
   </ItemGroup>
