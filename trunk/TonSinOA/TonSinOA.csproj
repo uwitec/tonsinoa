@@ -630,6 +630,7 @@
     <Content Include="Remark.txt" />
     <Content Include="SystemManager\AddDept.aspx" />
     <Content Include="SystemManager\AddDuty.aspx" />
+    <Content Include="SystemManager\AddNotice.aspx" />
     <Content Include="SystemManager\AddUser.aspx" />
     <Content Include="SystemManager\baogaozhongji.xml" />
     <Content Include="SystemManager\DepartManager.aspx" />
@@ -684,6 +685,13 @@
     </Compile>
     <Compile Include="SystemManager\AddDuty.aspx.designer.cs">
       <DependentUpon>AddDuty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\AddNotice.aspx.cs">
+      <DependentUpon>AddNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\AddNotice.aspx.designer.cs">
+      <DependentUpon>AddNotice.aspx</DependentUpon>
     </Compile>
     <Compile Include="SystemManager\AddUser.aspx.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
