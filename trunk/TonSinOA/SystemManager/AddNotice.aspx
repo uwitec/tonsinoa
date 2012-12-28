@@ -9,11 +9,22 @@
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
     <script src="../editor/kindeditor.js" type="text/javascript"></script>
-    <script src="../editor/lang/zh_CN.js" type="text/javascript"></script> 
+   <%-- <script src="../editor/lang/zh_CN.js" type="text/javascript"></script> --%>
+    <script src="../js/editor.config.js" type="text/javascript"></script> 
     <script type="text/javascript">
+        var editor;
         $(function () {
-            var editor = KindEditor.create('textarea[name="S1"]');
-        });
+             editor = KindEditor.create('textarea[name="S1"]',{
+                    resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload: false,
+					items :  items
+            });
+});
+function test() {
+   alert( editor.html())
+    return false;
+}
     </script>
     <style type="text/css">
         #TextArea1
@@ -33,7 +44,7 @@
 
                             </td>
                             <td align="left" >
-                                <asp:TextBox ID="TextBox1" runat="server" Width="268px"></asp:TextBox>
+                                <asp:TextBox ID="TextBox1" runat="server" Width="268px" CssClass="BigInput"></asp:TextBox>
                                 &nbsp;&nbsp;&nbsp;
                                
                             </td>
@@ -64,7 +75,7 @@
                                
                             </td>
                             <td align="left" >
-                                <asp:Button ID="Button2" runat="server" Text="保 存" CssClass="btnsubmit1" />
+                                <asp:Button ID="Button2" runat="server" Text="保 存" OnClientClick="test();" CssClass="btnsubmit1" />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:Button ID="Button3" runat="server" Text="关 闭" CssClass="btnsubmit1" OnClientClick="art.dialog.close();return false;" />
                             </td>
