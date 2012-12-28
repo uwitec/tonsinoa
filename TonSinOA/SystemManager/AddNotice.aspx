@@ -21,10 +21,7 @@
 					items :  items
             });
 });
-function test() {
-   alert( editor.html())
-    return false;
-}
+
     </script>
     <style type="text/css">
         #TextArea1
