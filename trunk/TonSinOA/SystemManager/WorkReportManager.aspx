@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>报告总结</title>
+    <title>报告总结分类</title>
      <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
@@ -13,18 +13,18 @@
     <script type="text/javascript">
 
 
-        function addNotice() {
+        function addWorkReport() {
 
-            art.dialog.open('SystemManager/AddDuty.aspx', {
-                title: '添加公告/通知',
+            art.dialog.open('SystemManager/AddWorkReport.aspx', {
+                title: '添加报告总结分类',
                 lock: true,
                 fixed: true //固定定位
             });
         }
-        function EditNotice(id) {
+        function EditWorkReport(id) {
 
-            art.dialog.open('SystemManager/EditDuty.aspx?ID=' + id, {
-                title: '编辑公告/通知',
+            art.dialog.open('SystemManager/EditWorkReport.aspx?ID=' + id, {
+                title: '编辑报告总结分类',
                 lock: true,
                 fixed: true //固定定位
             });
@@ -46,7 +46,7 @@
                          
                        
                             <td class="active">列表</td>
-                            <td><a href="#" onclick="javascript:addNotice()">添加分类</a></td>
+                            <td><a href="#" onclick="javascript:addWorkReport()">添加分类</a></td>
                         </tr>
                     </table>
                 </td>
@@ -98,7 +98,7 @@
                                                             </td>
                                                           
                                                             <td align="center">
-                                                                <a href="#" onclick='<%# "EditReport("+ Eval("ReportID")+")"%>'>编辑</a> |
+                                                                <a href="#" onclick='<%# "EditWorkReport("+ Eval("ReportID")+")"%>'>编辑</a> |
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" BorderWidth="0" 
                                                 CausesValidation="false" CommandArgument='<%# Eval("ReportID") %>' 
                                                 CommandName="Delete" OnClientClick="return confirm('您确定要删除此报告吗？')">删除</asp:LinkButton>

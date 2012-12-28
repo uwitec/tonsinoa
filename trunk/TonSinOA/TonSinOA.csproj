@@ -632,6 +632,7 @@
     <Content Include="SystemManager\AddDuty.aspx" />
     <Content Include="SystemManager\AddNotice.aspx" />
     <Content Include="SystemManager\AddUser.aspx" />
+    <Content Include="SystemManager\AddWorkReport.aspx" />
     <Content Include="SystemManager\baogaozhongji.xml" />
     <Content Include="SystemManager\DepartManager.aspx" />
     <Content Include="SystemManager\DocClassManager.aspx" />
@@ -640,6 +641,7 @@
     <Content Include="SystemManager\EditDuty.aspx" />
     <Content Include="SystemManager\EditNotice.aspx" />
     <Content Include="SystemManager\EditUser.aspx" />
+    <Content Include="SystemManager\EditWorkReport.aspx" />
     <Content Include="SystemManager\notice.xml" />
     <Content Include="SystemManager\NoticeManager.aspx" />
     <Content Include="SystemManager\WorkReportManager.aspx" />
@@ -701,6 +703,13 @@
     <Compile Include="SystemManager\AddUser.aspx.designer.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SystemManager\AddWorkReport.aspx.cs">
+      <DependentUpon>AddWorkReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\AddWorkReport.aspx.designer.cs">
+      <DependentUpon>AddWorkReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\DepartManager.aspx.cs">
       <DependentUpon>DepartManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -749,6 +758,13 @@
     </Compile>
     <Compile Include="SystemManager\EditUser.aspx.designer.cs">
       <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditWorkReport.aspx.cs">
+      <DependentUpon>EditWorkReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditWorkReport.aspx.designer.cs">
+      <DependentUpon>EditWorkReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="SystemManager\NoticeManager.aspx.cs">
       <DependentUpon>NoticeManager.aspx</DependentUpon>
