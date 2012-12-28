@@ -8,6 +8,13 @@
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    <script src="../editor/kindeditor.js" type="text/javascript"></script>
+    <script src="../editor/lang/zh_CN.js" type="text/javascript"></script> 
+    <script type="text/javascript">
+        $(function () {
+            var editor = KindEditor.create('textarea[name="S1"]');
+        });
+    </script>
     <style type="text/css">
         #TextArea1
         {
@@ -32,7 +39,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" style="white-space: nowrap; background-color: White;">
+                            <td align="right" >
                                 类型：</td>
                             <td align="left" >
                                 <select id="Select1" name="D1">
