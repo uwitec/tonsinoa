@@ -137,6 +137,11 @@ table.dataTable
 .btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btncancel2 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+input.BigInput,textarea.BigInput {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
+input.BigInput:hover,textarea.BigInput:hover {font-size: 10pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
+
+input.SmallInput,textarea.SmallInput {font-size: 9pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
+input.SmallInput:hover,textarea.SmallInput:hover {font-size: 9pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
 
 
 #AspNetPager1 {margin-top:5px;margin-bottom:5px;}

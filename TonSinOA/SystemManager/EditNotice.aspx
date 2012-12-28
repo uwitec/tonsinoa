@@ -9,6 +9,21 @@
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+        <script src="../editor/kindeditor.js" type="text/javascript"></script>
+    <script src="../editor/lang/en.js" type="text/javascript"></script> 
+    <script src="../js/editor.config.js" type="text/javascript"></script> 
+    <script type="text/javascript">
+        var editor;
+        $(function () {
+            editor = KindEditor.create('textarea[name="S1"]', {
+                resizeType: 1,
+                allowPreviewEmoticons: false,
+                allowImageUpload: false,
+                items: items
+            });
+        });
+
+    </script>
     <style type="text/css">
         #TextArea1
         {
@@ -27,7 +42,7 @@
 
                             </td>
                             <td align="left" >
-                                <asp:TextBox ID="TextBox1" runat="server" Width="268px"></asp:TextBox>
+                                <asp:TextBox ID="TextBox1" runat="server" Width="268px" CssClass="BigInput"></asp:TextBox>
                                 &nbsp;&nbsp;&nbsp;
                                
                             </td>

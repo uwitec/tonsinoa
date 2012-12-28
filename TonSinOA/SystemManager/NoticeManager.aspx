@@ -15,7 +15,7 @@
 
         function addNotice() {
 
-            art.dialog.open('SystemManager/AddDuty.aspx', {
+            art.dialog.open('SystemManager/AddNotice.aspx', {
                 title: '添加公告/通知',
                 lock: true,
                 fixed: true //固定定位
@@ -23,7 +23,7 @@
         }
         function EditNotice(id) {
 
-            art.dialog.open('SystemManager/EditDuty.aspx?ID=' + id, {
+            art.dialog.open('SystemManager/EditNotice.aspx?ID=' + id, {
                 title: '编辑公告/通知',
                 lock: true,
                 fixed: true //固定定位
