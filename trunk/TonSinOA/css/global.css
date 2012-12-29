@@ -137,11 +137,80 @@ table.dataTable
 .btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btncancel2 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
-input.BigInput,textarea.BigInput {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
+input.BigInput,textarea.BigInput {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') repeat-x 0 -1px; 
+    width: 157px;
+}
 input.BigInput:hover,textarea.BigInput:hover {font-size: 10pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
 
 input.SmallInput,textarea.SmallInput {font-size: 9pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
 input.SmallInput:hover,textarea.SmallInput:hover {font-size: 9pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
+
+input.BigStatic,textarea.BigStatic {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: #E0E0E0;}
+
+input.SmallStatic,textarea.SmallStatic {font-size: 9pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: #E0E0E0;}
+
+select.BigSelect  { COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.BigSelect:hover  { COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text_hover.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+
+select.SmallSelect{ COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+select.SmallSelect:hover{ COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text_hover.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+select.BigStatic  { COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.SmallStatic{ COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+/**添加**/
+A.orgAdd:link, A.orgAdd:visited{
+   color:#207BD6;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px 0px;
+}
+A.orgAdd:hover, A.orgAdd:active{
+   color:#207BD6;
+   text-decoration: underline;
+}
+/**清除**/
+A.orgClear:link, A.orgClear:visited{
+   color:#9AA9B8;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px -60px;
+   margin-left:5px;
+}
+A.orgClear:hover, A.orgClear:active{
+   color:#207BD6;
+   background-position:0px -40px;
+   text-decoration: underline;
+}
+a.addfile {
+   display:inline-block;
+   position:relative;
+   color:#207BD6;
+   text-decoration:none;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px 4px;
+}
+a.addfile:hover {
+   color:#9AA9B8;
+   text-decoration:underline;
+   background-position:0px -16px;
+}
+input.addfile {
+   cursor:pointer;
+   left:-5px;
+   opacity:0;
+   filter:alpha(opacity=0);
+   position:absolute;
+   width:1px;
+}
+a.selfile:link, a.selfile:visited {
+   color:#207BD6;
+   text-decoration:none;
+}
+a.selfile:hover, a.selfile:active {
+   color:#9AA9B8;
+   text-decoration:underline;
+}
 
 
 #AspNetPager1 {margin-top:5px;margin-bottom:5px;}

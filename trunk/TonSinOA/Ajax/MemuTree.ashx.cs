@@ -42,7 +42,7 @@ namespace TonSinOA.Ajax
                          nodes.Add(new ExtTreeNode { TypeTitle = "共享文档", TypeEName = "共享文档", text = "共享文档", TypeID = "103", id = "103", IsRoot = false, leaf = true, PID = node });
                          break;
                      case "2":
-                         nodes.Add(new ExtTreeNode { TypeTitle = "工作报告", TypeEName = "工作报告", text = "工作报告", TypeID = "201", id = "201", IsRoot = false, leaf = true, PID = node, action = "fullCalandarTest.aspx", icon = "Images/icons/calendar.png" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "工作报告", TypeEName = "工作报告", text = "工作报告", TypeID = "201", id = "201", IsRoot = false, leaf = true, PID = node, action = "workReport/worklist.aspx", icon = "Images/icons/calendar.png" });
                          break;
                      case "3":
                          nodes.Add(new ExtTreeNode { TypeTitle = "日程安排", TypeEName = "日程安排", text = "日程安排", TypeID = "301", id = "301", IsRoot = false, leaf = true, PID = node, action = "fullCalandarTest.aspx",icon="Images/icons/calendar.png"});

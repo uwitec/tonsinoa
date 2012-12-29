@@ -137,6 +137,7 @@
     <Content Include="css\easyui\default\window.css" />
     <Content Include="css\easyui\icon.css" />
     <Content Include="css\global.css" />
+    <Content Include="css\StyleSheet1.css" />
     <Content Include="editor\default.html" />
     <Content Include="editor\kindeditor-min.js" />
     <Content Include="editor\kindeditor.js" />
@@ -358,6 +359,7 @@
     <Content Include="images\menus\flow.gif" />
     <Content Include="images\menus\system.png" />
     <Content Include="images\option_tabs.gif" />
+    <Content Include="images\org_select.png" />
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
     <Content Include="index.aspx" />
@@ -854,6 +856,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="workReport\AddWork.aspx" />
+    <Content Include="workReport\LookWork.aspx" />
+    <Content Include="workReport\worklist.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ajax\MemuTree.ashx.cs">
@@ -987,10 +992,32 @@
     <Compile Include="SystemManager\UserManager.aspx.designer.cs">
       <DependentUpon>UserManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="workReport\AddWork.aspx.cs">
+      <DependentUpon>AddWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="workReport\AddWork.aspx.designer.cs">
+      <DependentUpon>AddWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="workReport\LookWork.aspx.cs">
+      <DependentUpon>LookWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="workReport\LookWork.aspx.designer.cs">
+      <DependentUpon>LookWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="workReport\worklist.aspx.cs">
+      <DependentUpon>worklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="workReport\worklist.aspx.designer.cs">
+      <DependentUpon>worklist.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Bbs\" />
+    <Folder Include="comm\" />
     <Folder Include="FileManager\" />
     <Folder Include="ProjectManager\" />
   </ItemGroup>
