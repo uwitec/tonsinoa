@@ -829,6 +829,10 @@
     <Content Include="js\DatePicker\WdatePicker.js" />
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
+    <Content Include="ProjectManager\AddTask.aspx" />
+    <Content Include="ProjectManager\project.xml" />
+    <Content Include="ProjectManager\projectlist.aspx" />
+    <Content Include="ProjectManager\task.xml" />
     <Content Include="Remark.txt" />
     <Content Include="SystemManager\AddDept.aspx" />
     <Content Include="SystemManager\AddDuty.aspx" />
@@ -879,6 +883,20 @@
     </Compile>
     <Compile Include="fullCalandarTest.aspx.designer.cs">
       <DependentUpon>fullCalandarTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\AddTask.aspx.cs">
+      <DependentUpon>AddTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\AddTask.aspx.designer.cs">
+      <DependentUpon>AddTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\projectlist.aspx.cs">
+      <DependentUpon>projectlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\projectlist.aspx.designer.cs">
+      <DependentUpon>projectlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemManager\AddDept.aspx.cs">
@@ -1020,7 +1038,6 @@
     <Folder Include="Bbs\" />
     <Folder Include="comm\" />
     <Folder Include="FileManager\" />
-    <Folder Include="ProjectManager\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ajax\MemuTree.ashx" />

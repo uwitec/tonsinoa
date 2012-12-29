@@ -112,6 +112,15 @@ table.dataTable
 	background: url(../Images/thbg.gif) #FFFFFF repeat-x left top;
 	table-layout: fixed;
 }
+.project_a a
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#project_tb td
+{
+    font-weight:bold
+}
 /*----------选项卡*/
 .tabs_head { background: url(../images/option_tabs.gif) repeat-x 0 0; margin:0px 0px 10px 0px;}
 .tabs_head h1 { background: url(../images/option_tabs.gif) no-repeat 0 -40px; color: #6774A8; line-height: 40px; font-size: 14px; padding-left: 18px; margin: 0; }
@@ -132,7 +141,7 @@ table.dataTable
 .helptable td { padding: 15px 15px 15px 35px; line-height: 18px; }
 .helptable ul { padding: 0; margin: 0 0 0 2em; }
 
-
+.btnsubmit3 { cursor:pointer; color: #00599B; background: url(../images/btn_submit1.gif) no-repeat 0 0; width:50px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit1 { cursor:pointer; color: #00599B; background: url(../images/btn_submit1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
