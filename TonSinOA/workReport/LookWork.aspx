@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
     <script src="../js/DatePicker/WdatePicker.js" type="text/javascript"></script>
@@ -14,6 +15,7 @@
     <script src="../js/editor.config.js" type="text/javascript"></script>
     <script type="text/javascript">
         var editor;
+        var MyDialog;
         $(function () {
             editor = KindEditor.create('textarea[id="ReportContent"]', {
                 resizeType: 1,
@@ -21,8 +23,17 @@
                 allowImageUpload: false,
                 items: simpleItmes
             });
+        
         });
 
+
+        function Share() {
+            MyDialog = art.dialog({
+                title: "分享给他人",
+                lock: true
+            });
+        MyDialog.content(document.getElementById("tbShare"));
+    }
     </script>
 </head>
 <body>
@@ -33,7 +44,7 @@
                 <td align="left">
                    <a href="worklist.aspx">返回工作报告</a> </td>
                 <td align="right">
-                    分享&nbsp;&nbsp; 打印</td>
+                    <a href="#" onclick="javascript:Share()">分享</a>&nbsp;&nbsp; 打印</td>
             </tr>
             <tr>
                 <td align="right">
@@ -93,7 +104,7 @@
                    中关村中心12月工作报告.doc</td>
             </tr>
             <tr>
-                <td align="right">评价
+                <td align="right">评价:
                 </td>
                 <td align="left">
                    <select id="Select2" name="D1" class="SmallSelect">
@@ -104,7 +115,7 @@
                 </td>
             </tr>
             <tr>
-                <td align="right">评语
+                <td align="right">评语:
                 </td>
                 <td align="left">
               报告内容详实，丰满，希望再接再厉！
@@ -146,6 +157,30 @@
         </tr>
         </table>
     </div>
+       <table id="tbShare" style="display:none" border="0" cellpadding="3" cellspacing="1" class="tableground">
+            <tr>
+                <td align="right">
+                  分享给： </td>
+                <td align="left">
+                     <textarea id="TextArea2" class="BigStatic" readonly="" wrap="yes" rows="2" name="S1"
+                        cols="45"></textarea>
+                    <a class="orgAdd" href="javascript:;">添加</a> <a class="orgClear" href="javascript:;">
+                        清空</a></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    通知方式：
+                </td>
+                <td align="left">
+                    <input id="Checkbox1" type="checkbox" />邮件通知  <input id="Checkbox2" type="checkbox" />系统消息 </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    &nbsp;</td>
+                <td align="left">
+                    <input id="Button2" type="button" value="提交并发送" class="btnsubmit1" /></td>
+            </tr>
+            </table>
     </form>
 </body>
 </html>
