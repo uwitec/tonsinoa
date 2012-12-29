@@ -10,7 +10,7 @@
 namespace TonSinOA.ProjectManager {
     
     
-    public partial class AddTask {
+    public partial class EditTask {
         
         /// <summary>
         /// form1 控件。

@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddTask.aspx.cs" Inherits="TonSinOA.ProjectManager.AddTask" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditTask.aspx.cs" Inherits="TonSinOA.ProjectManager.EditTask" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>新建任务</title>
+    <title></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
@@ -15,8 +16,8 @@
         <table border="0" cellpadding="3" cellspacing="1" class="tableground">
             <tr>
                 <td align="left">
-                   <img  src="../images/notify_new.gif" alt=""/>
-<span class="big3"> 新建任务</span>
+                   <img  src="../images/edit.gif" alt="">
+<span class="big3"> 编辑任务</span>
                     </td>
                 <td  align="right"> <a href="projectlist.aspx"><span>返回</span></a></td>
             </tr>
