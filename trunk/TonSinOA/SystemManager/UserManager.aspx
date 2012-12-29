@@ -57,7 +57,7 @@
             </tr>
         </table>
     </div>
-    <div>
+    <div class="right1">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td width="0%" valign="top">
@@ -171,7 +171,7 @@
                 </td>
                 <td width="0%" valign="top">
                     <h2>
-                        <img src="../images/ht16_03.gif" alt='' /></h2>
+                        <img src="../images/ht28_03.gif" alt='' /></h2>
                 </td>
             </tr>
         </table>

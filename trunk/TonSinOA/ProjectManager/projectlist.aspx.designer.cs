@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace TonSinOA.workReport {
+namespace TonSinOA.ProjectManager {
     
     
-    public partial class worklist {
+    public partial class projectlist {
         
         /// <summary>
         /// form1 控件。
@@ -22,30 +22,12 @@ namespace TonSinOA.workReport {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// DropDownList1 控件。
+        /// dgProjectView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
-        /// dgWpView 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dgWpView;
-        
-        /// <summary>
-        /// AspNetPager1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::Wuqi.Webdiyer.AspNetPager AspNetPager1;
+        protected global::System.Web.UI.WebControls.Repeater dgProjectView;
     }
 }
