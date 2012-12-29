@@ -55,7 +55,7 @@
                                         <tr>
                                             <td height="25" valign="top" style="padding-top: 2px; padding-left: 6px; padding-right: 6px;
                                                 padding-bottom: 2px;">
-                                                <asp:Repeater ID="dgUserView" runat="server" >
+                                                <asp:Repeater ID="dgWpView" runat="server" >
                                                     <HeaderTemplate>
                                                         <table width="100%" cellpadding="0" cellspacing="0" class="dataTable" align="center">
                                                             <tr class="dataTableHead" align="center">

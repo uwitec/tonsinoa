@@ -859,6 +859,7 @@
     <Content Include="workReport\AddWork.aspx" />
     <Content Include="workReport\LookWork.aspx" />
     <Content Include="workReport\worklist.aspx" />
+    <Content Include="workReport\workreport.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ajax\MemuTree.ashx.cs">
