@@ -13,7 +13,17 @@ body
 	height: 100%;
 	width:100%;
 }
+/*
+form{padding:0px;margin:0px;}
+img{border:0px;}
+a img{border:0px;}
 
+
+a{outline:none;}
+a:link{color: #0466cb; text-decoration: none;}
+a:visited {color: #0466cb; text-decoration: none}
+a:hover {color: #0466cb; text-decoration: none}
+a:active {color: #0466cb; text-decoration: none}*/
 div, span, td
 {
 	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;font-size: 12px;
@@ -78,6 +88,7 @@ input
 {
     height:30px;
     white-space: nowrap; background-color: White;
+     padding: 1px;
 }
 table.dataTable td, table.dataTable th
 {
@@ -146,8 +157,30 @@ table.dataTable
 .btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btncancel2 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
+.small {
+    font-size: 9pt;
+}
+.small1 {
+    color: #000000;
+    font-size: 9pt;
+}
+.big {
+    font-size: 12pt;
+}
+.big1 {
+    color: #000000;
+    font-size: 12pt;
+}
+.big2 {
+    font-size: 18pt;
+}
+.big3 {
+    color: #124164;
+    font-size: 12pt;
+    font-weight: bold;
+}
 input.BigInput,textarea.BigInput {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') repeat-x 0 -1px; 
-    width: 157px;
+    
 }
 input.BigInput:hover,textarea.BigInput:hover {font-size: 10pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
 
@@ -172,10 +205,12 @@ A.orgAdd:link, A.orgAdd:visited{
    padding-left:12px;
    background:url("../images/org_select.png") no-repeat;
    background-position:0px 0px;
+   font-size:9pt;
 }
 A.orgAdd:hover, A.orgAdd:active{
    color:#207BD6;
    text-decoration: underline;
+   font-size:9pt;
 }
 /**清除**/
 A.orgClear:link, A.orgClear:visited{

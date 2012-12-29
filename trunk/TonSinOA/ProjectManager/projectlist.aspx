@@ -154,7 +154,7 @@
                                                                             责任人：<%# Eval("Resperson")%>
                                                                         </td>
                                                                         <td align="right" class="project_a" style="width:50%">
-                                                                            <a href="AddTask.aspx">增加新任务</a><a href="#" onclick="javascript:EditProject()">修改</a><a href="#">删除</a><a href="#">打印</a><a
+                                                                            <a href="AddTask.aspx?ID="<%# Eval("ProjectID")  %>>增加新任务</a><a href="#" onclick="javascript:EditProject()">修改</a><a href="#">删除</a><a href="#">打印</a><a
                                                                                 href="#">导出</a>
                                                                         </td>
                                                                     </tr>
@@ -195,7 +195,7 @@
                                                                     <td align="left"><%# Eval("Progress")%></td>
                                                                     <td align="left"><%# Eval("State") %></td>
                                                                     <td align="left"><%# Eval("Donation")%></td>
-                                                                    <td align="left">    <a href='EditTask.aspxID="<%#  Eval("TaskID")%>'>修改</a> |
+                                                                    <td align="left">    <a href='EditTask.aspx?ID=<%#  Eval("TaskID")%>'>修改</a> |
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" BorderWidth="0" 
                                                 CausesValidation="false" CommandArgument='<%# Eval("TaskID") %>' 
                                                 CommandName="Delete" OnClientClick="return confirm('您确定要删除此任务吗？')">删除</asp:LinkButton></td>

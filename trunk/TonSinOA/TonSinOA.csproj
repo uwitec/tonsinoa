@@ -341,6 +341,7 @@
     <Content Include="images\btn_cancel2.gif" />
     <Content Include="images\btn_submit1.gif" />
     <Content Include="images\btn_submit2.gif" />
+    <Content Include="images\edit.gif" />
     <Content Include="images\ht16_03.gif" />
     <Content Include="images\ht17_03.gif" />
     <Content Include="images\ht28_03.gif" />
@@ -358,6 +359,7 @@
     <Content Include="images\menus\bbs.gif" />
     <Content Include="images\menus\flow.gif" />
     <Content Include="images\menus\system.png" />
+    <Content Include="images\notify_new.gif" />
     <Content Include="images\option_tabs.gif" />
     <Content Include="images\org_select.png" />
     <Content Include="images\th.gif" />
@@ -830,6 +832,7 @@
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
     <Content Include="ProjectManager\AddTask.aspx" />
+    <Content Include="ProjectManager\EditTask.aspx" />
     <Content Include="ProjectManager\project.xml" />
     <Content Include="ProjectManager\projectlist.aspx" />
     <Content Include="ProjectManager\task.xml" />
@@ -890,6 +893,13 @@
     </Compile>
     <Compile Include="ProjectManager\AddTask.aspx.designer.cs">
       <DependentUpon>AddTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\EditTask.aspx.cs">
+      <DependentUpon>EditTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\EditTask.aspx.designer.cs">
+      <DependentUpon>EditTask.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectManager\projectlist.aspx.cs">
       <DependentUpon>projectlist.aspx</DependentUpon>
@@ -1076,7 +1086,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>12047</DevelopmentServerPort>
+          <DevelopmentServerPort>12971</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
