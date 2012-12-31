@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet>
+  <Table>
+    <GroupID>1</GroupID>
+    <GroupName>.NET技术</GroupName>
+    <CreatUser>李四</CreatUser>
+  </Table>
+  <Table>
+    <GroupID>2</GroupID>
+    <GroupName>Java技术</GroupName>
+    <CreatUser>李四</CreatUser>
+  </Table>
+  <Table>
+    <GroupID>3</GroupID>
+    <GroupName>Web开发</GroupName>
+    <CreatUser>李四</CreatUser>
+  </Table>
+  <Table>
+    <GroupID>4</GroupID>
+    <GroupName>移动平台开发</GroupName>
+    <CreatUser>李四</CreatUser>
+  </Table>
+</DataSet>

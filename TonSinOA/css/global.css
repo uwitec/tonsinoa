@@ -6,7 +6,7 @@
 body
 {
 	margin: 0;
-	background-color: #E8F1F8;
+	
 	font-size: 12px;
 	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;
 	padding: 0;
@@ -14,24 +14,40 @@ body
 	width:100%;
 }
 /*
-form{padding:0px;margin:0px;}
+form{padding:0px;margin:0px;}*/
 img{border:0px;}
 a img{border:0px;}
 
 
 a{outline:none;}
-a:link{color: #0466cb; text-decoration: none;}
-a:visited {color: #0466cb; text-decoration: none}
-a:hover {color: #0466cb; text-decoration: none}
-a:active {color: #0466cb; text-decoration: none}*/
+
 div, span, td
 {
 	font-family: "微软雅黑" , "宋体" ,Consolas,Verdana;font-size: 12px;
 }
-a:link, a:visited
+A:link
 {
+	font-size: 12px;
+	color: #000000;
 	text-decoration: none;
-	color: #333;
+}
+A:visited
+{
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+A:hover
+{
+	font-size: 12px;
+	color: Blue;
+	text-decoration: underline;
+}
+A:active
+{
+	font-size: 12px;
+	color: green;
+	text-decoration: none;
 }
 input
 {
@@ -79,6 +95,17 @@ input
 	margin-top: 4px;
 	border: 1px solid #c6c6c6;
 }
+.tablegroundbbs
+{
+    width:100%;
+    background-color:#99ccff;
+}
+.tablegroundbbs td
+{
+    height:30px;
+    white-space: nowrap; background-color: White;
+     padding: 3px;
+}
 .tableground
 {
     width:100%;
@@ -88,7 +115,7 @@ input
 {
     height:30px;
     white-space: nowrap; background-color: White;
-     padding: 1px;
+     padding: 3px;
 }
 table.dataTable td, table.dataTable th
 {
@@ -157,7 +184,9 @@ table.dataTable
 .btncancel1 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel1.gif) no-repeat 0 0; width:71px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btnsubmit2 { cursor:pointer; color: #00599B; background: url(../images/btn_submit2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
 .btncancel2 { cursor:pointer; color: #7C7161; background: url(../images/btn_cancel2.gif) no-repeat 0 0; width:101px; line-height: 22px; height: 22px; border: 0px; padding: 0; }
-.small {
+.small 
+{
+    color:Gray;
     font-size: 9pt;
 }
 .small1 {

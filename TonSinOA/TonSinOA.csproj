@@ -51,6 +51,19 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bbs\Area.xml" />
+    <Content Include="Bbs\BbsIndex.aspx" />
+    <Content Include="Bbs\Group.xml" />
+    <Content Include="Bbs\Group\AddGroup.aspx" />
+    <Content Include="Bbs\Group\EditGroup.aspx" />
+    <Content Include="Bbs\Group\ListGroup.aspx" />
+    <Content Include="Bbs\MyForum.xml" />
+    <Content Include="Bbs\MyForumList.aspx" />
+    <Content Include="Bbs\PostNewSelect.aspx" />
+    <Content Include="Bbs\ReplyView.aspx" />
+    <Content Include="Bbs\SubArea\AddSubArea.aspx" />
+    <Content Include="Bbs\SubArea\EditSubArea.aspx" />
+    <Content Include="Bbs\SubArea\ListSubArea.aspx" />
     <Content Include="css\easyui\default\accordion.css" />
     <Content Include="css\easyui\default\calendar.css" />
     <Content Include="css\easyui\default\combo.css" />
@@ -335,6 +348,18 @@
     <Content Include="editor\themes\qq\editor.gif" />
     <Content Include="editor\themes\qq\qq.css" />
     <Content Include="editor\themes\simple\simple.css" />
+    <Content Include="images\attach.png" />
+    <Content Include="images\bbs\asp.net.gif" />
+    <Content Include="images\bbs\folder.gif" />
+    <Content Include="images\bbs\forum_isnews.gif" />
+    <Content Include="images\bbs\Forum_nav.gif" />
+    <Content Include="images\bbs\hotfolder.gif" />
+    <Content Include="images\bbs\nextthread.gif" />
+    <Content Include="images\bbs\nofollow.gif" />
+    <Content Include="images\bbs\postnew0.gif" />
+    <Content Include="images\bbs\prethread.gif" />
+    <Content Include="images\bbs\reply0.gif" />
+    <Content Include="images\bbs\time.gif" />
     <Content Include="images\bg_input_text.png" />
     <Content Include="images\bg_input_text_hover.png" />
     <Content Include="images\btn_cancel1.gif" />
@@ -362,6 +387,7 @@
     <Content Include="images\notify_new.gif" />
     <Content Include="images\option_tabs.gif" />
     <Content Include="images\org_select.png" />
+    <Content Include="images\remove.png" />
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
     <Content Include="index.aspx" />
@@ -394,6 +420,7 @@
     <Content Include="js\artDialog\skins\icons\succeed.png" />
     <Content Include="js\artDialog\skins\icons\warning.png" />
     <Content Include="js\artDialog\skins\icons\_notes\dwsync.xml" />
+    <Content Include="js\Attach.js" />
     <Content Include="js\bottom.js" />
     <Content Include="js\comm.js" />
     <Content Include="js\editor.config.js" />
@@ -856,6 +883,7 @@
     <Content Include="SystemManager\WorkReportManager.aspx" />
     <Content Include="SystemManager\UserManager.aspx" />
     <Content Include="SystemManager\User.xml" />
+    <Content Include="UserControl\BbsTopControl.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -871,6 +899,76 @@
   <ItemGroup>
     <Compile Include="Ajax\MemuTree.ashx.cs">
       <DependentUpon>MemuTree.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\BbsIndex.aspx.cs">
+      <DependentUpon>BbsIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\BbsIndex.aspx.designer.cs">
+      <DependentUpon>BbsIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\Group\AddGroup.aspx.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\Group\AddGroup.aspx.designer.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\Group\EditGroup.aspx.cs">
+      <DependentUpon>EditGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\Group\EditGroup.aspx.designer.cs">
+      <DependentUpon>EditGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\Group\ListGroup.aspx.cs">
+      <DependentUpon>ListGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\Group\ListGroup.aspx.designer.cs">
+      <DependentUpon>ListGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\MyForumList.aspx.cs">
+      <DependentUpon>MyForumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\MyForumList.aspx.designer.cs">
+      <DependentUpon>MyForumList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\PostNewSelect.aspx.cs">
+      <DependentUpon>PostNewSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\PostNewSelect.aspx.designer.cs">
+      <DependentUpon>PostNewSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\ReplyView.aspx.cs">
+      <DependentUpon>ReplyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\ReplyView.aspx.designer.cs">
+      <DependentUpon>ReplyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\SubArea\AddSubArea.aspx.cs">
+      <DependentUpon>AddSubArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\SubArea\AddSubArea.aspx.designer.cs">
+      <DependentUpon>AddSubArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\SubArea\EditSubArea.aspx.cs">
+      <DependentUpon>EditSubArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\SubArea\EditSubArea.aspx.designer.cs">
+      <DependentUpon>EditSubArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\SubArea\ListSubArea.aspx.cs">
+      <DependentUpon>ListSubArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\SubArea\ListSubArea.aspx.designer.cs">
+      <DependentUpon>ListSubArea.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">
@@ -1021,6 +1119,13 @@
     <Compile Include="SystemManager\UserManager.aspx.designer.cs">
       <DependentUpon>UserManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\BbsTopControl.ascx.cs">
+      <DependentUpon>BbsTopControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BbsTopControl.ascx.designer.cs">
+      <DependentUpon>BbsTopControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="workReport\AddWork.aspx.cs">
       <DependentUpon>AddWork.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1045,7 +1150,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Bbs\" />
+    <Folder Include="Bbs\Forum\" />
+    <Folder Include="Bbs\Reply\" />
     <Folder Include="comm\" />
     <Folder Include="FileManager\" />
   </ItemGroup>
