@@ -17,5 +17,19 @@ namespace TonSinOA
             AspNetPager1.CustomInfoHTML += " 当前页：<font color=\"red\"><b>" + AspNetPager1.CurrentPageIndex.ToString() + "</b></font>";
         }
         #endregion
+
+        public static string GetForumType(int type)
+        {
+           
+            if(type==1)
+            {
+                return "../images/bbs/hotfolder.gif";
+            }
+            else
+            {
+                
+                return "../images/bbs/vote.png";
+            }
+        }
     }
 }

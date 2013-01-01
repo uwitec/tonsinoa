@@ -10,7 +10,7 @@
 namespace TonSinOA.Bbs {
     
     
-    public partial class ReplyView {
+    public partial class AVote {
         
         /// <summary>
         /// form1 控件。
@@ -31,75 +31,48 @@ namespace TonSinOA.Bbs {
         protected global::TonSinOA.UserControl.BbsTopControl BbsTopControl1;
         
         /// <summary>
-        /// rptNavigation 控件。
+        /// drpAreaList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNavigation;
+        protected global::System.Web.UI.WebControls.DropDownList drpAreaList;
         
         /// <summary>
-        /// rptCommitItem 控件。
+        /// txtSubject 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCommitItem;
+        protected global::System.Web.UI.WebControls.TextBox txtSubject;
         
         /// <summary>
-        /// rptReplyToCommitItem 控件。
+        /// txtContent 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptReplyToCommitItem;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtContent;
         
         /// <summary>
-        /// AspNetPager1 控件。
+        /// btnSumit 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::Wuqi.Webdiyer.AspNetPager AspNetPager1;
+        protected global::System.Web.UI.WebControls.Button btnSumit;
         
         /// <summary>
-        /// HiddenCommitID 控件。
+        /// btnCanel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenCommitID;
-        
-        /// <summary>
-        /// HiddenCommitCurrentPageIndex 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenCommitCurrentPageIndex;
-        
-        /// <summary>
-        /// HiddenSubAreaID 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenSubAreaID;
-        
-        /// <summary>
-        /// HiddenReplyCurrentPageIndex 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenReplyCurrentPageIndex;
+        protected global::System.Web.UI.WebControls.Button btnCanel;
     }
 }
