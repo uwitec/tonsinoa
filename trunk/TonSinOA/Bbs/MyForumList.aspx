@@ -7,6 +7,7 @@
 <head runat="server">
     <title>我的帖子</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <script src="../js/Attach.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -34,9 +35,29 @@
         </tr>
         <tr>
             <td style="white-space: nowrap" valign="middle" align="left">               
-                <a href="PostNewSelect.aspx">
-                    <img src="../Images/bbs/postnew0.gif" alt="发新帖"></a>
-                <br />
+               <%-- <a href="PostNewSelect.aspx">
+                    <img src="../Images/bbs/postnew0.gif" alt="发新帖"></a>--%>
+                
+                   <a id="status" href="javascript:" class="big2 dropdown "  onmouseover="showMenu(this.id,'1');" ><span>发 &nbsp; &nbsp;&nbsp; 布</span></a>&nbsp;
+                   <br /><div id="status_menu" class="attach_div">
+                     
+                      <a href="PostNewSelect.aspx" style="color:#0000FF;">发布新帖</a>
+                      <a href="AVote.aspx" style="color:#0000FF;">发起投票</a>
+                      
+                   </div>
+                 
+                
+                <%--	<a  class="tie-write" href="/bbs/post.jsp?boardid=society" onmouseover="showMenu(this.id,'1')" ><span>发 &nbsp; &nbsp;&nbsp; 布</span></a>
+                   
+             
+
+            <div id="status_menu" class="attach_div">
+                     
+                      <a href="PostNewSelect.aspx" style="color:#0000FF;">发布新帖</a>
+                      <a href="AVote.aspx" style="color:#0000FF;">发起投票</a>
+                      
+                   </div>--%>
+                   
             </td>
         </tr>
         <tr>
