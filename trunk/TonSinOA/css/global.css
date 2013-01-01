@@ -247,7 +247,69 @@ a.ToolBtn span {
     line-height: 25px;
     padding: 0 13px 0 8px;
 }
-
+/*日程*/
+.PageHeader {
+    color: #666666;
+    height: 32px !important;
+    padding-top: 47px;
+}
+.PageHeader .title {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+.PageHeader .header-left {
+    float: left;
+}
+.PageHeader .header-right {
+    float: right;
+}
+.PageHeader .header-center {
+    float: left;
+}
+.PageHeader {
+    background: url("../images/calendar.jpg") no-repeat scroll left center transparent;
+    padding-left: 175px;
+}
+.PageHeader .header-right .calendar-view {
+    background: url("../images/calendar_view.png") no-repeat scroll 0 center transparent;
+    display: inline-block;
+    height: 20px;
+    margin-left: 10px;
+    width: 20px;
+}
+.PageHeader .header-right {
+    white-space: nowrap;
+}
+.PageHeader .header-right .list-view {
+    background-position: 0 0;
+}
+.PageHeader .header-right .list-view:hover {
+    background-position: 0 -20px;
+}
+.PageHeader .header-right .day-view {
+    background-position: -27px 0;
+}
+.PageHeader .header-right .day-view:hover {
+    background-position: -27px -20px;
+}
+.PageHeader .header-right .week-view {
+    background-position: -53px 0;
+}
+.PageHeader .header-right .week-view:hover {
+    background-position: -53px -20px;
+}
+.PageHeader .header-right .month-view {
+    background-position: -78px 0;
+}
+.PageHeader .header-right .month-view:hover {
+    background-position: -78px -20px;
+}
+div.Date {
+    color: #0167CB;
+}
 /**添加**/
 A.orgAdd:link, A.orgAdd:visited{
    color:#207BD6;
