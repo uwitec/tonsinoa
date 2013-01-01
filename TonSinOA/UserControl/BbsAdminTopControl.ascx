@@ -6,8 +6,8 @@
                     &nbsp;
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Bbs/SubArea/ListSubArea.aspx">分区管理</asp:HyperLink>
                     &nbsp;
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Bbs/Forum/ListForum.aspx">发表言论管理</asp:HyperLink>
-                    &nbsp; &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Bbs/Reply/ListAllReply.aspx">回复言论管理</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Bbs/Forum/ForumList.aspx">发表言论管理</asp:HyperLink>
+                    &nbsp; &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Bbs/Reply/ReplyList.aspx">回复言论管理</asp:HyperLink>
                     &nbsp;
                     <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Bbs/BbsIndex.aspx">返回首页</asp:HyperLink>
                 </td>

@@ -55,6 +55,7 @@
     <Content Include="Bbs\AVote.aspx" />
     <Content Include="Bbs\BbsIndex.aspx" />
     <Content Include="Bbs\Commit.xml" />
+    <Content Include="Bbs\Forum\ForumList.aspx" />
     <Content Include="Bbs\Group.xml" />
     <Content Include="Bbs\Group\AddGroup.aspx" />
     <Content Include="Bbs\Group\EditGroup.aspx" />
@@ -63,10 +64,13 @@
     <Content Include="Bbs\MyForumList.aspx" />
     <Content Include="Bbs\PostNewSelect.aspx" />
     <Content Include="Bbs\reply.xml" />
+    <Content Include="Bbs\ReplyTo.aspx" />
     <Content Include="Bbs\ReplyView.aspx" />
+    <Content Include="Bbs\Reply\ReplyList.aspx" />
     <Content Include="Bbs\SubArea\AddSubArea.aspx" />
     <Content Include="Bbs\SubArea\EditSubArea.aspx" />
     <Content Include="Bbs\SubArea\ListSubArea.aspx" />
+    <Content Include="Calendar\Calendar.aspx" />
     <Content Include="css\easyui\default\accordion.css" />
     <Content Include="css\easyui\default\calendar.css" />
     <Content Include="css\easyui\default\combo.css" />
@@ -371,6 +375,8 @@
     <Content Include="images\btn_dropdown_r.png" />
     <Content Include="images\btn_submit1.gif" />
     <Content Include="images\btn_submit2.gif" />
+    <Content Include="images\calendar.jpg" />
+    <Content Include="images\calendar_view.png" />
     <Content Include="images\edit.gif" />
     <Content Include="images\ht16_03.gif" />
     <Content Include="images\ht17_03.gif" />
@@ -923,6 +929,13 @@
     <Compile Include="Bbs\BbsIndex.aspx.designer.cs">
       <DependentUpon>BbsIndex.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bbs\Forum\ForumList.aspx.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\Forum\ForumList.aspx.designer.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bbs\Group\AddGroup.aspx.cs">
       <DependentUpon>AddGroup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -958,12 +971,26 @@
     <Compile Include="Bbs\PostNewSelect.aspx.designer.cs">
       <DependentUpon>PostNewSelect.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bbs\ReplyTo.aspx.cs">
+      <DependentUpon>ReplyTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\ReplyTo.aspx.designer.cs">
+      <DependentUpon>ReplyTo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bbs\ReplyView.aspx.cs">
       <DependentUpon>ReplyView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Bbs\ReplyView.aspx.designer.cs">
       <DependentUpon>ReplyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\Reply\ReplyList.aspx.cs">
+      <DependentUpon>ReplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\Reply\ReplyList.aspx.designer.cs">
+      <DependentUpon>ReplyList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bbs\SubArea\AddSubArea.aspx.cs">
       <DependentUpon>AddSubArea.aspx</DependentUpon>
@@ -985,6 +1012,13 @@
     </Compile>
     <Compile Include="Bbs\SubArea\ListSubArea.aspx.designer.cs">
       <DependentUpon>ListSubArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">
@@ -1173,8 +1207,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Bbs\Forum\" />
-    <Folder Include="Bbs\Reply\" />
     <Folder Include="comm\" />
     <Folder Include="FileManager\" />
   </ItemGroup>
