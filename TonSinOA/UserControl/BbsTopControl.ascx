@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BbsTopControl.ascx.cs" Inherits="TonSinOA.UserControl.BbsTopControl" %>
-     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;height:40px">
             <tr>
                 <td style="white-space: nowrap" align="center" valign="middle">
                     <asp:HyperLink ID="HyperLink1" Target="_self" NavigateUrl="~/Bbs/BbsIndex.aspx" runat="server" ToolTip="进入论坛首页">论坛首页</asp:HyperLink>&nbsp;&nbsp;

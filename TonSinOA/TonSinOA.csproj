@@ -54,6 +54,7 @@
     <Content Include="Bbs\Area.xml" />
     <Content Include="Bbs\AVote.aspx" />
     <Content Include="Bbs\BbsIndex.aspx" />
+    <Content Include="Bbs\Commit.xml" />
     <Content Include="Bbs\Group.xml" />
     <Content Include="Bbs\Group\AddGroup.aspx" />
     <Content Include="Bbs\Group\EditGroup.aspx" />
@@ -61,6 +62,7 @@
     <Content Include="Bbs\MyForum.xml" />
     <Content Include="Bbs\MyForumList.aspx" />
     <Content Include="Bbs\PostNewSelect.aspx" />
+    <Content Include="Bbs\reply.xml" />
     <Content Include="Bbs\ReplyView.aspx" />
     <Content Include="Bbs\SubArea\AddSubArea.aspx" />
     <Content Include="Bbs\SubArea\EditSubArea.aspx" />
@@ -395,6 +397,7 @@
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
     <Content Include="images\bbs\vote.png" />
+    <Content Include="images\tool_btn.png" />
     <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
     <Content Include="js\artDialog\artDialog.source.js" />

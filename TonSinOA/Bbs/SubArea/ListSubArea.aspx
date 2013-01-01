@@ -72,7 +72,7 @@
                         <tr>
                             <td valign="top">
                                 <div class="envthp">
-                                   <table border="0" cellpadding="3" cellspacing="1" class="dataTable">
+                                   <table border="0" cellpadding="3" cellspacing="1" class="dataTable"  width="100%" >
                                     <tr  class="dataTableHead" >
                             <td align="center">
                                 创建人
@@ -93,44 +93,40 @@
                                 查看该区的帖子
                             </td>
                             <td align="center">
-                                编辑
+                                操作
                             </td>
-                            <td align="center" style="width: 93px">
-                                删除
-                            </td>
+                           
                         </tr>
-                        <asp:Repeater ID="RepeaMain" runat="server" OnItemCommand="RepeaMain_ItemCommand"
-                            OnItemDataBound="RepeaMain_ItemDataBound">
+                        <asp:Repeater ID="dgAreaView" runat="server">
                             <ItemTemplate>
                                 <tr>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                      <%# Eval("CnName") %>
+                                      <%# Eval("CreatUser")%>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <a href="#" onclick="return SubAreaViewClick('<%# Eval("Area_ID") %>')">
-                                            <%# Eval("Area_Name") %>
+                                        <a href="#" onclick="return SubAreaViewClick('<%# Eval("AreaID") %>')">
+                                            <%# Eval("AreaName") %>
                                         </a>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <%# Eval("Area_CreateDate") %>
+                                        <%# Eval("CreatTime")%>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <a href="#" onclick="return GroupViewClick('<%# Eval("Group_ID") %>')" title="详细信息">
-                                            <%# Eval("Group_Name") %>
+                                        <a href="#" onclick="return GroupViewClick('<%# Eval("GroupID") %>')" title="详细信息">
+                                            <%# Eval("GroupName") %>
                                         </a>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <%# Eval("Area_Remark") %>
+                                        <%# Eval("Remark") %>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <a href="../ForumManage/ListForum.aspx?Action=<%# Eval("Area_ID") %>" title="查看该区的所有帖子">
+                                        <a href="../Forum/ListForum.aspx?Action=<%# Eval("AreaID") %>" title="查看该区的所有帖子">
                                             帖子列表</a>
                                     </td>
                                     <td align="center" style="white-space: nowrap; background-color: White">
-                                        <a href="EditSubArea.aspx?Action=<%# Eval("Area_ID") %>&Add=No" title="编辑该区的内容">编辑</a>
-                                    </td>
-                                    <td align="center" style="white-space: nowrap; background-color: White">
-                                        <asp:LinkButton ID="btnDelte" runat="server" CommandName="Delete" CommandArgument='<%# Eval("Area_ID") %>'
+                                        <a href="EditSubArea.aspx?Action=<%# Eval("AreaID") %>&Add=No" title="编辑该区的内容">编辑</a>
+                                   
+                                        <asp:LinkButton ID="btnDelte" runat="server" CommandName="Delete" CommandArgument='<%# Eval("AreaID") %>'
                                             OnClientClick="return confirm('如果将分区删除,则其下的帖子将一并删除,你确定要删除吗？')">删除</asp:LinkButton>
                                     </td>
                                 </tr>

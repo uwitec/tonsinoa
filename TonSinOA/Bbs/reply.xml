@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet>
+  <Table>
+    <AreaID>1</AreaID>
+    <AreaName>C#.NET技术</AreaName>
+    <ReplyID>1</ReplyID>
+    <CommitID>1</CommitID>
+    <Subject>C#.NET技术</Subject>
+    <AttachFlag>false</AttachFlag>
+    <Content>
+      1.WebBrowser只能在UI线程里执行，用代理循环提交依旧会假死
+      2.如何提交完加载完再继续提交
+    </Content>
+    <CreatUser>李四</CreatUser>
+    <CreatTime>2012-12-31</CreatTime>
+    <GroupName>.NET技术</GroupName>
+    <Remark></Remark>
+  </Table>
+  <Table>
+    <AreaID>1</AreaID>
+    <AreaName>C#.NET技术</AreaName>
+    <ReplyID>2</ReplyID>
+    <CommitID>1</CommitID>
+    <Subject>C#.NET技术</Subject>
+    <AttachFlag>false</AttachFlag>
+    <Content>WebBrowser就是研究着玩的。还是用回httprequest了。多谢斑竹 </Content>
+    <CreatUser>李四</CreatUser>
+    <CreatTime>2012-12-31</CreatTime>
+    <GroupName>.NET技术</GroupName>
+    <Remark></Remark>
+  </Table>
+  <Table>
+    <AreaID>1</AreaID>
+    <AreaName>C#.NET技术</AreaName>
+    <ReplyID>3</ReplyID>
+    <CommitID>1</CommitID>
+    <Subject>C#.NET技术</Subject>
+    <AttachFlag>false</AttachFlag>
+    <Content>
+      while (true)
+      {
+      webBrowser1.Navigate(url);
+      while (webBrowser1.ReadyState != WebBrowserReadyState.Interactive)
+      {
+      Application.DoEvents();
+      Thread.Sleep(100);
+      }
+      ... //你的代码
+      }
+    </Content>
+    <CreatUser>李四</CreatUser>
+    <CreatTime>2012-12-31</CreatTime>
+    <GroupName>.NET技术</GroupName>
+    <Remark></Remark>
+  </Table>
+</DataSet>

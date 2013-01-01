@@ -5,89 +5,107 @@
     <AreaName>C#.NET技术</AreaName>
     <Subject>C#.NET技术</Subject>
     <GroupID>1</GroupID>
+    <GroupName>.NET技术</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>10</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>2</AreaID>
     <AreaName>NET分析与设术</AreaName>
     <Subject>NET分析与设术</Subject>
     <GroupID>1</GroupID>
+    <GroupName>.NET技术</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>3</AreaID>
     <AreaName>Java Web开发</AreaName>
     <Subject>Java Web开发</Subject>
     <GroupID>2</GroupID>
+    <GroupName>Java技术</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>4</AreaID>
     <AreaName>Java SE开发</AreaName>
     <Subject>Java SE开发</Subject>
     <GroupID>2</GroupID>
+    <GroupName>Java技术</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>5</AreaID>
     <AreaName>Ajax技术</AreaName>
     <Subject>Ajax技术</Subject>
     <GroupID>3</GroupID>
+    <GroupName>Web开发</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>6</AreaID>
     <AreaName>JavaScript XML技术</AreaName>
     <Subject>JavaScript XML技术</Subject>
     <GroupID>3</GroupID>
+    <GroupName>Web开发</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>7</AreaID>
     <AreaName>Android技术开发</AreaName>
     <Subject>Android技术开发</Subject>
     <GroupID>4</GroupID>
+    <GroupName>移动平台开发</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>8</AreaID>
     <AreaName>Window Phone技术开发</AreaName>
     <Subject>Window Phone技术开发</Subject>
     <GroupID>4</GroupID>
+    <GroupName>移动平台开发</GroupName>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
   <Table>
     <AreaID>9</AreaID>
     <AreaName>iPhone 技术开发</AreaName>
     <Subject>iPhone 技术开发</Subject>
+    <GroupName>移动平台开发</GroupName>
     <GroupID>4</GroupID>
     <TodaySum>2</TodaySum>
     <CommitSum>4</CommitSum>
     <CreatUser>李四</CreatUser>
     <CreatTime>2012-12-31</CreatTime>
+    <Remark></Remark>
   </Table>
 </DataSet>

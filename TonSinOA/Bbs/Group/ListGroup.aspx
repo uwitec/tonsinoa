@@ -43,7 +43,7 @@
             <tr valign="top">
                 <td valign="top">
         
-               <table align="center" border="0" cellpadding="3" cellspacing="1"  class="dataTable">
+               <table align="center" border="0" cellpadding="3" cellspacing="1"  class="dataTable"  width="100%">
                                     <tr  class="dataTableHead" >
                                         <td align="center">
                                             类别名称
@@ -63,13 +63,11 @@
 
                                         </td>
                                         <td align="center">
-                                            编辑
+                                            操作
                                         </td>
-                                        <td align="center">
-                                            删除
-                                        </td>
+                                        
                                     </tr>
-                                    <asp:Repeater ID="RepeaterMain" runat="server" >
+                                    <asp:Repeater ID="dgGroupView" runat="server" >
                                         <ItemTemplate>
                                             <tr>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
@@ -78,22 +76,21 @@
                                                     </a>
                                                 </td>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
-                                                    <%# Eval("CreateDate") %>
+                                                    <%# Eval("CreatTime")%>
                                                 </td>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
-                                                    <%# Eval("CnName") %>
+                                                    <%# Eval("CreatUser")%>
                                                 </td>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
-                                                    <%# Eval("GroupRemark") %>
+                                                    <%# Eval("Remark") %>
                                                 </td>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
-                                                    <a href="../SubAreaManage/ListSubArea.aspx?Action=<%# Eval("GroupID") %>">查看分区</a>
+                                                    <a href="../SubArea/ListSubArea.aspx?Action=<%# Eval("GroupID") %>">查看分区</a>
                                                 </td>
                                                 <td align="center" style="white-space: nowrap; background-color: White">
                                                     <a href="EditGroup.aspx?Action=<%# Eval("GroupID") %>&Add=No">编辑</a>
-                                                </td>
-                                                <td align="center" style="white-space: nowrap; background-color: White">
-                                                    <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete" CommandArgument='<%# Eval("Group_ID")%>'>删除</asp:LinkButton>
+                                                
+                                                    <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete" CommandArgument='<%# Eval("GroupID")%>'>删除</asp:LinkButton>
                                                 </td>
                                             </tr>
                                         </ItemTemplate>

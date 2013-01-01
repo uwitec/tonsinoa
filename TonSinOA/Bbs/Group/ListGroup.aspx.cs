@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace TonSinOA.Bbs.Group
 {
@@ -11,7 +12,19 @@ namespace TonSinOA.Bbs.Group
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Bind();
+            }
         }
+
+        public void Bind()
+        {
+            DataSet ds = new DataSet();
+            ds.ReadXml(Server.MapPath("~/bbs/group.xml"));
+            this.dgGroupView.DataSource = ds;
+            this.dgGroupView.DataBind();
+        }
+
     }
 }
