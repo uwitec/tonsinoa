@@ -31,31 +31,31 @@ namespace TonSinOA.Bbs {
         protected global::TonSinOA.UserControl.BbsTopControl BbsTopControl1;
         
         /// <summary>
-        /// rptNavigation 控件。
+        /// dgNavaView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNavigation;
+        protected global::System.Web.UI.WebControls.Repeater dgNavaView;
         
         /// <summary>
-        /// rptCommitItem 控件。
+        /// dgCommView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCommitItem;
+        protected global::System.Web.UI.WebControls.Repeater dgCommView;
         
         /// <summary>
-        /// rptReplyToCommitItem 控件。
+        /// dgReplyView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptReplyToCommitItem;
+        protected global::System.Web.UI.WebControls.Repeater dgReplyView;
         
         /// <summary>
         /// AspNetPager1 控件。
