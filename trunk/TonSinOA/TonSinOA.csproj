@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bbs\Area.xml" />
+    <Content Include="Bbs\AVote.aspx" />
     <Content Include="Bbs\BbsIndex.aspx" />
     <Content Include="Bbs\Group.xml" />
     <Content Include="Bbs\Group\AddGroup.aspx" />
@@ -390,6 +391,7 @@
     <Content Include="images\remove.png" />
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
+    <Content Include="images\bbs\vote.png" />
     <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
     <Content Include="js\artDialog\artDialog.source.js" />
@@ -899,6 +901,13 @@
   <ItemGroup>
     <Compile Include="Ajax\MemuTree.ashx.cs">
       <DependentUpon>MemuTree.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Bbs\AVote.aspx.cs">
+      <DependentUpon>AVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bbs\AVote.aspx.designer.cs">
+      <DependentUpon>AVote.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bbs\BbsIndex.aspx.cs">
       <DependentUpon>BbsIndex.aspx</DependentUpon>

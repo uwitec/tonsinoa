@@ -31,9 +31,9 @@
   <Table>
     <RowID>3</RowID>
     <CommitID>3</CommitID>
-    <AreaID>1</AreaID>
+    <AreaID>2</AreaID>
     <AreaName>C#.NET技术</AreaName>
-    <Subject> C#获取JSON用LitJSON解析如下response。</Subject>
+    <Subject> 你对NET平台和Java平台有什么看法了？</Subject>
     <GroupID>1</GroupID>
     <GroupName>.NET技术</GroupName>
     <ReplyNum>2</ReplyNum>

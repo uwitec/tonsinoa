@@ -1,4 +1,5 @@
-﻿var $$ = function (id) { return document.getElementById(id); };
+﻿/// <reference path="jquery.js" />
+var $$ = function (id) { return document.getElementById(id); };
 var userAgent = navigator.userAgent.toLowerCase();
 var is_opera = userAgent.indexOf('opera') != -1 && opera.version();
 var is_moz = (navigator.product == 'Gecko') && userAgent.substr(userAgent.indexOf('firefox') + 8, 3);
@@ -516,4 +517,50 @@ function ShowAddImage(postfix) {
 function AddImage2Editor(name, src) {
     if (typeof (insertEditorImage) == 'function')
         insertEditorImage(name, src);
+}
+function AddVote(val,id) {
+
+   // var sHTML;
+    //sHTML = '<tr><td>选择' + val + '</td><td><input type=\"text\"  class=\"BigInput\" /><img src=\"../images/remove.png\" onclick=\"\" align=\"absMiddle\" style=\"cursor:hand;\"></td></tr>'
+
+    var tbody = document.getElementById("tbVote")
+    var rowNo = tbody.rows.length;
+    console.debug(rowNo)
+    if (rowNo >= 10) {
+        $("#ovteList").hide();
+     }
+    else {
+        var row = tbody.insertRow(rowNo);
+        for (var i = 0; i <= 1; i++) {
+            row.insertCell(i);
+        }
+
+        row.cells[0].style.width = "40px";
+        row.cells[0].innerHTML = "选择" + (rowNo + 1);  //  onclick=\"OnCheckConfMember(this)\" />";
+
+        row.cells[1].innerHTML = "<input type=\"text\"  class=\"BigInput\"  style=\" width:95%\" /><img src=\"../images/remove.png\" onclick=\"deleteVote(this)\" align=\"absMiddle\" style=\"cursor:hand;\">";
+
+        if (document.getElementById("tbVote").rows.length >= 10) {
+            $("#ovteList").hide();
+        }
+    }
+}
+function deleteVote(r) {
+    //console.debug($("#tbVote td:first-child"))
+
+    var tbody = document.getElementById("tbVote")
+    //console.debug(tbody.rows(index).innerHTML);
+    var i = r.parentNode.parentNode.rowIndex
+  //  document.getElementById('myTable').deleteRow(i)
+    tbody.deleteRow(i);
+    var rowNo = tbody.rows.length;
+    if (rowNo < 10) {
+        $("#ovteList").show();
+    }
+    // $("ul li:first-child")
+    $("#tbVote td:first-child").each(function (i, row) {
+        
+        $(this).text("选择" +(i+1));
+    });
+   
 }

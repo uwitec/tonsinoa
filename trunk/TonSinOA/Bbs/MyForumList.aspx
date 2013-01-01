@@ -41,36 +41,36 @@
         </tr>
         <tr>
             <td align="center">
-                <table border="0" cellpadding="3" cellspacing="1" style="width: 100%; background-color: #0099cc">
-                    <tr style="background-color: #99ccff">
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                <table border="0" cellpadding="3" cellspacing="1"  class="tableground">
+                    <tr style="background-color:#f0f0ee">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             主题
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             作者
 
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             回复
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             最后更新/回复人
 
                         </td>
                  <%--       <td style="height: 22px; white-space: nowrap;" align="center">
                             附件
                         </td>--%>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             所在分区
 
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             所在分类
 
                         </td>
-                        <td style="height: 22px; white-space: nowrap;" align="center">
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                             查看回复
                         </td>
                     </tr>
@@ -78,8 +78,9 @@
                         <ItemTemplate>
                             <tr style="background-color: White" valign="top">
                                 <td style="height: 25px; white-space: nowrap;" align="center">
-                                    <asp:HiddenField ID="HiddenStatus" runat="server" />
-                                    <asp:Image ID="ImgStatus" runat="server" ImageUrl="~/Images/bbs/folder.gif" />
+                                   <%-- <asp:HiddenField ID="HiddenStatus" runat="server" />
+                                    <asp:Image ID="ImgStatus" runat="server" ImageUrl="~/Images/bbs/vote.png" />--%>
+                                    <img src="<%# TonSinOA.Global.GetForumType(  Convert.ToInt32( Eval("AreaID"))) %>" />
                                 </td>
                                 <td style="height: 25px; white-space: nowrap;" align="center">
                                     <a href="ReplyView.aspx?Action=<%# Eval("CommitID") %>&Infomation=<%#  Eval("AreaID") %>">
