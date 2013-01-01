@@ -193,9 +193,15 @@ namespace TonSinOA.Utility
         /// 获取时间戳
         /// </summary>
         /// <returns></returns>
+
         public static long GetTimeStemp()
         {
             TimeSpan ts = DateTime.Now - Convert.ToDateTime("1970-01-01");
+            return (long)ts.TotalSeconds;
+        }
+        public static long GetTimeStemp(DateTime d)
+        {
+            TimeSpan ts = d - Convert.ToDateTime("1970-01-01");
             return (long)ts.TotalSeconds;
         }
     }

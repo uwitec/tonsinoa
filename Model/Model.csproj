@@ -35,6 +35,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Release\DataEntity.dll</HintPath>
     </Reference>
+    <Reference Include="Jayrock.Json">
+      <HintPath>..\DLL\Jayrock.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalendarInfo.cs" />
+    <Compile Include="EventInfo.cs" />
     <Compile Include="ExtTreeNode.cs" />
     <Compile Include="DepartmentInfo.cs" />
     <Compile Include="DocTypeInfo.cs" />

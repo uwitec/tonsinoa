@@ -404,6 +404,8 @@
     <Content Include="images\thbg.gif" />
     <Content Include="images\bbs\vote.png" />
     <Content Include="images\tool_btn.png" />
+    <Content Include="images\triangle-e.png" />
+    <Content Include="images\triangle-w.png" />
     <Content Include="index.aspx" />
     <Content Include="fullCalandarTest.aspx" />
     <Content Include="js\artDialog\artDialog.source.js" />
@@ -912,6 +914,10 @@
     <Content Include="workReport\workreport.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax\BaseHandler.cs" />
+    <Compile Include="Ajax\CalendarData.ashx.cs">
+      <DependentUpon>CalendarData.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Ajax\MemuTree.ashx.cs">
       <DependentUpon>MemuTree.ashx</DependentUpon>
     </Compile>
@@ -1213,6 +1219,7 @@
   <ItemGroup>
     <Content Include="Ajax\MemuTree.ashx" />
     <Content Include="App_Themes\Default\Default.skin" />
+    <Content Include="Ajax\CalendarData.ashx" />
     <None Include="css\easyui\default\images\Thumbs.db" />
     <None Include="editor\themes\common\Thumbs.db" />
     <None Include="editor\themes\default\Thumbs.db" />
