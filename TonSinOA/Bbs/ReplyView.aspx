@@ -45,9 +45,18 @@
                             </tr>
                             <tr>
                                 <td valign="middle" align="left" style="white-space: nowrap">
-                                    <a href='PostNew.aspx?Action=<%# Eval("Area_ID") %>'>
-                                        <img src="../Images/bbs/postnew0.gif" border="0" alt="发新帖"></a> &nbsp; &nbsp; <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'>
-                                            <img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子"></a>
+                                     <a id="status" href="javascript:" class="big2 dropdown "  onmouseover="showMenu(this.id,'1');" ><span>发 &nbsp; &nbsp; 布</span></a>&nbsp;
+                                     <a id="A1" href="javascript:" class="dropdown "  ><span>回 &nbsp; &nbsp; 复</span></a>
+                   <br /><div id="status_menu" class="attach_div">
+                     
+                      <a href='PostNew.aspx?Action=<%# Eval("Area_ID") %>' style="color:#0000FF;">发布新帖</a>
+                      <a href="AVote.aspx?Action=<%# Eval("Area_ID") %>" style="color:#0000FF;">发起投票</a>
+                      
+                   </div>
+<%--                                     <span class="huifu"> <a href='PostNew.aspx?Action=<%# Eval("Area_ID") %>' title="回复该帖子" >发新贴</a></span>
+                                     <span class="huifu"> <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'title="回复该帖子" >回复</a></span>--%>
+                                  <%--      <img src="../Images/bbs/postnew0.gif" border="0" alt="发新帖"></a> &nbsp; &nbsp; <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'>
+                                            <img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子"></a>--%>
                                 </td>
                                 <td valign="middle" align="right" style="white-space: nowrap">
                                     <asp:LinkButton ID="btnPrevPiece" runat="server" CommandArgument="Prev" BorderWidth="0"
@@ -89,9 +98,11 @@
                                                     Target="_top" ID="LinkAttach" runat="server" Visible="False">[查看附件]</asp:HyperLink>
                                                 <asp:HiddenField ID="HiddenAttachFlag" Value='<%# Eval("Commit_AttachFlag") %>' runat="server" />
                                                   <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>&AType=1'>
-                                            <img src="../Images/bbs/reply0.gif" border="0" alt="引用该帖子"></a>
+                                          <%--  <img src="../Images/bbs/reply0.gif" border="0" alt="引用该帖子"></a>
                                                  <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'>
-                                            <img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子"></a>
+                                            <img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子"></a>--%>
+                                             <span class="huifu"> <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'title="回复该帖子" >回复</a></span>
+                                                 <span class="huifu"><a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>&AType=1' title="引用该帖子">引用</a></span>
                                             </td>
                                         </tr>
                                     </ItemTemplate>
@@ -130,9 +141,9 @@
                                                 <asp:HyperLink NavigateUrl='<%# Eval("Reply_ID","DownLoad.aspx?Action={0}&Infomation=1")  %>'
                                                     Target="_top" ID="LinkAttachReply" runat="server" Visible="False">[查看附件]</asp:HyperLink>
                                                 <asp:HiddenField ID="HiddenAttachFlagReply" Value='<%# Eval("Reply_AttachFlag") %>' runat="server" />
-                                                <img src="../Images/bbs/reply0.gif" border="0" alt="引用该帖子"></a>
-                                                 <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'>
-                                            <img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子"></a>
+                                               <span class="huifu"> <a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>'title="回复该帖子" >回复</a></span>
+                                                 <span class="huifu"><a href='ReplyTo.aspx?Action=<%# Eval("Commit_ID") %>&Infomation=<%# Eval("Area_ID") %>&AType=1' title="引用该帖子">引用</a></span>
+                                            <%--<img src="../Images/bbs/reply0.gif" border="0" alt="回复该帖子">--%></a>
                                             </td>
                                         </tr>
                                     </ItemTemplate>
@@ -157,6 +168,7 @@
         </tr>
         <tr>
             <td style="width: 100px">
+
             </td>
         </tr>
     </table>

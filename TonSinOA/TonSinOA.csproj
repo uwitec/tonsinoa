@@ -365,6 +365,8 @@
     <Content Include="images\bg_input_text_hover.png" />
     <Content Include="images\btn_cancel1.gif" />
     <Content Include="images\btn_cancel2.gif" />
+    <Content Include="images\btn_dropdown_l.png" />
+    <Content Include="images\btn_dropdown_r.png" />
     <Content Include="images\btn_submit1.gif" />
     <Content Include="images\btn_submit2.gif" />
     <Content Include="images\edit.gif" />
@@ -380,6 +382,7 @@
     <Content Include="images\icons\lock_go.png" />
     <Content Include="images\icons\setting.png" />
     <Content Include="images\icons\user.png" />
+    <Content Include="images\icon_write.jpg" />
     <Content Include="images\menus\bangong.png" />
     <Content Include="images\menus\baogao.gif" />
     <Content Include="images\menus\bbs.gif" />
@@ -885,6 +888,7 @@
     <Content Include="SystemManager\WorkReportManager.aspx" />
     <Content Include="SystemManager\UserManager.aspx" />
     <Content Include="SystemManager\User.xml" />
+    <Content Include="UserControl\BbsAdminTopControl.ascx" />
     <Content Include="UserControl\BbsTopControl.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -1127,6 +1131,13 @@
     </Compile>
     <Compile Include="SystemManager\UserManager.aspx.designer.cs">
       <DependentUpon>UserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BbsAdminTopControl.ascx.cs">
+      <DependentUpon>BbsAdminTopControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BbsAdminTopControl.ascx.designer.cs">
+      <DependentUpon>BbsAdminTopControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\BbsTopControl.ascx.cs">
       <DependentUpon>BbsTopControl.ascx</DependentUpon>
