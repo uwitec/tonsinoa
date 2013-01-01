@@ -232,6 +232,8 @@ select.SmallSelect:hover{ COLOR: #000066;  border: 1px solid #C0BBB4; background
 
 select.BigStatic  { COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
 select.SmallStatic{ COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+
 a.ToolBtn {
     background: url("../images/tool_btn.png") no-repeat scroll left 0 transparent;
     display: inline-block;
@@ -246,6 +248,13 @@ a.ToolBtn span {
     height: 25px;
     line-height: 25px;
     padding: 0 13px 0 8px;
+}
+a.ToolBtn:hover, a.ToolBtn-active {
+    background-position: left -25px;
+}
+a.ToolBtn:hover span, a.ToolBtn-active span {
+    background-position: right -75px;
+    color: #FFFFFF !important;
 }
 /*日程*/
 .PageHeader {
@@ -265,9 +274,20 @@ a.ToolBtn span {
 }
 .PageHeader .header-right {
     float: right;
+   
+    
 }
 .PageHeader .header-center {
     float: left;
+     margin-left:10px;
+}
+#HeaderTitle
+{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 .PageHeader {
     background: url("../images/calendar.jpg") no-repeat scroll left center transparent;
@@ -309,6 +329,23 @@ a.ToolBtn span {
 }
 div.Date {
     color: #0167CB;
+}
+
+.prve-w 
+{
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    background-image: url("../images/triangle-w.png");
+}
+.next-e 
+{
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    background-image: url("../images/triangle-e.png");
 }
 /**添加**/
 A.orgAdd:link, A.orgAdd:visited{

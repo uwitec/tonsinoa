@@ -7,12 +7,14 @@
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
     <link href="../js/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
-      <script src="../js/jquery.js" type="text/javascript"></script>
+    <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.js" type="text/javascript"></script>
     <script src="../js/fullcalendar/fullcalendar.js" type="text/javascript"></script>
     <script src="../js/DatePicker/WdatePicker.js" type="text/javascript"></script>
     <script src="../js/Attach.js" type="text/javascript"></script>
-  
-    <script  type="text/javascript">
+    <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
+    <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    <script type="text/javascript">
         $(document).ready(function () {
             var date = new Date();
             var d = date.getDate();
@@ -40,10 +42,11 @@
                 aspectRatio: 2,
                 weekMode: 'variable', //每周固定，月份高度不固定。fixed固定六周,liquid月份高度固定，每周高度不固定。
                 theme: false,
+                editable: false, //允许编辑
                 titleFormat: {
-                    month: 'yyyy年MMMM',
-                    week: "yyyy年MMMd日{'&#8212;'[yyyy年][MMM]d日}",
-                    day: 'yyyy-MM-d dddd'
+                    month: 'yyyy年MM月',
+                    week: "yyyy年MM月dd日{'-'[yyyy年][MM月]dd日}",
+                    day: 'yyyy年MM月dd日 dddd'
                 },
                 //                buttonIcons: {
 
@@ -58,8 +61,8 @@
                 },
                 columnFormat: {//header底下的第一行;
                     month: 'dddd',
-                    week: 'ddd dd',
-                    day: 'yyyy-MM-d dddd'
+                    week: 'dddd dd',
+                    day: 'dddd, yyyy年MM月d日 '
                 },
                 allDayText: '全天', //allDay全天事件的文本
                 axisFormat: 'HH:mm', //agenda时间轴的格式
@@ -69,82 +72,118 @@
                 dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
                 dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
                 firstHour: 0, //默认是6，只对agenda视图有效果
-                defaultEventMinutes: 120 //如果事件没有结束时间，默认120分钟长度 
+                defaultEventMinutes: 120, //如果事件没有结束时间，默认120分钟长度 
+                //日程点击：添加日程
+                dayClick: function (date, allDay, jsEvent, view) {
+                    art.dialog.open('newschedule.html', {
+                        title: '添加日程',
+                        lock: true,
+                        width: 500,
+                        height: 400,
+                        fixed: true, //固定定位
+                        //background: '#600', // 背景色
+                        opacity: 0.1 // 透明度
+                    });
+                },
+                viewDisplay: function (view) {
+                    //console.debug(view.start + "          " + view.end);
+
+                },
+                eventSources: [{ "Id": 1, "title": "我的日程", "description": "自已的", "textColor": "rgb(203, 89, 186)", "backgroundColor": "rgb(255, 180, 3)", "UserID": 1, "events": [{ "objectId": "1", "sourceId": " 1", "title": "明天中午去趟肯得鸡", "description": "", "start": "1357084800", "end": "1357084800", "allDay": true, "UserID": 1 }, { "objectId": "2", "sourceId": " 1", "title": "上午12点到2点开会", "description": "", "start": "1357214400", "end": "1357221600", "UserID": 1}]}],
+                // events: "../Ajax/CalendarData.ashx",
+                eventClick: function (calEvent, jsEvent, view) {
+                    console.debug(calEvent);
+                    art.dialog.open('newschedule.html', {
+                        title: '更新日程',
+                        lock: true,
+                        width: 500,
+                        height: 400,
+                        fixed: true, //固定定位
+                        //background: '#600', // 背景色
+                        opacity: 0.1 // 透明度
+                    });
+                }
 
             });
+
+            SetHeaderTitle();
             $('#spToday').click(function () {
                 //$('#calendar').fullCalendar('today');
                 $('#calendar').fullCalendar('gotoDate', new Date());
+                SetHeaderTitle();
                 //$('#calendar').fullCalendar('incrementDate', 1);
             });
-            $('#Button1').click(function () {
-                var obj = $("#calendar").fullCalendar('getView')
-                if (obj.name == 'month') {
-                    $("#calendar").fullCalendar('getView')
-                }
-                else if (obj.name == 'agendaWeek') {
-                }
-                else if (obj.name == 'agendaDay') {
-                }
-                $('#calendar').fullCalendar('prev');
+            //            $('#Button1').click(function () {
+            //                var obj = $("#calendar").fullCalendar('getView')
+            //                if (obj.name == 'month') {
+            //                    $("#calendar").fullCalendar('getView')
+            //                }
+            //                else if (obj.name == 'agendaWeek') {
+            //                }
+            //                else if (obj.name == 'agendaDay') {
+            //                }
+            //                $('#calendar').fullCalendar('prev');
 
-                //                $('#calendar').fullCalendar('today');
-                // $('#calendar').fullCalendar('gotoDate', '2013 01-12');
-                //$('#calendar').fullCalendar('incrementDate', 1);
-            });
-            $('#Button2').click(function () {
-                var obj = $("#calendar").fullCalendar('getView')
-                if (obj.name == 'month') {
-                    $("#calendar").fullCalendar('getView')
-                }
-                else if (obj.name == 'agendaWeek') {
-                }
-                else if (obj.name == 'agendaDay') {
-                }
-                $('#calendar').fullCalendar('next');
+            //                //                $('#calendar').fullCalendar('today');
+            //                // $('#calendar').fullCalendar('gotoDate', '2013 01-12');
+            //                //$('#calendar').fullCalendar('incrementDate', 1);
+            //            });
+            //            $('#Button2').click(function () {
+            //                var obj = $("#calendar").fullCalendar('getView')
+            //                if (obj.name == 'month') {
+            //                    $("#calendar").fullCalendar('getView')
+            //                }
+            //                else if (obj.name == 'agendaWeek') {
+            //                }
+            //                else if (obj.name == 'agendaDay') {
+            //                }
+            //                $('#calendar').fullCalendar('next');
 
-                //                $('#calendar').fullCalendar('today');
-                // $('#calendar').fullCalendar('gotoDate', '2013 01-12');
-                //$('#calendar').fullCalendar('incrementDate', 1);
-            });
+            //                //                $('#calendar').fullCalendar('today');
+            //                // $('#calendar').fullCalendar('gotoDate', '2013 01-12');
+            //                //$('#calendar').fullCalendar('incrementDate', 1);
+            //            });
             LoadLeftDate();
         });
-          function setView(viewName) {
-              if (viewName == 'list') {
-                  $('#calendar').hide();
-              } else {
-                  $("#calendar").fullCalendar('changeView', viewName);
-              }
+        function setView(viewName) {
+            if (viewName == 'list') {
+                $('#calendar').hide();
+            } else {
+                $("#calendar").fullCalendar('changeView', viewName);
+                SetHeaderTitle();
             }
-            function LoadLeftDate() {
-                WdatePicker({ eCont: 'dataPicker', skin: 'default', onpicked: function (dp) { setDate(dp.cal.getDateStr()) } })
+        }
+        function LoadLeftDate() {
+            WdatePicker({ eCont: 'dataPicker', skin: 'default', onpicked: function (dp) { setDate(dp.cal.getDateStr()) } })
+        }
+        function setDate(s) {
+            // console.debug(s);
+            var obj = $("#calendar").fullCalendar('getView')
+            if (obj.name != 'agendaDay') {
+                setView('agendaDay');
             }
-            function setDate(s) {
-               // console.debug(s);
-                var obj = $("#calendar").fullCalendar('getView')
-                if (obj.name != 'agendaDay') {
-                    setView('agendaDay');
-                }
-                var d = new Date(Date.parse(s.replace(/-/g, "/")))
-                //console.debug(d);
-                $('#calendar').fullCalendar('gotoDate', d);
-            }
+            var d = new Date(Date.parse(s.replace(/-/g, "/")))
+            //console.debug(d);
+            $('#calendar').fullCalendar('gotoDate', $.fullCalendar.parseDate(s));
+            SetHeaderTitle();
+        }
+        function SetHeaderTitle() {
+            $("#HeaderTitle").text($("#calendar").fullCalendar('getView').title);
+        }
     </script>
 </head>
 <body>
     <form id="form1" runat="server">
     <div class="dv">
-        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" class="tableground">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" >
             <tr>
                 <td colspan="2" align="center" valign="middle">
                     <div class="PageHeader calendar_icon">
                         <div class="header-left">
-                          
-                            <input type="hidden" name="BTN_OP" value=""/>
-                            <input type="hidden" name="OVER_STATUS" value=""/>
-                            <a class="ToolBtn ToolBtn-active">
-                                <span id="spToday">今天</span></a>
-                            <!-------------- 年 ------------>
+                            <input type="hidden" name="BTN_OP" value="" />
+                            <input type="hidden" name="OVER_STATUS" value="" />
+                            <a class="ToolBtn ToolBtn-active"><span id="spToday" title="转到今天">今天</span></a>
+                            <%--<!-------------- 年 ------------>
                             <a title="上一年" class="ArrowButtonL" href="javascript:set_year(-1);"></a>
                             <select onchange="My_Submit();" class="SmallSelect" name="YEAR">
                                 <option value="2000">2000年</option>
@@ -229,16 +268,25 @@
                                 <option value="29">29日</option>
                                 <option value="30">30日</option>
                                 <option value="31">31日</option>
-                            </select><a title="下一天" class="ArrowButtonR" href="javascript:set_day(1);"></a>
-                           
-                          
+                            </select><a title="下一天" class="ArrowButtonR" href="javascript:set_day(1);"></a>--%>
                         </div>
                         <div class="header-center">
-                            <input id="Button1" type="button" value="上" /> <input id="Button2" type="button" value="下" />
+                            <%--<input id="Button1" type="button" value="上" />
+                            <input id="Button2" type="button" value="下" />--%>
+                            <a class="prve-w"></a>
+                            <span id="HeaderTitle"></span>
+                            <a class="next-e"></a>
+                           <%-- <div class="fc-header-center">
+                                <span class="fc-button fc-button-prev fc-state-default fc-corner-left fc-corner-right">
+                                    <span class="fc-button-inner"><span class="fc-button-content"><span class="triangle-w">
+                                        &nbsp;</span></span></span></span><span class="fc-header-title day"><span class="title-text"><span
+                                            class="h2">二, 2013年1月1日</span></span></span><span class="fc-button fc-button-next fc-state-default fc-corner-left fc-corner-right"><span
+                                                class="fc-button-inner"><span class="fc-button-content"><span class="triangle-e">&nbsp;</span></span></span></span></div>--%>
                         </div>
                         <div class="header-right">
-                           <%-- <a class="ToolBtn" href="query.php"><span>查询</span></a>--%> 
-                           <a  onclick="showMenu(this.id,'1');" class="dropdown" href="javascript:;" id="new"><span>新建</span></a> 
+                            <%-- <a class="ToolBtn" href="query.php"><span>查询</span></a>--%>
+                            <a onclick="showMenu(this.id,'1');" class="dropdown" href="javascript:;" id="new"><span>
+                                新建</span></a>
                             <div class="attach_div" id="new_menu">
                                 <a title="建立日程" href="javascript:new_cal(1356969600,'+1 days');">日程</a>
                             </div>
@@ -252,14 +300,16 @@
                 </td>
             </tr>
             <tr>
-                <td style="width:100px"  align="center" valign="top">
-                <div id="dataPicker"></div>
-                <script type="text/javascript">
+                <td style="width: 100px" align="center" valign="top">
+                    <div id="dataPicker">
+                    </div>
+                    <script type="text/javascript">
                     
-                </script>
+                    </script>
                 </td>
                 <td>
-               <div id='calendar'></div>
+                    <div id='calendar' style="margin-left:5px">
+                    </div>
                 </td>
             </tr>
         </table>
