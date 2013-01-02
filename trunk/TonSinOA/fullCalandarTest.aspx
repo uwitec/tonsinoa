@@ -6,9 +6,9 @@
 <head runat="server">
     <title></title>
     <link href="js/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-    <link href="js/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
     <link href="js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
     <script src="js/fullcalendar/fullcalendar.js" type="text/javascript"></script>
     <script src="js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="js/artDialog/iframeTools.source.js" type="text/javascript"></script>
@@ -134,32 +134,77 @@
              //                aspectRatio: 2.7,
              //                editable: false,
              //                allDayDefault: false,
-             viewDisplay: function (view) {
-                 var viewStart = $.fullCalendar.formatDate(view.start, "yyyy-MM-dd HH:mm:ss");
-                 var viewEnd = $.fullCalendar.formatDate(view.end, "yyyy-MM-dd HH:mm:ss");
-                 $("#calendar").fullCalendar('removeEvents');
-                 $.getJSON('RequestURL/getData.ashx?opt=list', { start: viewStart, end: viewEnd }, function (data) {
-                     for (var i = 0; i < data.length; i++) {
-                         var obj = new Object();
-                         obj.id = data[i].id;
-                         obj.title = data[i].title;
-                         obj.description = data[i].description;
-                         obj.color = data[i].color;
-                         obj.remindertime = $.fullCalendar.parseDate(data[i].remindertime);
-                         obj.messagenotice = data[i].messagenotice;
-                         obj.description = data[i].description;
-                         obj.start = $.fullCalendar.parseDate(data[i].start);
-                         obj.end = $.fullCalendar.parseDate(data[i].end);
-                         $("#calendar").fullCalendar('renderEvent', obj, true);
-                     }
-                 }); //把从后台取出的数据进行封装以后在页面上以fullCalendar的方式进行显示
-             },
+//             viewDisplay: function (view) {
+//                 var viewStart = $.fullCalendar.formatDate(view.start, "yyyy-MM-dd HH:mm:ss");
+//                 var viewEnd = $.fullCalendar.formatDate(view.end, "yyyy-MM-dd HH:mm:ss");
+//                 $("#calendar").fullCalendar('removeEvents');
+//                 $.getJSON('RequestURL/getData.ashx?opt=list', { start: viewStart, end: viewEnd }, function (data) {
+//                     for (var i = 0; i < data.length; i++) {
+//                         var obj = new Object();
+//                         obj.id = data[i].id;
+//                         obj.title = data[i].title;
+//                         obj.description = data[i].description;
+//                         obj.color = data[i].color;
+//                         obj.remindertime = $.fullCalendar.parseDate(data[i].remindertime);
+//                         obj.messagenotice = data[i].messagenotice;
+//                         obj.description = data[i].description;
+//                         obj.start = $.fullCalendar.parseDate(data[i].start);
+//                         obj.end = $.fullCalendar.parseDate(data[i].end);
+//                         $("#calendar").fullCalendar('renderEvent', obj, true);
+//                     }
+//                 }); //把从后台取出的数据进行封装以后在页面上以fullCalendar的方式进行显示
+//             },
              eventMouseover: function (event, jsEvent, view) {
                  showDetail(event, jsEvent);
              },
              eventMouseout: function (event, jsEvent, view) {
                  $('#tip').remove();
-             },
+             },events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			],
              //日程点击：添加日程
              dayClick: function (date, allDay, jsEvent, view) {
                  var obj = new Object();
@@ -420,11 +465,11 @@
 </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div id="container">
+   <%-- <form id="form1" runat="server">--%>
+    <div id="container"><div style="background-color:#9bb845;color:#000000" class="fc-event-inner fc-event-skin"><span class="fc-event-title">明天中午去趟肯得鸡</span></div>
 		<div id='selectdate'></div>
 		<div id='calendar'></div>	
 	</div>
-    </form>
+    <%--</form>--%>
 </body>
 </html>

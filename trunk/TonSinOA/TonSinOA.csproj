@@ -858,6 +858,7 @@
     <Content Include="js\fullcalendar\fullcalendar.min.js" />
     <Content Include="js\fullcalendar\fullcalendar.print.css" />
     <Content Include="js\fullcalendar\gcal.js" />
+    <Content Include="js\jquery-ui-1.9.2.custom.js" />
     <Content Include="js\jquery.easyui.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\DatePicker\calendar.js" />
@@ -881,6 +882,7 @@
     <Content Include="ProjectManager\task.xml" />
     <Content Include="Remark.txt" />
     <Content Include="SystemManager\AddDept.aspx" />
+    <Content Include="SystemManager\AddDocClass.aspx" />
     <Content Include="SystemManager\AddDuty.aspx" />
     <Content Include="SystemManager\AddNotice.aspx" />
     <Content Include="SystemManager\AddUser.aspx" />
@@ -888,8 +890,10 @@
     <Content Include="SystemManager\baogaozhongji.xml" />
     <Content Include="SystemManager\DepartManager.aspx" />
     <Content Include="SystemManager\DocClassManager.aspx" />
+    <Content Include="SystemManager\Document.xml" />
     <Content Include="SystemManager\DutyManager.aspx" />
     <Content Include="SystemManager\EditDept.aspx" />
+    <Content Include="SystemManager\EditDocClass.aspx" />
     <Content Include="SystemManager\EditDuty.aspx" />
     <Content Include="SystemManager\EditNotice.aspx" />
     <Content Include="SystemManager\EditUser.aspx" />
@@ -1070,6 +1074,13 @@
     <Compile Include="SystemManager\AddDept.aspx.designer.cs">
       <DependentUpon>AddDept.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SystemManager\AddDocClass.aspx.cs">
+      <DependentUpon>AddDocClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\AddDocClass.aspx.designer.cs">
+      <DependentUpon>AddDocClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\AddDuty.aspx.cs">
       <DependentUpon>AddDuty.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1125,6 +1136,13 @@
     </Compile>
     <Compile Include="SystemManager\EditDept.aspx.designer.cs">
       <DependentUpon>EditDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\EditDocClass.aspx.cs">
+      <DependentUpon>EditDocClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\EditDocClass.aspx.designer.cs">
+      <DependentUpon>EditDocClass.aspx</DependentUpon>
     </Compile>
     <Compile Include="SystemManager\EditDuty.aspx.cs">
       <DependentUpon>EditDuty.aspx</DependentUpon>

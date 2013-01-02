@@ -25,9 +25,15 @@ namespace TonSinOA.Model
         [JsonDataMember(Name = "end")]
         public string EndDate { get; set; }
 
+      
         [JsonDataMember(Name = "allDay")]
-        public bool AllDayLong { get; set; }
+        public string AllDayLong { get; set; }
 
+        [JsonDataMember(Name = "textColor")]
+        public string TextColor { get; set; }
+
+        [JsonDataMember(Name = "backgroundColor")]
+        public string BackgroundColor { get; set; }
        // public EventAlertType AlertType { get; set; }
        // public EventRepeatType RepeatType { get; set; }
         public int UserID { get; set; }
