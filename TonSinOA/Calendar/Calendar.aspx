@@ -6,7 +6,6 @@
     <title></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-    <link href="../js/fullcalendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
     <script src="../js/fullcalendar/fullcalendar.js" type="text/javascript"></script>
@@ -51,14 +50,15 @@
                 //                buttonIcons: {
 
                 //            },
+                currentTimezone: 'Asia/Beijing',
                 firstDay: 0, //作用周视图，默认周几开始，0星期天，1星期一。。。。默认为0
                 weekMode: 'variable', //默认fixed总是显示6周的格子。liquid，variable根据月份显示4，5，6周其中一个，liquid的总体高度固定。variable格子高度固定。
                 height: 550, //注意不加单位，包括header和主体部分的高度。
-                //timeFormat:'HH:mm',全部视图使用这个时间样式
-                timeFormat: {
-                    week: 'HH:mm{-HH:mm}',
-                    day: 'HH:mm'
-                },
+                timeFormat: 'HH:mm', //全部视图使用这个时间样式
+                //                timeFormat: {
+                //                    week: 'HH:mm{-HH:mm}',
+                //                    day: 'HH:mm'
+                //                },
                 columnFormat: {//header底下的第一行;
                     month: 'dddd',
                     week: 'dddd dd',
@@ -72,28 +72,24 @@
                 dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
                 dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
                 firstHour: 0, //默认是6，只对agenda视图有效果
-                defaultEventMinutes: 120, //如果事件没有结束时间，默认120分钟长度 
+                // defaultEventMinutes: 120, //如果事件没有结束时间，默认120分钟长度 
                 //日程点击：添加日程
                 dayClick: function (date, allDay, jsEvent, view) {
-                    art.dialog.open('newschedule.html', {
-                        title: '添加日程',
-                        lock: true,
-                        width: 500,
-                        height: 400,
-                        fixed: true, //固定定位
-                        //background: '#600', // 背景色
-                        opacity: 0.1 // 透明度
-                    });
+                    //console.debug(date + allDay);
+                    AddEvent(date);
                 },
                 viewDisplay: function (view) {
                     //console.debug(view.start + "          " + view.end);
 
                 },
-                eventSources: [{ "Id": 1, "title": "我的日程", "description": "自已的", "textColor": "rgb(203, 89, 186)", "backgroundColor": "rgb(255, 180, 3)", "UserID": 1, "events": [{ "objectId": "1", "sourceId": " 1", "title": "明天中午去趟肯得鸡", "description": "", "start": "1357084800", "end": "1357084800", "allDay": true, "UserID": 1 }, { "objectId": "2", "sourceId": " 1", "title": "上午12点到2点开会", "description": "", "start": "1357214400", "end": "1357221600", "UserID": 1}]}],
-                // events: "../Ajax/CalendarData.ashx",
+                //eventSources: [{ "Id": 1, "title": "我的日程", "description": "自已的", "textColor": "rgb(203, 89, 186)", "backgroundColor": "rgb(255, 180, 3)", "UserID": 1, "events": [{ "objectId": "1", "sourceId": " 1", "title": "明天中午去趟肯得鸡", "description": "", "start": "1357084800", "end": "1357084800", "allDay": true, "UserID": 1 }, { "objectId": "2", "sourceId": " 1", "title": "上午12点到2点开会", "description": "", "start": "1357214400", "end": "1357221600", "UserID": 1}]}],
+                events: "../Ajax/CalendarData.ashx",
+                //                eventSources: "../Ajax/CalendarData.ashx",
                 eventClick: function (calEvent, jsEvent, view) {
-                    console.debug(calEvent);
-                    art.dialog.open('newschedule.html', {
+                    // console.debug(calEvent);
+                    //$.fullCalendar.formatDate(calEvent.start, "yyyy-MM-dd HH:mm:ss")
+                    $("#ddd").html("标题：" + calEvent.title + " <br/>开始时间：" + calEvent.start + " <br/>结束时间:" + calEvent.end)
+                    var mydialog = art.dialog({
                         title: '更新日程',
                         lock: true,
                         width: 500,
@@ -101,7 +97,9 @@
                         fixed: true, //固定定位
                         //background: '#600', // 背景色
                         opacity: 0.1 // 透明度
+
                     });
+                    mydialog.content(document.getElementById("ddd"));
                 }
 
             });
@@ -112,6 +110,12 @@
                 $('#calendar').fullCalendar('gotoDate', new Date());
                 SetHeaderTitle();
                 //$('#calendar').fullCalendar('incrementDate', 1);
+            });
+            $(".prve-w").click(function () {
+                $('#calendar').fullCalendar('prev');
+            });
+            $(".next-e").click(function () {
+                $('#calendar').fullCalendar('next');
             });
             //            $('#Button1').click(function () {
             //                var obj = $("#calendar").fullCalendar('getView')
@@ -149,6 +153,7 @@
             if (viewName == 'list') {
                 $('#calendar').hide();
             } else {
+                $('#calendar').show();
                 $("#calendar").fullCalendar('changeView', viewName);
                 SetHeaderTitle();
             }
@@ -162,13 +167,31 @@
             if (obj.name != 'agendaDay') {
                 setView('agendaDay');
             }
-            var d = new Date(Date.parse(s.replace(/-/g, "/")))
+            //var d = new Date(Date.parse(s.replace(/-/g, "/")))
             //console.debug(d);
             $('#calendar').fullCalendar('gotoDate', $.fullCalendar.parseDate(s));
             SetHeaderTitle();
         }
         function SetHeaderTitle() {
             $("#HeaderTitle").text($("#calendar").fullCalendar('getView').title);
+        }
+        
+        //新建日程
+        function AddEvent(date) {
+            if (isUndefined(date)) {
+            }
+            art.dialog.open('newschedule.html', {
+                title: '添加日程',
+                lock: true,
+                width: 500,
+                height: 400,
+                fixed: true, //固定定位
+                //background: '#600', // 背景色
+                opacity: 0.1 // 透明度
+            });
+        }
+        function isUndefined(variable) {
+            return typeof variable == 'undefined' ? true : false;
         }
     </script>
 </head>
@@ -288,7 +311,7 @@
                             <a onclick="showMenu(this.id,'1');" class="dropdown" href="javascript:;" id="new"><span>
                                 新建</span></a>
                             <div class="attach_div" id="new_menu">
-                                <a title="建立日程" href="javascript:new_cal(1356969600,'+1 days');">日程</a>
+                                <a title="建立日程" href="javascript:AddEvent();">日程</a>
                             </div>
                             <a title="列表视图" class="calendar-view list-view" href="javascript:setView('list');">
                             </a><a title="日视图" class="calendar-view day-view" href="javascript:setView('agendaDay');">
@@ -314,6 +337,7 @@
             </tr>
         </table>
     </div>
+    <div id="ddd"></div>
     </form>
 </body>
 </html>

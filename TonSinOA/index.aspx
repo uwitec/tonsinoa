@@ -141,7 +141,7 @@
                 }
                 tabs.add(
                 {
-                    title: '日程安排', id: "PanelArticleViewID_02", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='fullCalandarTest.aspx'></iframe>",
+                    title: '日程安排', id: "PanelArticleViewID_02", html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='Calendar/Calendar.aspx'></iframe>",
                     closable: true
                 });
                 tabs.activate('PanelArticleViewID_02');
