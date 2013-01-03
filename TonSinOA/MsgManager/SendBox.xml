@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>张三，李四</ReceiveUser>
+    <Title>
+      测试信息</Title>
+    <Content>测试内容测试内容测试内容测试内容测试内容测试内容</Content>
+    <SendTime>2012-01-03 11:20:23</SendTime>
+</Table>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>王五</ReceiveUser>
+    <Title>
+      测试信息1
+    </Title>
+      <Content>测试内容测试内容测试内容测试内容</Content>
+      <SendTime>2012-01-03 11:20:23</SendTime>
+    </Table>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>小明，赵七</ReceiveUser>
+    <Title>
+      测试信息2</Title>
+      <Content>测试内容测试内容测试内容测试内容测试内容</Content>
+      <SendTime>2012-01-03 11:20:23</SendTime>
+    </Table>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>小明，赵七</ReceiveUser>
+    <Title>
+      测试信息2
+    </Title>
+    <Content>测试内容测试内容测试内容测试内容测试内容</Content>
+    <SendTime>2012-01-03 11:20:23</SendTime>
+  </Table>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>小明，赵七</ReceiveUser>
+    <Title>
+      测试信息2
+    </Title>
+    <Content>测试内容测试内容测试内容测试内容测试内容</Content>
+    <SendTime>2012-01-03 11:20:23</SendTime>
+  </Table>
+  <Table>
+    <RowId>1</RowId>
+    <ID>1</ID>
+    <SendUser>李四</SendUser>
+    <ReceiveUser>小明，赵七</ReceiveUser>
+    <Title>
+      测试信息2
+    </Title>
+    <Content>测试内容测试内容测试内容测试内容测试内容</Content>
+    <SendTime>2012-01-03 11:20:23</SendTime>
+  </Table>
+</DataSet>

@@ -63,35 +63,35 @@
                                         <tr>
                                             <td height="25" valign="top" style="padding-top: 2px; padding-left: 6px; padding-right: 6px;
                                                 padding-bottom: 2px;">
-                                                <asp:Repeater ID="dgWpView" runat="server">
+                                                <asp:Repeater ID="dgSendView" runat="server">
                                                     <HeaderTemplate>
                                                         <table width="100%" cellpadding="0" cellspacing="0" class="dataTable" align="center">
                                                             <tr class="dataTableHead" align="center">
-                                                                <td style="width: 15%">
-                                                                    发信人
+                                                                <td >
+                                                                    收信人
                                                                 </td>
-                                                                <td style="width: 35%">
+                                                                <td >
                                                                     主题
                                                                 </td>
-                                                                <td style="width: 15%">
+                                                                <td >
                                                                    发送时间
                                                                 </td>
-                                                                
+                                                                <td></td>
                                                             </tr>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <tr>
                                                             <td align="center">
-                                                                <%# Eval("UserName") %>
+                                                                <%# Eval("ReceiveUser")%>
                                                             </td>
                                                             <td align="center">
-                                                                <a href="LookWork.aspx">
-                                                                    <%# Eval("Title")%></a>
+                                                               
+                                                                    <%# Eval("Title")%>
                                                             </td>
                                                             <td align="center">
-                                                                <%# Eval("SubmitTime")%>
+                                                                <%# Eval("SendTime")%>
                                                             </td>
-                                                           
+                                                           <td><a href="javascript:" onclick="">查看详情</a></td>
                                                         </tr>
                                                     </ItemTemplate>
                                                     <FooterTemplate>

@@ -427,6 +427,7 @@
     <Content Include="images\notify_new.gif" />
     <Content Include="images\option_tabs.gif" />
     <Content Include="images\org_select.png" />
+    <Content Include="images\PersonMessage.png" />
     <Content Include="images\remove.png" />
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
@@ -906,7 +907,9 @@
     <Content Include="js\theme.js" />
     <Content Include="MsgManager\NewMsg.aspx" />
     <Content Include="MsgManager\ReceiveBox.aspx" />
+    <Content Include="MsgManager\ReceiveBox.xml" />
     <Content Include="MsgManager\SendBox.aspx" />
+    <Content Include="MsgManager\SendBox.xml" />
     <Content Include="MsgManager\SendMsg.aspx" />
     <Content Include="ProjectManager\AddTask.aspx" />
     <Content Include="ProjectManager\EditTask.aspx" />

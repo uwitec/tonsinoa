@@ -31,13 +31,13 @@ namespace TonSinOA.MsgManager {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// dgWpView 控件。
+        /// dgReceiveView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dgWpView;
+        protected global::System.Web.UI.WebControls.Repeater dgReceiveView;
         
         /// <summary>
         /// AspNetPager1 控件。
