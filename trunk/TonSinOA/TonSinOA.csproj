@@ -904,6 +904,10 @@
     <Content Include="js\jquery.ztree.all.min.js" />
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
+    <Content Include="MsgManager\NewMsg.aspx" />
+    <Content Include="MsgManager\ReceiveBox.aspx" />
+    <Content Include="MsgManager\SendBox.aspx" />
+    <Content Include="MsgManager\SendMsg.aspx" />
     <Content Include="ProjectManager\AddTask.aspx" />
     <Content Include="ProjectManager\EditTask.aspx" />
     <Content Include="ProjectManager\project.xml" />
@@ -941,10 +945,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="workReport\AddWork.aspx" />
-    <Content Include="workReport\LookWork.aspx" />
-    <Content Include="workReport\worklist.aspx" />
-    <Content Include="workReport\workreport.xml" />
+    <Content Include="WorkReport\AddWork.aspx" />
+    <Content Include="WorkReport\LookWork.aspx" />
+    <Content Include="WorkReport\worklist.aspx" />
+    <Content Include="WorkReport\workreport.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ajax\BaseHandler.cs" />
@@ -1097,6 +1101,34 @@
     </Compile>
     <Compile Include="fullCalandarTest.aspx.designer.cs">
       <DependentUpon>fullCalandarTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgManager\NewMsg.aspx.cs">
+      <DependentUpon>NewMsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MsgManager\NewMsg.aspx.designer.cs">
+      <DependentUpon>NewMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgManager\ReceiveBox.aspx.cs">
+      <DependentUpon>ReceiveBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MsgManager\ReceiveBox.aspx.designer.cs">
+      <DependentUpon>ReceiveBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgManager\SendBox.aspx.cs">
+      <DependentUpon>SendBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MsgManager\SendBox.aspx.designer.cs">
+      <DependentUpon>SendBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MsgManager\SendMsg.aspx.cs">
+      <DependentUpon>SendMsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MsgManager\SendMsg.aspx.designer.cs">
+      <DependentUpon>SendMsg.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectManager\AddTask.aspx.cs">
       <DependentUpon>AddTask.aspx</DependentUpon>
@@ -1260,25 +1292,25 @@
     <Compile Include="UserControl\BbsTopControl.ascx.designer.cs">
       <DependentUpon>BbsTopControl.ascx</DependentUpon>
     </Compile>
-    <Compile Include="workReport\AddWork.aspx.cs">
+    <Compile Include="WorkReport\AddWork.aspx.cs">
       <DependentUpon>AddWork.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="workReport\AddWork.aspx.designer.cs">
+    <Compile Include="WorkReport\AddWork.aspx.designer.cs">
       <DependentUpon>AddWork.aspx</DependentUpon>
     </Compile>
-    <Compile Include="workReport\LookWork.aspx.cs">
+    <Compile Include="WorkReport\LookWork.aspx.cs">
       <DependentUpon>LookWork.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="workReport\LookWork.aspx.designer.cs">
+    <Compile Include="WorkReport\LookWork.aspx.designer.cs">
       <DependentUpon>LookWork.aspx</DependentUpon>
     </Compile>
-    <Compile Include="workReport\worklist.aspx.cs">
+    <Compile Include="WorkReport\worklist.aspx.cs">
       <DependentUpon>worklist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="workReport\worklist.aspx.designer.cs">
+    <Compile Include="WorkReport\worklist.aspx.designer.cs">
       <DependentUpon>worklist.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -1325,7 +1357,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>12971</DevelopmentServerPort>
+          <DevelopmentServerPort>6240</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

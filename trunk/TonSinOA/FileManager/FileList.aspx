@@ -6,6 +6,11 @@
 <head runat="server">
     <title></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function gotoView(val) {
+            location = "FileContent.aspx?ID=" + val;
+    }
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,8 +30,19 @@
             </td>
         </tr>
         <tr>
-            <td style="white-space: nowrap" valign="middle" align="left">               
-              <span class="big2" id="spTypeName" runat="server">文档库</span>
+            <td style="white-space: nowrap" valign="middle" align="left">   
+                <asp:DataList ID="dgTypeView" runat="server">
+                    <ItemTemplate>
+                        <div>
+                            <div>
+                                <span id="spTypeName" runat="server" class="big1"><%# Eval("TypeName") %></span></div>
+                            <div>
+                            <span class="discreet"><%# Eval("Remark") %></span>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:DataList> 
+           
                    
             </td>
         </tr>
@@ -34,7 +50,7 @@
             <td align="center">
                 <table border="0" cellpadding="3" cellspacing="1"  class="tableground">
                     <tr style="background-color:#f0f0ee">
-                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">类型
+                        <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee; width:40px" align="center">类型
                         </td>
                     <%--    <td style="height: 22px; white-space: nowrap;background-color:#f0f0ee" align="center">
                            所属分类
@@ -68,7 +84,7 @@
                     <asp:Repeater ID="dgDocView" runat="server" >
                         <ItemTemplate>
                             <tr style="background-color: White" valign="top">
-                                <td style="height: 25px; white-space: nowrap;" align="center">
+                                <td style="height: 25px;  white-space: nowrap;" align="center">
                                   
                                     <img style="width:32px; height:32px" src="<%# TonSinOA.Global.GetFileTypeImg(Convert.ToString(Eval("FileExt")), Convert.ToInt32(Eval("TypeID"))) %>" />
                                 </td>
@@ -77,7 +93,8 @@
                                         <%#  Eval("Subject") %>
                                 </td>--%>
                                 <td style="height: 25px; white-space: nowrap;" align="center">
-                                    <%# Eval("FileName") %>
+                                <%# Convert.ToInt32(Eval("TypeID")) == 1 ? "<a href='FileList.aspx?TypeID=" + Eval("DocID") + "&SuperID=" + Eval("ParentID") + "'>" + Eval("FileName") + "</a>" : "<a onclick=gotoView('"+Eval("DocID")+"')>" + Eval("FileName") + "</a>"%>
+                                    
                                 </td>
                                 <td style="height: 25px; white-space: nowrap;" align="center">
                                      <%# Eval("Vesion") %>
@@ -103,7 +120,7 @@
                         </ItemTemplate>
                     </asp:Repeater>
                     <tr align="right" style="background-color: #f2f8ff" valign="top">
-                        <td style="white-space: nowrap" colspan="8">
+                        <td style="white-space: nowrap" colspan="7">
                      <webdiyer:AspNetPager ID="AspNetPager1" runat="server" NumericButtonCount="20" 
                                                                 PageSize="20" FirstPageText="首页" LastPageText="尾页" NextPageText="下一页" PrevPageText="上一页"
                                                                 ShowPageIndex="False" AlwaysShow="True" ShowInputBox="Auto">
