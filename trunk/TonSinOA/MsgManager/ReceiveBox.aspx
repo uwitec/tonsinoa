@@ -63,13 +63,13 @@
                                         <tr>
                                             <td height="25" valign="top" style="padding-top: 2px; padding-left: 6px; padding-right: 6px;
                                                 padding-bottom: 2px;">
-                                                <asp:Repeater ID="dgWpView" runat="server">
+                                                <asp:Repeater ID="dgReceiveView" runat="server">
                                                     <HeaderTemplate>
                                                         <table width="100%" cellpadding="0" cellspacing="0" class="dataTable" align="center">
                                                             <tr class="dataTableHead" align="center">
                                                             <td style="width: 30px" align="center"></td>
                                                                 <td >
-                                                                    收信人
+                                                                    发信人
                                                                 </td>
                                                                 <td >
                                                                     主题
@@ -82,16 +82,16 @@
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <tr>
-                                                        <td><input id="Checkbox1" type="checkbox" /></td>
+                                                        <td><input id="Checkbox2" type="checkbox" /></td>
                                                             <td align="center">
-                                                                <%# Eval("UserName") %>
+                                                                <%# Eval("SendUser")%>
                                                             </td>
                                                             <td align="center">
                                                                 
                                                                     <%# Eval("Title")%>
                                                             </td>
                                                             <td align="center">
-                                                                <%# Eval("SubmitTime")%>
+                                                                <%# Eval("SendTime")%>
                                                             </td>
                                                             
                                                            <td><a href="javascript:" onclick="">查看详情</a></td>
