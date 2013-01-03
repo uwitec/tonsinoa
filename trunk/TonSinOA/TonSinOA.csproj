@@ -158,6 +158,21 @@
     <Content Include="css\easyui\icon.css" />
     <Content Include="css\global.css" />
     <Content Include="css\StyleSheet1.css" />
+    <Content Include="css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="css\zTreeStyle\img\diy\2.png" />
+    <Content Include="css\zTreeStyle\img\diy\3.png" />
+    <Content Include="css\zTreeStyle\img\diy\4.png" />
+    <Content Include="css\zTreeStyle\img\diy\5.png" />
+    <Content Include="css\zTreeStyle\img\diy\6.png" />
+    <Content Include="css\zTreeStyle\img\diy\7.png" />
+    <Content Include="css\zTreeStyle\img\diy\8.png" />
+    <Content Include="css\zTreeStyle\img\diy\9.png" />
+    <Content Include="css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="css\zTreeStyle\img\loading.gif" />
+    <Content Include="css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="css\zTreeStyle\zTreeStyle.css" />
     <Content Include="editor\default.html" />
     <Content Include="editor\kindeditor-min.js" />
     <Content Include="editor\kindeditor.js" />
@@ -355,6 +370,10 @@
     <Content Include="editor\themes\qq\editor.gif" />
     <Content Include="editor\themes\qq\qq.css" />
     <Content Include="editor\themes\simple\simple.css" />
+    <Content Include="FileManager\File.xml" />
+    <Content Include="FileManager\FileContent.aspx" />
+    <Content Include="FileManager\FileIndex.aspx" />
+    <Content Include="FileManager\FileList.aspx" />
     <Content Include="images\attach.png" />
     <Content Include="images\bbs\asp.net.gif" />
     <Content Include="images\bbs\folder.gif" />
@@ -378,6 +397,15 @@
     <Content Include="images\calendar.jpg" />
     <Content Include="images\calendar_view.png" />
     <Content Include="images\edit.gif" />
+    <Content Include="images\fileExt\archive.png" />
+    <Content Include="images\fileExt\binary.gif" />
+    <Content Include="images\fileExt\document.gif" />
+    <Content Include="images\fileExt\folder.big.gif" />
+    <Content Include="images\fileExt\html.gif" />
+    <Content Include="images\fileExt\image.gif" />
+    <Content Include="images\fileExt\ms-excel.gif" />
+    <Content Include="images\fileExt\ms-powerpoint.gif" />
+    <Content Include="images\fileExt\ms-word.gif" />
     <Content Include="images\ht16_03.gif" />
     <Content Include="images\ht17_03.gif" />
     <Content Include="images\ht28_03.gif" />
@@ -873,6 +901,7 @@
     <Content Include="js\DatePicker\skin\whyGreen\datepicker.css" />
     <Content Include="js\DatePicker\skin\whyGreen\img.gif" />
     <Content Include="js\DatePicker\WdatePicker.js" />
+    <Content Include="js\jquery.ztree.all.min.js" />
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
     <Content Include="ProjectManager\AddTask.aspx" />
@@ -921,6 +950,9 @@
     <Compile Include="Ajax\BaseHandler.cs" />
     <Compile Include="Ajax\CalendarData.ashx.cs">
       <DependentUpon>CalendarData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\FileTree.ashx.cs">
+      <DependentUpon>FileTree.ashx</DependentUpon>
     </Compile>
     <Compile Include="Ajax\MemuTree.ashx.cs">
       <DependentUpon>MemuTree.ashx</DependentUpon>
@@ -1029,6 +1061,27 @@
     </Compile>
     <Compile Include="Calendar\Calendar.aspx.designer.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager\FileContent.aspx.cs">
+      <DependentUpon>FileContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManager\FileContent.aspx.designer.cs">
+      <DependentUpon>FileContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager\FileIndex.aspx.cs">
+      <DependentUpon>FileIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManager\FileIndex.aspx.designer.cs">
+      <DependentUpon>FileIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager\FileList.aspx.cs">
+      <DependentUpon>FileList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManager\FileList.aspx.designer.cs">
+      <DependentUpon>FileList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">
@@ -1232,12 +1285,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="comm\" />
-    <Folder Include="FileManager\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ajax\MemuTree.ashx" />
     <Content Include="App_Themes\Default\Default.skin" />
     <Content Include="Ajax\CalendarData.ashx" />
+    <Content Include="Ajax\FileTree.ashx" />
     <None Include="css\easyui\default\images\Thumbs.db" />
     <None Include="editor\themes\common\Thumbs.db" />
     <None Include="editor\themes\default\Thumbs.db" />

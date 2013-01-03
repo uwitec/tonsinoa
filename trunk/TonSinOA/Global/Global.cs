@@ -31,5 +31,58 @@ namespace TonSinOA
                 return "../images/bbs/vote.png";
             }
         }
+
+        public static string GetFileTypeImg(string ext,int typeID)
+        {
+            string ret = "";
+            if (typeID == 2)
+            {
+                switch (ext.ToLower())
+                {
+                    case "doc":
+                    case "docx":
+                        ret = "../images/fileExt/ms-word.gif";
+                        break;
+                    case "xls":
+                    case "xlsx":
+                        ret = "../images/fileExt/ms-excel.gif";
+                        break;
+                    case "ppt":
+                    case "pptx":
+                        ret = "../images/fileExt/ms-powerpoint.gif";
+                        break;
+                    case "zip":
+                    case "rar":
+                        ret = "../images/fileExt/archive.png";
+                        break;
+                    case "txt":
+                    case "log":
+                        ret = "../images/fileExt/document.gif";
+                        break;
+                    case "jpg":
+                    case "jpeg":
+                    case "gif":
+                    case "png":
+                    case "bmp":
+                        ret = "../images/fileExt/image.gif";
+                        break;
+                    case "html":
+                    case "htm":
+                        ret = "../images/fileExt/html.gif";
+                        break;
+                    case "chm":
+                        ret = "../images/fileExt/binary.gif";
+                        break;
+                    default:
+                        ret = "../images/fileExt/binary.gif";
+                        break;
+                }
+            }
+            else
+            {
+                ret = "../images/fileExt/folder.big.gif";
+            }
+            return ret;
+        }
     }
 }
