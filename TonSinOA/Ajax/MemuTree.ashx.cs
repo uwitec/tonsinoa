@@ -25,7 +25,8 @@ namespace TonSinOA.Ajax
                  nodes.Add(new ExtTreeNode() { TypeTitle = "工作报告总结", TypeEName = "工作报告总结", text = "工作报告总结", TypeID = "2", id = "2", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0",iconCls="workbaogao_icon" });
                  nodes.Add(new ExtTreeNode() { TypeTitle = "工作日历", TypeEName = "工作日历", text = "工作日历", TypeID = "3", id = "3", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0",iconCls="workdate_icon" });
                  nodes.Add(new ExtTreeNode() { TypeTitle = "项目管理", TypeEName = "项目管理", text = "项目管理", TypeID = "4", id = "4", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0",iconCls="project_icon" });
-                 nodes.Add(new ExtTreeNode() { TypeTitle = "BBS论坛", TypeEName = "BBS论坛", text = "BBS论坛", TypeID = "5", id = "5", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0",iconCls="bbs_icon" });
+                 nodes.Add(new ExtTreeNode() { TypeTitle = "内部论坛", TypeEName = "内部论坛", text = "内部论坛", TypeID = "5", id = "5", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0", iconCls = "bbs_icon" });
+                 nodes.Add(new ExtTreeNode() { TypeTitle = "消息管理", TypeEName = "消息管理", text = "消息管理", TypeID = "7", id = "7", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0", iconCls = "project_icon" });
                  nodes.Add(new ExtTreeNode() { TypeTitle = "系统设置", TypeEName = "系统设置", text = "系统设置", TypeID = "6", id = "6", IsRoot = false, leaf = false, draggable = false, PID = "0", parentNodeId = "0",iconCls="system_icon" });
                  string json = JsonHelper.SerializeObject(nodes);
 
@@ -37,9 +38,9 @@ namespace TonSinOA.Ajax
                  switch (node)
                  {
                      case"1":
-                         nodes.Add(new ExtTreeNode { TypeTitle = "图书馆", TypeEName = "图书馆", text = "图书馆",TypeID="101",id="101",IsRoot=false,leaf=true,PID=node });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "资料库", TypeEName = "资料库", text = "资料库", TypeID = "102", id = "102", IsRoot = false, leaf = true, PID = node });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "共享文档", TypeEName = "共享文档", text = "共享文档", TypeID = "103", id = "103", IsRoot = false, leaf = true, PID = node });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "图书馆", TypeEName = "图书馆", text = "图书馆",TypeID="101",id="101",IsRoot=false,leaf=true,PID=node ,action="FileManager/FileIndex.aspx"});
+                         nodes.Add(new ExtTreeNode { TypeTitle = "资料库", TypeEName = "资料库", text = "资料库", TypeID = "102", id = "102", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileIndex.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "共享文档", TypeEName = "共享文档", text = "共享文档", TypeID = "103", id = "103", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileIndex.aspx" });
                          break;
                      case "2":
                          nodes.Add(new ExtTreeNode { TypeTitle = "工作报告", TypeEName = "工作报告", text = "工作报告", TypeID = "201", id = "201", IsRoot = false, leaf = true, PID = node, action = "workReport/worklist.aspx", icon = "Images/icons/calendar.png" });
@@ -63,6 +64,11 @@ namespace TonSinOA.Ajax
                          nodes.Add(new ExtTreeNode { TypeTitle = "文档分类管理", TypeEName = "文档分类管理", text = "文档分类管理", TypeID = "605", id = "605", IsRoot = false, leaf = true, PID = node, action = "SystemManager/DocClassManager.aspx" });
                          nodes.Add(new ExtTreeNode { TypeTitle = "报告/总结分类管理", TypeEName = "报告/总结分类管理", text = "报告/总结分类管理", TypeID = "606", id = "606", IsRoot = false, leaf = true, PID = node, action = "SystemManager/WorkReportManager.aspx" });
                          nodes.Add(new ExtTreeNode { TypeTitle = "修改密码", TypeEName = "修改密码", text = "修改密码", TypeID = "607", id = "607", IsRoot = false, leaf = true, PID = node, action = "SystemManager/ChangePwd.aspx" });
+                         break;
+                     case "7":
+                         nodes.Add(new ExtTreeNode { TypeTitle = "写消息", TypeEName = "写消息", text = "写消息", TypeID = "701", id = "701", IsRoot = false, leaf = true, PID = node, action = "" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "发件箱", TypeEName = "发件箱", text = "发件箱", TypeID = "702", id = "702", IsRoot = false, leaf = true, PID = node, action = "" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "收件箱", TypeEName = "收件箱", text = "收件箱", TypeID = "703", id = "703", IsRoot = false, leaf = true, PID = node, action = "" });
                          break;
                      default: break;
                  }
