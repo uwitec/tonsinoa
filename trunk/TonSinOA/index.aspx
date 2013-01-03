@@ -190,7 +190,7 @@
         {
             xtype: "tbbutton", minWidth: 80, text: "注销", cls: "x-btn-text-icon", icon: "Images/icons/lock_go.png",
             handler: function (btn, e) {
-                JsHelper.Confirm("您确认要退出系统吗？", function (btn) {
+               Ext.Msg.confirm("退出","您确认要退出系统吗？", function (btn) {
                     if (btn == 'yes') {
                         parent.location = "index.aspx";
                     }

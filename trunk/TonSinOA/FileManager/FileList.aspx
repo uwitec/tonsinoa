@@ -31,8 +31,11 @@
         </tr>
         <tr>
             <td style="white-space: nowrap" valign="middle" align="left">   
-                <asp:DataList ID="dgTypeView" runat="server">
-                    <ItemTemplate>
+            <div>
+            <asp:Repeater ID="dgTypeView" runat="server">
+            <ItemTemplate>
+            <div style="float:left;width:400px">
+           
                         <div>
                             <div>
                                 <span id="spTypeName" runat="server" class="big1"><%# Eval("TypeName") %></span></div>
@@ -40,10 +43,14 @@
                             <span class="discreet"><%# Eval("Remark") %></span>
                             </div>
                         </div>
-                    </ItemTemplate>
-                </asp:DataList> 
-           
-                   
+                     </div>
+                <div  style="float:right;width:100px;margin-bottom:10px">
+                <a class="ToolBtn" title="上传文件" href='UpLoad.aspx?ID=<%# Eval("TypeID") %>'><span>上传文件</span></a>
+                </div>
+               
+               </ItemTemplate>
+           </asp:Repeater>
+                 </div>   
             </td>
         </tr>
         <tr>

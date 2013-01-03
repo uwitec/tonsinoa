@@ -374,6 +374,7 @@
     <Content Include="FileManager\FileContent.aspx" />
     <Content Include="FileManager\FileIndex.aspx" />
     <Content Include="FileManager\FileList.aspx" />
+    <Content Include="FileManager\UpLoad.aspx" />
     <Content Include="images\attach.png" />
     <Content Include="images\bbs\asp.net.gif" />
     <Content Include="images\bbs\folder.gif" />
@@ -1089,6 +1090,13 @@
     </Compile>
     <Compile Include="FileManager\FileList.aspx.designer.cs">
       <DependentUpon>FileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager\UpLoad.aspx.cs">
+      <DependentUpon>UpLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManager\UpLoad.aspx.designer.cs">
+      <DependentUpon>UpLoad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">

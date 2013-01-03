@@ -45,6 +45,7 @@ namespace TonSinOA.FileManager
                 DataRow dr = dt.NewRow();
                 dr["TypeName"]="根目录";
                 dr["Remark"]="";
+                dr["ParentID"] = "0";
                 dt.Rows.Add(dr);
             }
            
