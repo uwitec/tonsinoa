@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace TonSinOA.FileManager {
+namespace TonSinOA.MsgManager {
     
     
-    public partial class FileList {
+    public partial class ReceiveBox {
         
         /// <summary>
         /// form1 控件。
@@ -22,31 +22,22 @@ namespace TonSinOA.FileManager {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// dataListMapPath 控件。
+        /// DropDownList2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dataListMapPath;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// dgTypeView 控件。
+        /// dgWpView 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dgTypeView;
-        
-        /// <summary>
-        /// dgDocView 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dgDocView;
+        protected global::System.Web.UI.WebControls.Repeater dgWpView;
         
         /// <summary>
         /// AspNetPager1 控件。

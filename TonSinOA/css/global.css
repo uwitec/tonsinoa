@@ -85,6 +85,12 @@ input
 	padding-top: 2px;
 	background: url(../images/ht18_03.gif) no-repeat;
 }
+
+.discreet {
+    color: #76797C;
+    font-size: 12px;
+    font-weight: normal;
+}
 .dv
 {
     text-align: center;
@@ -117,7 +123,7 @@ input
     white-space: nowrap; background-color: White;
      padding: 3px;
 }
-.tdHeader
+tr.tdHeader
 {
     background-color:#f0f0ee;
 }

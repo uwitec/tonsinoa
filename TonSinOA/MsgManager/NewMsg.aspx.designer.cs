@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace TonSinOA.FileManager {
+namespace TonSinOA.MsgManager {
     
     
-    public partial class FileContent1 {
+    public partial class NewMsg {
         
         /// <summary>
         /// form1 控件。
