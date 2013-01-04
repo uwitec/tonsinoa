@@ -27,7 +27,7 @@
                   auto: false,
                  // multi: false,
                   //removeCompleted: false,
-                  //debug: true,   //开启调试
+                 // debug: true,   //开启调试
                   queueSizeLimit: 5,
                   uploadLimit: 5, //限制总上传文件数
                   fileSizeLimit: '3MB', //文件大小
@@ -83,8 +83,11 @@
 //				v += nodes[i].name + ",";
 //			}
 //			if (v.length > 0 ) v = v.substring(0, v.length-1);
-			var cityObj = $("#DirName");
-			cityObj.attr("value", treeNode.name);
+			//var cityObj = $("#DirName span");
+            $("#DirTypeID").val(treeNode.id);
+            $("#DirName span").text( treeNode.name);
+            hideMenu();
+			//cityObj.attr("value", treeNode.name);
 		}
 
 		function showMenu() {
@@ -105,7 +108,7 @@
 		}
 
 		$(document).ready(function(){
-			$.fn.zTree.init($("#treeDemo"), setting);
+			$.fn.zTree.init($("#tree"), setting);
 		});
 		//-->
       </script>
@@ -119,7 +122,9 @@
  <tr>
      
  <td align="left">
- 上传目录：<input id="DirName" type="text" onclick="showMenu(); return false;"/>
+ <input id="DirTypeID" type="hidden" />
+ 上传目录： <a onclick="showMenu();" class="dropdown" href="javascript:;" id="DirName"><span>
+                                选择目录</span></a><%--<input id="DirName" type="text" onclick="showMenu(); return false;"/>--%>
  </td>
  </tr>
  <tr>
@@ -151,8 +156,8 @@
  </tr>
  </table>
 </div>
-<div id="menuContent" class="menuContent" style="display:none; position: absolute;">
-	<ul id="treeDemo" class="ztree" style="margin-top:0; width:180px; height: 300px;"></ul>
+<div id="menuContent" class="menuContent" style="display:none; position: absolute; background-color:#ffffff">
+	<ul id="tree" class="ztree" style="margin-top:0; width:120px; height: 200px;"></ul>
 </div>
     </form>
 </body>

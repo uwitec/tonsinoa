@@ -100,7 +100,7 @@
                                         <%#  Eval("Subject") %>
                                 </td>--%>
                                 <td style="height: 25px; white-space: nowrap;" align="center">
-                                <%# Convert.ToInt32(Eval("TypeID")) == 1 ? "<a href='FileList.aspx?TypeID=" + Eval("DocID") + "&SuperID=" + Eval("ParentID") + "'>" + Eval("FileName") + "</a>" : "<a onclick=gotoView('"+Eval("DocID")+"')>" + Eval("FileName") + "</a>"%>
+                                <%# Convert.ToInt32(Eval("TypeID")) == 1 ? "<a href='FileList.aspx?TypeID=" + Eval("DocID") + "&SuperID=" + Eval("ParentID") + "'>" + Eval("FileName") + "</a>" : "<a href='javascript:' onclick=gotoView('"+Eval("DocID")+"')>" + Eval("FileName") + "</a>"%>
                                     
                                 </td>
                                 <td style="height: 25px; white-space: nowrap;" align="center">

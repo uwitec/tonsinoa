@@ -370,6 +370,7 @@
     <Content Include="editor\themes\qq\editor.gif" />
     <Content Include="editor\themes\qq\qq.css" />
     <Content Include="editor\themes\simple\simple.css" />
+    <Content Include="FileManager\1_5.swf" />
     <Content Include="FileManager\File.xml" />
     <Content Include="FileManager\FileContent.aspx" />
     <Content Include="FileManager\FileIndex.aspx" />
@@ -883,6 +884,8 @@
     <Content Include="js\extjs\resources\images\vista\tabs\tab-sprite.gif" />
     <Content Include="js\extjs\resources\images\vista\toolbar\gray-bg.gif" />
     <Content Include="js\extjs\resources\images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="js\FlexPaperViewer.swf" />
+    <Content Include="js\flexpaper_flash_debug.js" />
     <Content Include="js\fullcalendar\fullcalendar.css" />
     <Content Include="js\fullcalendar\fullcalendar.js" />
     <Content Include="js\fullcalendar\fullcalendar.min.js" />

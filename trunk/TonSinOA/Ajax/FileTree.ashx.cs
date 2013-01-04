@@ -24,6 +24,11 @@ namespace TonSinOA.Ajax
             id = StringHelper.GetRequest("id") == "" ? "0" : StringHelper.GetRequest("id");
             pid = StringHelper.GetRequest("pid") == "" ? "0" : StringHelper.GetRequest("pid");
             extparam = StringHelper.GetRequest("extparam") == "" ? "0" : StringHelper.GetRequest("extparam");
+            bool noTarget = false;
+            if (extparam == "N")
+            {
+                noTarget = true;
+            }
             DataSet ds = new DataSet();
             ds.ReadXml(context.Server.MapPath( "~/SystemManager/Document.xml"));
             StringBuilder str = new StringBuilder();
@@ -37,6 +42,7 @@ namespace TonSinOA.Ajax
                 drs = ds.Tables[0].Select("ParentID='"+id+"'");
             }
             List<TreeNode> list = new List<TreeNode>();
+           
             for (int i = 0; i < drs.Length; i++)
             {
                 DataRow dr = drs[i];
@@ -45,7 +51,7 @@ namespace TonSinOA.Ajax
                 node.pid = dr["ParentID"].ToString();
                 node.name = dr["TypeName"].ToString();
                 node.isParent = "true";
-                if (extparam != "N")
+                if (!noTarget)
                 {
                     node.target = "rightFrame";
                     node.url = "FileList.aspx?TypeID=" + node.id + "&SuperID=" + node.pid + "&name=" + node.name;
