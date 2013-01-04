@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TonSinOA.FileManager
 {
-    public partial class FileContent : System.Web.UI.Page
+    public partial class FileIndex : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

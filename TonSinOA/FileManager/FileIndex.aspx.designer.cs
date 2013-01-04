@@ -10,7 +10,7 @@
 namespace TonSinOA.FileManager {
     
     
-    public partial class FileContent {
+    public partial class FileIndex {
         
         /// <summary>
         /// form1 控件。
