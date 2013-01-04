@@ -8,9 +8,11 @@
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <link href="../js/uploadify/uploadify.css" rel="stylesheet" type="text/css" /> 
+     <link href="../css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script>
     <script src="../js/Attach.js" type="text/javascript"></script>
+    <script src="../js/jquery.ztree.all.min.js" type="text/javascript"></script>
     <script src="../js/uploadify/jquery.uploadify.js" type="text/javascript"></script>
       <script type="text/javascript">
           var upload_limit = 1, limit_type = "php,php3,php4,php5,";
@@ -34,7 +36,6 @@
                   successTimeout: 99999,
                   queueID: 'fileQueue',
                   buttonText: 'Browse',
-                  'buttonImg': '/images/btn_submit1.gif',
                   swf: "/js/uploadify/uploadify.swf",
                   uploader: "/Ajax/UpLoadFile.ashx",
                   width: 80,
@@ -47,6 +48,66 @@
               });
 
           });
+
+          		<!--
+		var setting = {
+			view: {
+				dblClickExpand: false
+			},
+			async: {
+                    enable: true,
+				url:"../Ajax/FileTree.ashx",
+				autoParam:["id", "pid"],
+				otherParam: { "extparam": "N" }
+                },
+			callback: {
+				//beforeClick: beforeClick,
+				onClick: onClick
+			}
+		};
+
+		
+
+		function beforeClick(treeId, treeNode) {
+			var check = (treeNode && !treeNode.isParent);
+			//if (!check) alert("只能选择城市...");
+			return check;
+		}
+		
+		function onClick(e, treeId, treeNode) {
+//			var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+//			nodes = zTree.getSelectedNodes(),
+//			v = "";
+//			nodes.sort(function compare(a,b){return a.id-b.id;});
+//			for (var i=0, l=nodes.length; i<l; i++) {
+//				v += nodes[i].name + ",";
+//			}
+//			if (v.length > 0 ) v = v.substring(0, v.length-1);
+			var cityObj = $("#DirName");
+			cityObj.attr("value", treeNode.name);
+		}
+
+		function showMenu() {
+			var cityObj = $("#DirName");
+			var cityOffset = $("#DirName").offset();
+			$("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+
+			$("body").bind("mousedown", onBodyDown);
+		}
+		function hideMenu() {
+			$("#menuContent").fadeOut("fast");
+			$("body").unbind("mousedown", onBodyDown);
+		}
+		function onBodyDown(event) {
+			if (!(event.target.id == "menuBtn" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length>0)) {
+				hideMenu();
+			}
+		}
+
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting);
+		});
+		//-->
       </script>
 </head>
 <body>
@@ -56,7 +117,14 @@
 <div class="dv">
  <table border="0" cellpadding="3" cellspacing="1" class="tableground" width="100%">
  <tr>
- <td align="left"><div id="tabs" >
+     
+ <td align="left">
+ 上传目录：<input id="DirName" type="text" onclick="showMenu(); return false;"/>
+ </td>
+ </tr>
+ <tr>
+ <td align="left">
+ <div id="tabs" >
     <ul>
         <li><a href="#tabs-1">单选文件上传</a></li>
         <li><a href="#tabs-2">批量上传</a></li>
@@ -75,14 +143,17 @@
 </div></td>
  </tr>
  <tr>
- <td align="left"><asp:Button ID="Button2" runat="server" Text="上 传" OnClientClick="javascript:$('#file_upload').uploadify('upload','*');return false" CssClass="btnsubmit1" />
+ <td align="left">
+ <asp:Button ID="Button2" runat="server" Text="上 传" OnClientClick="javascript:$('#file_upload').uploadify('upload','*');return false" CssClass="btnsubmit1" />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <input id="Button1" type="button" class="btnsubmit1" value="取 消" /></td>
 
  </tr>
  </table>
 </div>
-
+<div id="menuContent" class="menuContent" style="display:none; position: absolute;">
+	<ul id="treeDemo" class="ztree" style="margin-top:0; width:180px; height: 300px;"></ul>
+</div>
     </form>
 </body>
 </html>
