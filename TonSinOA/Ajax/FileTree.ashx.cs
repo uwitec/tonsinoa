@@ -20,9 +20,10 @@ namespace TonSinOA.Ajax
 
             string id = "0";
             string pid = "0";
-
+            string extparam = "";
             id = StringHelper.GetRequest("id") == "" ? "0" : StringHelper.GetRequest("id");
             pid = StringHelper.GetRequest("pid") == "" ? "0" : StringHelper.GetRequest("pid");
+            extparam = StringHelper.GetRequest("extparam") == "" ? "0" : StringHelper.GetRequest("extparam");
             DataSet ds = new DataSet();
             ds.ReadXml(context.Server.MapPath( "~/SystemManager/Document.xml"));
             StringBuilder str = new StringBuilder();
@@ -44,8 +45,11 @@ namespace TonSinOA.Ajax
                 node.pid = dr["ParentID"].ToString();
                 node.name = dr["TypeName"].ToString();
                 node.isParent = "true";
-                node.target = "rightFrame";
-                node.url = "FileList.aspx?TypeID=" + node.id + "&SuperID=" + node.pid+"&name="+node.name;
+                if (extparam != "N")
+                {
+                    node.target = "rightFrame";
+                    node.url = "FileList.aspx?TypeID=" + node.id + "&SuperID=" + node.pid + "&name=" + node.name;
+                }
                 list.Add(node);
             }
             string json = JsonHelper.SerializeObject(list);
