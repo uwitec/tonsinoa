@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalendarInfo.cs" />
+    <Compile Include="DocumentCommentsInfo.cs" />
+    <Compile Include="DocumentInfo.cs" />
     <Compile Include="EventInfo.cs" />
     <Compile Include="ExtTreeNode.cs" />
     <Compile Include="DepartmentInfo.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="DutyInfo.cs" />
     <Compile Include="NoticeInfo.cs" />
     <Compile Include="TypeCodeInfo.cs" />
+    <Compile Include="UploadFileInfo.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
