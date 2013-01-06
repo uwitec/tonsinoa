@@ -50,11 +50,13 @@
     <Compile Include="DocumentCommentsInfo.cs" />
     <Compile Include="DocumentInfo.cs" />
     <Compile Include="EventInfo.cs" />
+    <Compile Include="EventRemindType.cs" />
     <Compile Include="ExtTreeNode.cs" />
     <Compile Include="DepartmentInfo.cs" />
     <Compile Include="DocTypeInfo.cs" />
     <Compile Include="DutyInfo.cs" />
     <Compile Include="NoticeInfo.cs" />
+    <Compile Include="TaskInfo.cs" />
     <Compile Include="TypeCodeInfo.cs" />
     <Compile Include="UploadFileInfo.cs" />
     <Compile Include="UserInfo.cs" />

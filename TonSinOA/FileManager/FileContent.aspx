@@ -107,7 +107,7 @@
                                                 <script type="text/javascript">
 
                                                     var fp = new FlexPaperViewer(
-						 '../js/FlexPaperViewer',
+						 '../js/reader',
 						 'viewerPlaceHolder', { config: {
 						     SwfFile: escape('1_5.swf'),
 						     Scale: 1,
@@ -180,7 +180,7 @@
                             </tr>
                             <tr>
                                 <td align="left">
-                                    <textarea id="TextArea1" cols="50" name="S1" rows="5"></textarea>
+                                    <textarea id="TextArea1" cols="50" name="S1" rows="2"></textarea>
                                 </td>
                                 <td align="right">
                                     &nbsp;
@@ -200,7 +200,7 @@
             </tr>
         </table>
     </div>
-    <table id="tbNewVersion" style="display: block" border="0" cellpadding="3" cellspacing="1"
+    <table id="tbNewVersion" style="display: none" border="0" cellpadding="3" cellspacing="1"
         class="tableground">
         <tr>
             <td align="right">

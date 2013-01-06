@@ -28,5 +28,7 @@ namespace TonSinOA.Model
         /// 版本号
         /// </summary>
         public int Version { get; set; }
+
+        
     }
 }

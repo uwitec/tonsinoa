@@ -35,7 +35,18 @@ namespace TonSinOA.Model
         [JsonDataMember(Name = "backgroundColor")]
         public string BackgroundColor { get; set; }
        // public EventAlertType AlertType { get; set; }
-       // public EventRepeatType RepeatType { get; set; }
+       // public EventRepeatType RepeatType { get; set; }r
+       /// <summary>
+       /// 重复提醒次数
+       /// </summary>
+       [JsonDataMember(Name = "repeattimes")]
+        public string RepeatTimes { get; set; }
+       /// <summary>
+       /// 重复提醒间隔
+       /// </summary>
+       [JsonDataMember(Name = "repeatinterval")]
+        public string RepeatInterval { get; set; }
+        
         public int UserID { get; set; }
     }
 }
