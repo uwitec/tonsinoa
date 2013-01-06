@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fullCalandarTest.aspx.cs" Inherits="TonSinOA.fullCalandarTest" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"   CodeBehind="fullCalandarTest.aspx.cs" Inherits="TonSinOA.fullCalandarTest" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -465,11 +465,17 @@
 </style>
 </head>
 <body>
-   <%-- <form id="form1" runat="server">--%>
-    <div id="container"><div style="background-color:#9bb845;color:#000000" class="fc-event-inner fc-event-skin"><span class="fc-event-title">明天中午去趟肯得鸡</span></div>
+    <form id="form1" runat="server">
+    <%=Resources.lang.Next%>
+
+    <div id="container"><div style="background-color:#9bb845;color:#000000" class="fc-event-inner fc-event-skin"><span class="fc-event-title">明天中午去趟肯得鸡</span><input 
+            id="Button1" runat="server" type="button" value="<%$Resources:lang,TestKey %>" /><asp:Button ID="Button2" 
+            runat="server" Text="<%$Resources:lang,Next %>" />
+        </div>
 		<div id='selectdate'></div>
 		<div id='calendar'></div>	
 	</div>
-    <%--</form>--%>
+ 
+    </form>
 </body>
 </html>

@@ -376,6 +376,7 @@
     <Content Include="FileManager\FileIndex.aspx" />
     <Content Include="FileManager\FileList.aspx" />
     <Content Include="FileManager\UpLoad.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="images\attach.png" />
     <Content Include="images\bbs\asp.net.gif" />
     <Content Include="images\bbs\folder.gif" />
@@ -907,6 +908,9 @@
     <Content Include="js\DatePicker\skin\whyGreen\img.gif" />
     <Content Include="js\DatePicker\WdatePicker.js" />
     <Content Include="js\jquery.ztree.all.min.js" />
+    <Content Include="js\lang.en-us.js" />
+    <Content Include="js\lang.js" />
+    <Content Include="js\lang.zh-cn.js" />
     <Content Include="js\rightKeyTabPanel.js" />
     <Content Include="js\theme.js" />
     <Content Include="js\uploadify\jquery.uploadify.js" />
@@ -975,6 +979,21 @@
     </Compile>
     <Compile Include="Ajax\UpLoadFile.ashx.cs">
       <DependentUpon>UpLoadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\lang.en-us.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.en-us.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\lang.zh-cn.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.zh-cn.resx</DependentUpon>
     </Compile>
     <Compile Include="Bbs\AVote.aspx.cs">
       <DependentUpon>AVote.aspx</DependentUpon>
@@ -1108,6 +1127,9 @@
     </Compile>
     <Compile Include="FileManager\UpLoad.aspx.designer.cs">
       <DependentUpon>UpLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
     <Compile Include="index.aspx.cs">
@@ -1371,6 +1393,24 @@
       <Project>{C51D199C-8158-441A-930F-45FCC9BF0213}</Project>
       <Name>Utility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\lang.zh-cn.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.zh-cn.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\lang.en-us.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.en-us.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\lang.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>lang.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

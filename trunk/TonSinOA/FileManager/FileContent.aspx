@@ -132,7 +132,8 @@
 
 						     localeChain: 'en_US'
 						 }
-						 });
+			});
+                         
 	        </script>
                                             </div>
                                         </td>
