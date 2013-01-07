@@ -26,12 +26,34 @@
 </head>
 <body>
     <form id="form1" runat="server">
+      <div style="margin: 7px;">
+        <table class="tabs_head" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+                <td width="140">
+                    <h1>
+                        工作总结</h1>
+                </td>
+                <td class="actions" width="*">
+                    <table cellspacing="0" cellpadding="0" border="0" align="right">
+                        <tr>
+                              <td >
+                                <a href="worklist.aspx"> 报告列表</a>
+                            </td>
+                            <td class="active">
+                               新建报告
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="dv">
         <table border="0" cellpadding="3" cellspacing="1" class="tableground">
-                 <tr>
+               <%--  <tr>
                 <td align="left" colspan="2">
                    <a href="worklist.aspx">返回工作报告</a> </td>
-            </tr>
+            </tr>--%>
             <tr>
                 <td align="right">
                     报告类型：
