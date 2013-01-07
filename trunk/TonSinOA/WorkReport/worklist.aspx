@@ -9,91 +9,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-  <%--  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%">
-        <tr>
-            <td width="20%" valign="top">
-                <div style="margin-top: 7px">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%">
-                        <tr>
-                            <td>
-                                <a href="AddWork.aspx">新建报告</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                分类查看
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                按类型
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select id="Select1" name="D1">
-                                    <option value="1">工作报告</option>
-                                    <option value="1">工作总结</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                按评价
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="#">待评价</a> <a href="#">已评价</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                提交时间
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="#">今天</a> <a href="#">昨天</a> <a href="#">本周</a> <a href="#">上一周</a> <a href="#">
-                                    本月</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                提交人
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                &nbsp;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="Text1" type="text" class="BigInput" /><input id="Button1" type="button"
-                                    value="搜索" />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </td>
-            <td width="80%">
-            </td>
-        </tr>
-    </table>--%>
     <div style="margin: 7px;">
         <table class="tabs_head" cellpadding="0" cellspacing="0" border="0" width="100%">
             <tr>
                 <td width="140">
                     <h1>
-                        工作总结报告</h1>
+                        工作总结</h1>
                 </td>
                 <td class="actions" width="*">
                     <table cellspacing="0" cellpadding="0" border="0" align="right">
                         <tr>
-                            <%--  <td class="active">
-                                员工列表
-                            </td>--%>
+                              <td class="active">
+                                报告列表
+                            </td>
                             <td>
                                 <a href="AddWork.aspx">新建报告</a>
                             </td>

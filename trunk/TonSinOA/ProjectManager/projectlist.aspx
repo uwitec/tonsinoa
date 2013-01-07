@@ -57,11 +57,11 @@
                 <td class="actions" width="*">
                     <table cellspacing="0" cellpadding="0" border="0" align="right">
                         <tr>
-                            <%--  <td class="active">
-                                员工列表
-                            </td>--%>
-                            <td>
-                               <a href="#" onclick="javascript:AddProject()"> 创建新建项目</a>
+                            <td class="active" >
+                               项目列表
+                            </td>
+                            <td >
+                                <a href="AddProject.aspx"> 创建新建项目</a>
                             </td>
                         </tr>
                     </table>

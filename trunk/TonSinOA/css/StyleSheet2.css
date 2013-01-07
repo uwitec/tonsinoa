@@ -1,0 +1,256 @@
+﻿
+.oa_portlet {
+    font-size: 12px;
+}
+.ext-ie .oa_portlet {
+    width: 100%;
+}
+.oa_portlet .bwarp {
+    cursor: auto;
+}
+.ext-ie .oa_portlet .bwarp {
+    width: 100%;
+}
+.oa_portlet .bwarp img {
+    vertical-align: middle;
+}
+.oa_portlet .bwarp table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.oa_portlet .bwarp table td {
+    font-size: 12px;
+    line-height: 26px;
+}
+.oa_portlet .bwarp table td.over {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.oa_portlet .bwarp table td.line {
+    background: url("../images/portlet/line.jpg") repeat-x scroll 0 0 transparent;
+    font-size: 0;
+    height: 1px;
+}
+.oa_portlet .bwarp .ico1 {
+    background: url("../images/portlet/ico.jpg") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    width: 16px;
+}
+.oa_portlet .bwarp .ico2 {
+    background: url("../images/portlet/ico.jpg") no-repeat scroll 0 -16px transparent;
+    height: 16px;
+    width: 16px;
+}
+.oa_portlet .bwarp .ico {
+    background: url("../images/portlet/ico.jpg") no-repeat scroll 0 -32px transparent;
+    height: 16px;
+    width: 16px;
+}
+.oa_portlet .bwarp .ico4 {
+    background: url("../images/portlet/ico.jpg") no-repeat scroll 0 -48px transparent;
+    height: 16px;
+    width: 16px;
+}
+.oa_portlet .oa_portlet_b_1, .oa_portlet .oa_portlet_b_2, .oa_portlet .oa_portlet_b_3 {
+    background: url("../images/portlet/oa_portlet_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 26px;
+}
+.oa_portlet .oa_portlet_b_1 .oa_portlet_tr, .oa_portlet .oa_portlet_b_2 .oa_portlet_tr, .oa_portlet .oa_portlet_b_3 .oa_portlet_tr {
+    background: url("../images/portlet/oa_portlet_tl.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 26px;
+    width: 5px;
+}
+.oa_portlet .oa_portlet_b_1 .oa_portlet_tc, .oa_portlet .oa_portlet_b_2 .oa_portlet_tc, .oa_portlet .oa_portlet_b_3 .oa_portlet_tc {
+    background: url("../images/portlet/oa_portlet_bg.jpg") repeat-x scroll 0 -26px transparent;
+    float: left;
+    font-size: 12px;
+    height: 26px;
+    padding-top: 5px;
+}
+.oa_portlet .oa_portlet_tl {
+    background: url("../images/portlet/oa_portlet_tr.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 26px;
+    width: 35px;
+}
+.oa_portlet .oa_portlet_b_1 .oa_portlet_tl {
+    background-position: 0 0;
+}
+.oa_portlet .oa_portlet_b_2 .oa_portlet_tl {
+    background-position: -35px 0;
+}
+.oa_portlet .oa_portlet_b_3 .oa_portlet_tl {
+    background-position: -70px 0;
+}
+.oa_portlet .oa_portlet_y_1, .oa_portlet .oa_portlet_y_2, .oa_portlet .oa_portlet_y_3 {
+    background: url("../images/portlet/oa_portlet_bg.jpg") repeat-x scroll 0 -52px transparent;
+    height: 26px;
+}
+.oa_portlet .oa_portlet_y_1 .oa_portlet_tr, .oa_portlet .oa_portlet_y_2 .oa_portlet_tr, .oa_portlet .oa_portlet_y_3 .oa_portlet_tr {
+    background: url("../images/portlet/oa_portlet_tl.jpg") no-repeat scroll 0 -26px transparent;
+    float: left;
+    height: 26px;
+    width: 5px;
+}
+.oa_portlet .oa_portlet_y_1 .oa_portlet_tc, .oa_portlet .oa_portlet_y_2 .oa_portlet_tc, .oa_portlet .oa_portlet_y_3 .oa_portlet_tc {
+    background: url("../images/portlet/oa_portlet_bg.jpg") repeat-x scroll 0 -78px transparent;
+    float: left;
+    font-size: 12px;
+    height: 26px;
+    padding-top: 5px;
+}
+.oa_portlet .oa_portlet_tl, .oa_portlet .oa_portlet_tl, .oa_portlet .oa_portlet_tl {
+    background: url("../images/portlet/oa_portlet_tr.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 26px;
+    width: 35px;
+}
+.oa_portlet .oa_portlet_y_1 .oa_portlet_tl {
+    background-position: 0 -26px;
+}
+.oa_portlet .oa_portlet_y_2 .oa_portlet_tl {
+    background-position: -35px -26px;
+}
+.oa_portlet .oa_portlet_y_3 .oa_portlet_tl {
+    background-position: -70px -26px;
+}
+.oa_portlet .oa_portlet_tool {
+    float: right;
+    overflow: hidden;
+    padding: 0 4px;
+}
+.oa_portlet .oa_portlet_btn {
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    margin-top: 4px;
+    width: 18px;
+}
+.oa_portlet .btn1 {
+    background: url("../images/portlet/tools.gif") no-repeat scroll 0 0 transparent;
+}
+.oa_portlet .btn2 {
+    background: url("../images/portlet/tools.gif") no-repeat scroll -18px 0 transparent;
+}
+.oa_portlet .btn3 {
+    background: url("../images/portlet/tools.gif") no-repeat scroll -36px 0 transparent;
+}
+.oa_portlet .oa_portlet_ml {
+    background: url("../images/portlet/oa_portlet_ml.jpg") repeat-y scroll left center transparent;
+}
+.oa_portlet .oa_portlet_mr {
+    background: url("../images/portlet/oa_portlet_mr.jpg") repeat-y scroll right center transparent;
+}
+.oa_portlet .oa_portlet_mc {
+    padding: 5px 10px;
+}
+.oa_portlet .oa_portlet_bc {
+    background: url("../images/portlet/oa_portlet_bc.jpg") repeat-x scroll center bottom transparent;
+    height: 5px;
+}
+.ext-ie .oa_portlet .oa_portlet_bc {
+    font-size: 0;
+}
+.oa_portlet .oa_portlet_bl {
+    background: url("../images/portlet/oa_portlet_bl.jpg") no-repeat scroll left center transparent;
+    padding-left: 5px;
+}
+.oa_portlet .oa_portlet_br {
+    background: url("../images/portlet/oa_portlet_br.jpg") no-repeat scroll right center transparent;
+    padding-right: 5px;
+}
+.oa_portlet .titleIco {
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+.oa_portlet a:link, .oa_portlet a:visited, .oa_portlet a:visited, .oa_portlet a:hover, .oa_portlet a:active {
+    color: #000000;
+    font-size: 12px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.oa_portlet a:hover, .oa_portlet a:active {
+    color: #1F8CC3;
+    font-size: 12px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.oa_portlet .oa_portlet_b {
+    border: 1px solid #D1DCDF;
+}
+.oa_portlet .oa_portlet_b .oa_portlet_tc {
+    background: url("../images/portlet/oa_portlet_tc.jpg") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #D1DCDF;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.oa_portlet .oa_portlet_b .oa_portlet_bc {
+    background-color: #E9EEF8;
+    background-position: 100px 100px;
+    height: 22px;
+}
+.oa_portlet .oa_portlet_b .oa_portlet_bc td {
+    font-size: 12px;
+}
+.ext-ie .oa_portlet_b .oa_portlet_bc td {
+    padding-top: 4px;
+}
+.oa_portlet .oa_portlet_b .th {
+    border-bottom: 1px solid #D1DCDF;
+}
+.oa_portlet .oa_portlet_y {
+    border: 1px solid #EBD88D;
+}
+.oa_portlet .oa_portlet_y .oa_portlet_tc {
+    background: url("../images/portlet/oa_portlet_tc.jpg") repeat-x scroll 0 -22px transparent;
+    border-bottom: 1px solid #EBD88D;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.oa_portlet .oa_portlet_y .th {
+    border-bottom: 1px solid #EBD88D;
+}
+.oa_portlet .oa_portlet_y .bwarp table td {
+    color: #333333;
+}
+.oa_portlet .oa_portlet_y .bwarp .row {
+    background-color: #FFFFFF;
+}
+.oa_portlet .oa_portlet_y .bwarp .row-over {
+    background-color: #E9EEF8;
+}
+.oa_portlet .oa_portlet_y a:link, .oa_portlet .oa_portlet_y a:visited, .oa_portlet .oa_portlet_y a:visited, .oa_portlet .oa_portlet_y a:hover, .oa_portlet .oa_portlet_y a:active {
+    color: #333333;
+    text-decoration: none;
+}
+.oa_portlet .oa_portlet_y a:hover, .oa_portlet .oa_portlet_y a:active {
+    color: #1F8CC3;
+    text-decoration: none;
+}
+.oa_portlet .oa_portlet_y .oa_portlet_bc {
+    background-color: #F2E7BA;
+    background-position: 100px 100px;
+    height: 22px;
+}
+.oa_portlet .oa_portlet_y .oa_portlet_bc td {
+    font-size: 12px;
+}
+.ext-ie .oa_portlet_y .oa_portlet_bc td {
+    padding-top: 4px;
+}
+.oa_portlet .bwarp p {
+    font-size: 12px;
+    line-height: 1.8em;
+    margin: 1em 0.1em;
+}
+.oa_portlet .bwarp h3 {
+    font-size: 18px;
+}

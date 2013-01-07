@@ -158,6 +158,7 @@
     <Content Include="css\easyui\icon.css" />
     <Content Include="css\global.css" />
     <Content Include="css\StyleSheet1.css" />
+    <Content Include="css\StyleSheet2.css" />
     <Content Include="css\zTreeStyle\img\diy\1_close.png" />
     <Content Include="css\zTreeStyle\img\diy\1_open.png" />
     <Content Include="css\zTreeStyle\img\diy\2.png" />
@@ -377,6 +378,7 @@
     <Content Include="FileManager\FileList.aspx" />
     <Content Include="FileManager\UpLoad.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
     <Content Include="images\attach.png" />
     <Content Include="images\bbs\asp.net.gif" />
     <Content Include="images\bbs\folder.gif" />
@@ -431,6 +433,17 @@
     <Content Include="images\option_tabs.gif" />
     <Content Include="images\org_select.png" />
     <Content Include="images\PersonMessage.png" />
+    <Content Include="images\portlet\ico.jpg" />
+    <Content Include="images\portlet\line.jpg" />
+    <Content Include="images\portlet\oa_portlet_bc.jpg" />
+    <Content Include="images\portlet\oa_portlet_bg.jpg" />
+    <Content Include="images\portlet\oa_portlet_bl.jpg" />
+    <Content Include="images\portlet\oa_portlet_br.jpg" />
+    <Content Include="images\portlet\oa_portlet_ml.jpg" />
+    <Content Include="images\portlet\oa_portlet_mr.jpg" />
+    <Content Include="images\portlet\oa_portlet_tl.jpg" />
+    <Content Include="images\portlet\oa_portlet_tr.jpg" />
+    <Content Include="images\portlet\tools.gif" />
     <Content Include="images\remove.png" />
     <Content Include="images\th.gif" />
     <Content Include="images\thbg.gif" />
@@ -924,6 +937,7 @@
     <Content Include="MsgManager\SendBox.aspx" />
     <Content Include="MsgManager\SendBox.xml" />
     <Content Include="MsgManager\SendMsg.aspx" />
+    <Content Include="ProjectManager\AddProject.aspx" />
     <Content Include="ProjectManager\AddTask.aspx" />
     <Content Include="ProjectManager\EditTask.aspx" />
     <Content Include="ProjectManager\project.xml" />
@@ -1132,6 +1146,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Global\Global.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>index.aspx</DependentUpon>
@@ -1173,6 +1194,13 @@
     </Compile>
     <Compile Include="MsgManager\SendMsg.aspx.designer.cs">
       <DependentUpon>SendMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\AddProject.aspx.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\AddProject.aspx.designer.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjectManager\AddTask.aspx.cs">
       <DependentUpon>AddTask.aspx</DependentUpon>
@@ -1420,7 +1448,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>6240</DevelopmentServerPort>
+          <DevelopmentServerPort>8475</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
