@@ -221,8 +221,8 @@
         activeTab: 0, autoWidth: true, autoScroll: true, border: true, frame: true, id: "TabPanelID",
         enableTabScroll: true, items: [
         {
-            xtype: "panel", layout: 'fit', title: "工作台", border: false, frame: false, iconCls: 'panel_icon',
-            html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='http://www.baidu.com'></iframe>"
+            xtype: "panel", layout: 'fit', title: "个人门户", border: false, frame: false, iconCls: 'panel_icon',
+            html: "<iframe scrolling='true' width='100%' height='100%'  frameborder='0' src='home.aspx'></iframe>"
         }]
     });
            var panel_center = new Ext.Panel(

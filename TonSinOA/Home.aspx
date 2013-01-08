@@ -23,7 +23,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','toggleCollapse');" class="oa_portlet_btn btn1">
+                                <div  class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
                     </div>
@@ -46,7 +46,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a onclick="" href="javascript:void(0);">请尽快提交健身计划 【公告】【置顶】 </a>
+                                                                    <a style="color:red" onclick="" href="javascript:void(0);">请尽快提交健身计划 【公告】【置顶】 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-12-28 15:02
@@ -149,7 +149,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
@@ -205,10 +205,10 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a href="javascript:void(0);"></a>
+                                                                    <a href="javascript:void(0);">2013年火车票时间预售时间提前至20天</a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;2012-12-31 19:55
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -221,10 +221,10 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a href="javascript:void(0);"></a>
+                                                                    <a href="javascript:void(0);">关于公司春节放假事宜</a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;2013-01-31 19:55
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -236,11 +236,11 @@
                                                                     <div class="ico">
                                                                     </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a href="javascript:void(0);"></a>
+                                                               <td class="over">
+                                                                    <a href="javascript:void(0);">关于公司春节放假事宜</a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;2013-01-31 19:55
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -280,7 +280,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
                     </div>
@@ -350,10 +350,11 @@
                                                                     <div class="ico">
                                                                     </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a href="javascript:void(0);"></a>
+                                                                 <td class="over">
+                                                                    <a href="javascript:void(0);">本周三评估新教材 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
+                                                                    2012-11-14 13:27
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -365,10 +366,11 @@
                                                                     <div class="ico">
                                                                     </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a href="javascript:void(0);"></a>
+                                                                 <td class="over">
+                                                                    <a href="javascript:void(0);">本周三评估新教材 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
+                                                                    2012-11-14 13:27
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -404,7 +406,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
@@ -532,7 +534,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
