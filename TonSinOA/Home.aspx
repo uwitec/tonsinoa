@@ -4,7 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>个人门户</title>
-    <link href="css/StyleSheet2.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var newNotice = function () {
+            parent.addTabContent("012121", "最新公告通知", "http://www.baidu.com");
+        }
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,7 +29,7 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div  class="oa_portlet_btn btn4">
+                                <div onclick="newNotice();"  class="oa_portlet_btn btn4">
                                 </div>
                                 <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
                     </div>
