@@ -11,25 +11,25 @@
     <div class="dv">
         <table cellpadding="0" cellspacing="0" border="0" width="100%">
             <tr>
-                <td style="padding-left:10px;padding-right:10px">
+                <td style="padding-left: 10px; padding-right: 10px">
                     <div class="oa_portlet">
-                        <div class="oa_portlet_y_3">
+                        <div class="oa_portlet_b_2">
                             <div class="oa_portlet_tr">
                             </div>
                             <div class="oa_portlet_tc">
-                                <div class="titleIco mnu-note_go">
+                                <div class="titleIco mnu-comment_blue">
                                 </div>
                                 &nbsp;最新公告通知</div>
                             <div class="oa_portlet_tl">
                             </div>
-                            <%--     <div class="oa_portlet_tool">
-                    <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','toggleCollapse');" class="oa_portlet_btn btn1">
-                    </div>
-                    <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
+                            <div class="oa_portlet_tool">
+                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','toggleCollapse');" class="oa_portlet_btn btn1">
+                                </div>
+                                <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
                     </div>
                     <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','colsePortlet');" class="oa_portlet_btn btn3">
-                    </div>
-                </div>--%>
+                    </div>--%>
+                            </div>
                         </div>
                         <div class="oa_portlet_ml">
                             <div class="oa_portlet_mr">
@@ -46,9 +46,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]公文发文-WI_001814武路&nbsp;&nbsp;审批已接收&nbsp;&nbsp;2012-12-28 15:02"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000003207','wf.officework.docmanage.senddoc');"
-                                                                        href="javascript:void(0);">[公文流程]公文发文-WI_001814 </a>
+                                                                    <a onclick="" href="javascript:void(0);">请尽快提交健身计划 【公告】【置顶】 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-12-28 15:02
@@ -64,9 +62,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]文件收文-WI_001704胡杰&nbsp;&nbsp;审阅已接收&nbsp;&nbsp;2012-11-22 21:32"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002980','wf.officework.filedoc.recivedoc');"
-                                                                        href="javascript:void(0);">[公文流程]文件收文-WI_001704 </a>
+                                                                    <a href="javascript:void(0);">更改作息时间的公告 【公告】 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-11-22 21:32
@@ -82,9 +78,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[项目流程]工程项目流程-WI_001536胡杰&nbsp;&nbsp;项目部已接收&nbsp;&nbsp;2012-11-14 13:27"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002893','wf_wffrom_710');"
-                                                                        href="javascript:void(0);">[项目流程]工程项目流程-WI_001536 </a>
+                                                                    <a href="javascript:void(0);">处罚李四屡次不交总结的公告【公告】 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-11-14 13:27
@@ -100,9 +94,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[行政流程]公务接待申请 (表格型表单)-WI_001618武路&nbsp;&nbsp;总经理已接收&nbsp;&nbsp;2012-11-03 14:15"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002776','wf_wffrom_741');"
-                                                                        href="javascript:void(0);">[行政流程]公务接待申请 (表格型表单)-WI_001618 </a>
+                                                                    <a href="javascript:void(0);">戴维给您分享了报告 【系统消息】</a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-11-03 14:15
@@ -118,9 +110,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]文件收文-WI_001610胡杰&nbsp;&nbsp;审批已接收&nbsp;&nbsp;2012-10-30 17:39"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002746','wf.officework.filedoc.recivedoc');"
-                                                                        href="javascript:void(0);">[公文流程]文件收文-WI_001610 </a>
+                                                                    <a href="javascript:void(0);">关于下周二公开课的通知【通知】 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-10-30 17:39
@@ -147,7 +137,7 @@
                         </div>
                     </div>
                 </td>
-                <td  style="padding-left:10px;padding-right:10px">
+                <td style="padding-left: 10px; padding-right: 10px">
                     <div class="oa_portlet">
                         <div class="oa_portlet_b_2">
                             <div class="oa_portlet_tr">
@@ -159,31 +149,30 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','toggleCollapse');" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn1">
                                 </div>
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
+                                <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
                                 <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','colsePortlet');" class="oa_portlet_btn btn3">
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="oa_portlet_ml">
                             <div class="oa_portlet_mr">
-                                <div id="contentext-gen133" class="oa_portlet_mc">
-                                    <div id="ext-comp-1031" class=" x-panel x-panel-noborder">
-                                        <div class="x-panel-bwrap" id="ext-gen172">
-                                            <div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen173">
+                                <div class="oa_portlet_mc">
+                                    <div>
+                                        <div>
+                                            <div>
                                                 <div class="bwarp">
                                                     <table width="100%">
                                                         <tbody>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="胡杰&nbsp;&nbsp;回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认&nbsp;&nbsp;2013-01-03 16:44"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2852');" href="javascript:void(0);">
-                                                                        [胡杰]回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认 </a>
+                                                                    <a href="javascript:void(0);">下周去喝酒吧 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2013-01-03 16:44
@@ -195,11 +184,12 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
+                                                                    <%-- <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">--%>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回执：回复: cccxcvxv&nbsp;&nbsp;2012-12-06 19:55" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2819');"
-                                                                        href="javascript:void(0);">[武路]回执：回复: cccxcvxv </a>
+                                                                    <a href="javascript:void(0);">关于上班时间的投票 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2012-12-06 19:55
@@ -211,14 +201,14 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回复: cccxcvxv&nbsp;&nbsp;2012-12-05 11:15" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2818');"
-                                                                        href="javascript:void(0);">[武路]回复: cccxcvxv </a>
+                                                                    <a href="javascript:void(0);"></a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-12-05 11:15
+                                                                    &nbsp;&nbsp;
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -227,14 +217,14 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="符晓蓉&nbsp;&nbsp;回执：转发: 回复: 季度奖金发放&nbsp;&nbsp;2012-12-04 17:00" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2812');"
-                                                                        href="javascript:void(0);">[符晓蓉]回执：转发: 回复: 季度奖金发放 </a>
+                                                                    <a href="javascript:void(0);"></a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-12-04 17:00
+                                                                    &nbsp;&nbsp;
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -243,14 +233,14 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="夏雨&nbsp;&nbsp;回执：回复: 回复: 111111111&nbsp;&nbsp;2012-11-21 15:19" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2787');"
-                                                                        href="javascript:void(0);">[夏雨]回执：回复: 回复: 111111111 </a>
+                                                                    <a href="javascript:void(0);"></a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-11-21 15:19
+                                                                    &nbsp;&nbsp;
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -275,26 +265,28 @@
                     </div>
                 </td>
             </tr>
-             <tr>
-                <td style="padding-left:10px;padding-right:10px;padding-top:10px">
+            <tr>
+                <td style="padding-left: 10px; padding-right: 10px; padding-top: 10px">
                     <div class="oa_portlet">
-                        <div class="oa_portlet_y_3">
+                        <%--<div class="oa_portlet_y_3">--%>
+                        <div class="oa_portlet_b_2">
                             <div class="oa_portlet_tr">
                             </div>
                             <div class="oa_portlet_tc">
-                                <div class="titleIco mnu-note_go">
+                                <%-- <div class="titleIco mnu-note_go">--%>
+                                <div class="titleIco   comment_blue">
                                 </div>
                                 &nbsp;最近工作日历</div>
                             <div class="oa_portlet_tl">
                             </div>
-                            <%--     <div class="oa_portlet_tool">
-                    <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','toggleCollapse');" class="oa_portlet_btn btn1">
-                    </div>
-                    <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
+                            <div class="oa_portlet_tool">
+                                <div onclick="" class="oa_portlet_btn btn1">
+                                </div>
+                                <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','moreData');" class="oa_portlet_btn btn2">
                     </div>
                     <div onclick="Ext.parf.reflect.ExtCmp('ext-gen128','colsePortlet');" class="oa_portlet_btn btn3">
-                    </div>
-                </div>--%>
+                    </div>--%>
+                            </div>
                         </div>
                         <div class="oa_portlet_ml">
                             <div class="oa_portlet_mr">
@@ -311,9 +303,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]公文发文-WI_001814武路&nbsp;&nbsp;审批已接收&nbsp;&nbsp;2012-12-28 15:02"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000003207','wf.officework.docmanage.senddoc');"
-                                                                        href="javascript:void(0);">[公文流程]公文发文-WI_001814 </a>
+                                                                    <a href="javascript:void(0);">12月16日下午三点开小组会 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-12-28 15:02
@@ -329,9 +319,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]文件收文-WI_001704胡杰&nbsp;&nbsp;审阅已接收&nbsp;&nbsp;2012-11-22 21:32"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002980','wf.officework.filedoc.recivedoc');"
-                                                                        href="javascript:void(0);">[公文流程]文件收文-WI_001704 </a>
+                                                                    <a href="javascript:void(0);">11月8日下午2-3点参加家长会 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-11-22 21:32
@@ -347,9 +335,7 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[项目流程]工程项目流程-WI_001536胡杰&nbsp;&nbsp;项目部已接收&nbsp;&nbsp;2012-11-14 13:27"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002893','wf_wffrom_710');"
-                                                                        href="javascript:void(0);">[项目流程]工程项目流程-WI_001536 </a>
+                                                                    <a href="javascript:void(0);">本周三评估新教材 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     2012-11-14 13:27
@@ -365,12 +351,9 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[行政流程]公务接待申请 (表格型表单)-WI_001618武路&nbsp;&nbsp;总经理已接收&nbsp;&nbsp;2012-11-03 14:15"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002776','wf_wffrom_741');"
-                                                                        href="javascript:void(0);">[行政流程]公务接待申请 (表格型表单)-WI_001618 </a>
+                                                                    <a href="javascript:void(0);"></a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    2012-11-03 14:15
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -383,12 +366,9 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="[公文流程]文件收文-WI_001610胡杰&nbsp;&nbsp;审批已接收&nbsp;&nbsp;2012-10-30 17:39"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen128','openDetail','WF_000002746','wf.officework.filedoc.recivedoc');"
-                                                                        href="javascript:void(0);">[公文流程]文件收文-WI_001610 </a>
+                                                                    <a href="javascript:void(0);"></a>
                                                                 </td>
                                                                 <td width="120" align="right">
-                                                                    2012-10-30 17:39
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -412,7 +392,7 @@
                         </div>
                     </div>
                 </td>
-                <td  style="padding-left:10px;padding-right:10px; padding-top:10px">
+                <td style="padding-left: 10px; padding-right: 10px; padding-top: 10px">
                     <div class="oa_portlet">
                         <div class="oa_portlet_b_2">
                             <div class="oa_portlet_tr">
@@ -424,31 +404,30 @@
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','toggleCollapse');" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn1">
                                 </div>
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
+                                <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
                                 <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','colsePortlet');" class="oa_portlet_btn btn3">
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="oa_portlet_ml">
                             <div class="oa_portlet_mr">
-                                <div id="Div1" class="oa_portlet_mc">
-                                    <div id="Div2" class=" x-panel x-panel-noborder">
-                                        <div class="x-panel-bwrap" id="Div3">
-                                            <div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="Div4">
+                                <div class="oa_portlet_mc">
+                                    <div>
+                                        <div>
+                                            <div>
                                                 <div class="bwarp">
                                                     <table width="100%">
                                                         <tbody>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="胡杰&nbsp;&nbsp;回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认&nbsp;&nbsp;2013-01-03 16:44"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2852');" href="javascript:void(0);">
-                                                                        [胡杰]回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认 </a>
+                                                                    <a href="javascript:void(0);">长银中心本周工作报告 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2013-01-03 16:44
@@ -460,11 +439,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回执：回复: cccxcvxv&nbsp;&nbsp;2012-12-06 19:55" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2819');"
-                                                                        href="javascript:void(0);">[武路]回执：回复: cccxcvxv </a>
+                                                                    <a href="javascript:void(0);">中关村分校上周工作总结 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2012-12-06 19:55
@@ -476,11 +455,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回复: cccxcvxv&nbsp;&nbsp;2012-12-05 11:15" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2818');"
-                                                                        href="javascript:void(0);">[武路]回复: cccxcvxv </a>
+                                                                    <a href="javascript:void(0);">上地分校上周工作总结 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2012-12-05 11:15
@@ -492,11 +471,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="符晓蓉&nbsp;&nbsp;回执：转发: 回复: 季度奖金发放&nbsp;&nbsp;2012-12-04 17:00" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2812');"
-                                                                        href="javascript:void(0);">[符晓蓉]回执：转发: 回复: 季度奖金发放 </a>
+                                                                    <a href="javascript:void(0);">海淀分校上周工作总结 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2012-12-04 17:00
@@ -508,11 +487,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
                                                                 <td class="over">
-                                                                    <a ext:qtip="夏雨&nbsp;&nbsp;回执：回复: 回复: 111111111&nbsp;&nbsp;2012-11-21 15:19" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2787');"
-                                                                        href="javascript:void(0);">[夏雨]回执：回复: 回复: 111111111 </a>
+                                                                    <a href="javascript:void(0);">朝阳分校上周工作总结 </a>
                                                                 </td>
                                                                 <td width="120" align="right">
                                                                     &nbsp;&nbsp;2012-11-21 15:19
@@ -541,7 +520,7 @@
                 </td>
             </tr>
             <tr>
-            <td colspan="2"  style="padding-left:10px;padding-right:10px; padding-top:10px">
+                <td colspan="2" style="padding-left: 10px; padding-right: 10px; padding-top: 10px">
                     <div class="oa_portlet">
                         <div class="oa_portlet_b_2">
                             <div class="oa_portlet_tr">
@@ -549,106 +528,133 @@
                             <div class="oa_portlet_tc">
                                 <div class="titleIco mnu-comment_blue">
                                 </div>
-                                &nbsp;最新文档</div>
+                                &nbsp;最新文档库</div>
                             <div class="oa_portlet_tl">
                             </div>
                             <div class="oa_portlet_tool">
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','toggleCollapse');" class="oa_portlet_btn btn1">
+                                <div onclick="" class="oa_portlet_btn btn1">
                                 </div>
-                                <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
+                                <%-- <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','moreData');" class="oa_portlet_btn btn2">
                                 </div>
                                 <div onclick="Ext.parf.reflect.ExtCmp('ext-gen133','colsePortlet');" class="oa_portlet_btn btn3">
-                                </div>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="oa_portlet_ml">
                             <div class="oa_portlet_mr">
-                                <div id="Div5" class="oa_portlet_mc">
-                                    <div id="Div6" class=" x-panel x-panel-noborder">
-                                        <div class="x-panel-bwrap" id="Div7">
-                                            <div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="Div8">
+                                <div class="oa_portlet_mc">
+                                    <div>
+                                        <div>
+                                            <div>
                                                 <div class="bwarp">
                                                     <table width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="16" align="left">
+                                                                </th>
+                                                                <th align="left">
+                                                                    分类
+                                                                </th>
+                                                                <th align="left">
+                                                                    名称
+                                                                </th>
+                                                                <th align="left">
+                                                                    版本号
+                                                                </th>
+                                                                <th align="left">
+                                                                    提交都
+                                                                </th>
+                                                                <th align="left">
+                                                                    最后修改时间
+                                                                </th>
+                                                                <th align="left">
+                                                                    最后修改者
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a ext:qtip="胡杰&nbsp;&nbsp;回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认&nbsp;&nbsp;2013-01-03 16:44"
-                                                                        onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2852');" href="javascript:void(0);">
-                                                                        [胡杰]回执：回复: 《公司全体部门绩效考核表》（征求稿）内容确认 </a>
+                                                                <td>
+                                                                    图书管
                                                                 </td>
-                                                                <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2013-01-03 16:44
+                                                                <td>
+                                                                    如何口语水平5
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="line" colspan="3">
+                                                                <td>
+                                                                    V2.1
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                <td>
+                                                                    张三
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回执：回复: cccxcvxv&nbsp;&nbsp;2012-12-06 19:55" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2819');"
-                                                                        href="javascript:void(0);">[武路]回执：回复: cccxcvxv </a>
+                                                                <td>
+                                                                    2012-12-06 19:55
                                                                 </td>
-                                                                <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-12-06 19:55
+                                                                <td>
+                                                                    李四
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="line" colspan="3">
+                                                                <td class="line" colspan="7">
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a ext:qtip="武路&nbsp;&nbsp;回复: cccxcvxv&nbsp;&nbsp;2012-12-05 11:15" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2818');"
-                                                                        href="javascript:void(0);">[武路]回复: cccxcvxv </a>
+                                                                <td>
+                                                                    资料库
                                                                 </td>
-                                                                <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-12-05 11:15
+                                                                <td>
+                                                                    新华词典电子版
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="line" colspan="3">
+                                                                <td>
+                                                                    V1.1
                                                                 </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                <td>
+                                                                    张三
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a ext:qtip="符晓蓉&nbsp;&nbsp;回执：转发: 回复: 季度奖金发放&nbsp;&nbsp;2012-12-04 17:00" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2812');"
-                                                                        href="javascript:void(0);">[符晓蓉]回执：转发: 回复: 季度奖金发放 </a>
+                                                                <td>
+                                                                    2012-12-06 19:55
                                                                 </td>
-                                                                <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-12-04 17:00
+                                                                <td>
+                                                                    李四
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="line" colspan="3">
+                                                                <td class="line" colspan="7">
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td width="16">
-                                                                    <img width="16" height="16" ext:qtip="已读" src="/images/communication/feedback_isread_1.png">
+                                                                    <div class="ico">
+                                                                    </div>
                                                                 </td>
-                                                                <td class="over">
-                                                                    <a ext:qtip="夏雨&nbsp;&nbsp;回执：回复: 回复: 111111111&nbsp;&nbsp;2012-11-21 15:19" onclick="Ext.parf.reflect.ExtCmp('ext-gen133','openDetail','2787');"
-                                                                        href="javascript:void(0);">[夏雨]回执：回复: 回复: 111111111 </a>
+                                                                <td>
+                                                                    共享文档
                                                                 </td>
-                                                                <td width="120" align="right">
-                                                                    &nbsp;&nbsp;2012-11-21 15:19
+                                                                <td>
+                                                                    哈利波特观后感
+                                                                </td>
+                                                                <td>
+                                                                    V1.1
+                                                                </td>
+                                                                <td>
+                                                                    张三
+                                                                </td>
+                                                                <td>
+                                                                    2012-12-06 19:55
+                                                                </td>
+                                                                <td>
+                                                                    李四
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="line" colspan="3">
+                                                                <td class="line" colspan="7">
                                                                 </td>
                                                             </tr>
                                                         </tbody>
