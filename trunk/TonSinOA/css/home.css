@@ -136,6 +136,9 @@
 .oa_portlet .btn3 {
     background: url("../images/portlet/tools.gif") no-repeat scroll -36px 0 transparent;
 }
+.oa_portlet .btn4{
+    background: url("../images/portlet/genduo.gif") no-repeat transparent;
+}
 .oa_portlet .oa_portlet_ml {
     background: url("../images/portlet/oa_portlet_ml.jpg") repeat-y scroll left center transparent;
 }
