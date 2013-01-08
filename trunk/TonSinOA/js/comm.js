@@ -13,4 +13,11 @@
                 }
             ]
         });
-}
+        }
+
+        function addTabContent(typID, title, href) {
+            var tabs = Ext.getCmp("TabPanelID");
+            var pnl = new BuildGridView(typID, title, href).gridView;
+            tabs.add(pnl);
+            tabs.activate(pnl);
+        }
