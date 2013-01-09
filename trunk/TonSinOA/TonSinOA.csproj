@@ -428,7 +428,11 @@
     <Content Include="images\menus\baogao.gif" />
     <Content Include="images\menus\bbs.gif" />
     <Content Include="images\menus\flow.gif" />
+    <Content Include="images\menus\icon-inbox.png" />
+    <Content Include="images\menus\icon-new-sms.gif" />
+    <Content Include="images\menus\icon-outbox.png" />
     <Content Include="images\menus\system.png" />
+    <Content Include="images\menus\user.png" />
     <Content Include="images\notify_new.gif" />
     <Content Include="images\option_tabs.gif" />
     <Content Include="images\org_select.png" />
