@@ -2467,7 +2467,7 @@ TableComment 0 新宋体,8,N</a:FontList>
 <o:TableSymbol Id="o58">
 <a:CreationDate>1357824338</a:CreationDate>
 <a:ModificationDate>1357824440</a:ModificationDate>
-<a:Rect>((-748,-58524), (10726,-54277))</a:Rect>
+<a:Rect>((-935,-58526), (10913,-54278))</a:Rect>
 <a:LineColor>12615680</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -8971,11 +8971,11 @@ End</a:Procedure.Text>
 </o:Table>
 <o:Table Id="o59">
 <a:ObjectID>B35AD576-9C5E-406B-BEC8-5EC5A61BBDBF</a:ObjectID>
-<a:Name>OA_TB_SM_UserFucs(用户功能表)</a:Name>
-<a:Code>OA_TB_SM_UserFucs</a:Code>
+<a:Name>OA_TB_SM_UserFuncs(用户功能表)</a:Name>
+<a:Code>OA_TB_SM_UserFuncs</a:Code>
 <a:CreationDate>1357824338</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1357824543</a:ModificationDate>
+<a:ModificationDate>1357825910</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
 <o:Column Id="o383">
