@@ -17,7 +17,7 @@ namespace TonSinOA.DAL
         /// <param name="StartDate">开始时间</param>
         /// <param name="EndDate">结束时间</param>
         /// <returns></returns>
-        public IList<EventInfo> GetUserEventList(string StartDate, string EndDate)
+        public IList<EventInfo> GetUserEventList(int UserID,string StartDate, string EndDate)
         {
             return null;
         }
