@@ -71,9 +71,9 @@ namespace TonSinOA.Ajax
                          break;
                      case "7":
                          nodes.Add(new ExtTreeNode { TypeTitle = "最新消息", TypeEName = "最新消息", text = "最新消息", TypeID = "704", id = "704", IsRoot = false, leaf = true, PID = node, action = "MsgManager/NewMsg.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "写消息", TypeEName = "写消息", text = "写消息", TypeID = "701", id = "701", IsRoot = false, leaf = true, PID = node, action = "MsgManager/SendMsg.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "发件箱", TypeEName = "发件箱", text = "发件箱", TypeID = "702", id = "702", IsRoot = false, leaf = true, PID = node, action = "MsgManager/SendBox.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "收件箱", TypeEName = "收件箱", text = "收件箱", TypeID = "703", id = "703", IsRoot = false, leaf = true, PID = node, action = "MsgManager/ReceiveBox.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "写消息", TypeEName = "写消息", text = "写消息", TypeID = "701", id = "701", IsRoot = false, leaf = true, PID = node, action = "MsgManager/SendMsg.aspx",icon="images/menus/icon-new-sms.gif" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "发件箱", TypeEName = "发件箱", text = "发件箱", TypeID = "702", id = "702", IsRoot = false, leaf = true, PID = node, action = "MsgManager/SendBox.aspx",icon="images/menus/icon-outbox.png"});
+                         nodes.Add(new ExtTreeNode { TypeTitle = "收件箱", TypeEName = "收件箱", text = "收件箱", TypeID = "703", id = "703", IsRoot = false, leaf = true, PID = node, action = "MsgManager/ReceiveBox.aspx", icon = "images/menus/icon-inbox.png" });
                          break;
                      default: break;
                  }

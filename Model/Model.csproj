@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BbsGroupInfo.cs" />
+    <Compile Include="BbsSectionInfo.cs" />
     <Compile Include="CalendarInfo.cs" />
     <Compile Include="DocumentCommentsInfo.cs" />
     <Compile Include="DocumentInfo.cs" />
@@ -56,6 +58,8 @@
     <Compile Include="DocTypeInfo.cs" />
     <Compile Include="DutyInfo.cs" />
     <Compile Include="NoticeInfo.cs" />
+    <Compile Include="PostInfo.cs" />
+    <Compile Include="ReplyInfo.cs" />
     <Compile Include="TaskInfo.cs" />
     <Compile Include="TypeCodeInfo.cs" />
     <Compile Include="UploadFileInfo.cs" />
