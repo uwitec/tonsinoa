@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{813C5561-2A7
 		DLL\AspNetPager.dll = DLL\AspNetPager.dll
 		DLL\Jayrock.Json.dll = DLL\Jayrock.Json.dll
 		DLL\log4net.dll = DLL\log4net.dll
+		DLL\Newtonsoft.Json.dll = DLL\Newtonsoft.Json.dll
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataModel", "DataModel", "{56BADA6C-E875-45D2-872E-84B57B5A33B5}"
