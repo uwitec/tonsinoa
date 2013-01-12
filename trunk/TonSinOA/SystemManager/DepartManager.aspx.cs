@@ -30,9 +30,6 @@ namespace TonSinOA.SystemManager
             dgDeptView.DataBind();
         }
 
-        protected void AspNetPager1_PageChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -4,8 +4,13 @@ js资源文件定义
 */
 var lang = {};
 lang.global = {
+    add:'添加',
+    edit:'编辑',
+    del:'删除',
     submit: '提交',
-    cancel: '取消'
+    cancel: '取消',
+    order:'序号',
+    operate:'操作'
 };
 /*按模块分*/
 lang.module = {
@@ -14,10 +19,13 @@ lang.module = {
 lang.module.system = {
     //todo
     depart: {
-    
-    msg1:'部门名称不能为空！',
-    msg2:''
-}
+        adddep: '添加部门',
+        editdep: '编辑部门',
+        depmanager: '部门设置',
+
+        msg1: '部门名称不能为空！',
+        msg2: '您确定要删除此部门吗？'
+    }
 }
 //论坛
 lang.module.bbs = {

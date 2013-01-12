@@ -8,6 +8,7 @@ using System.Threading;
 using System.Web.UI.WebControls;
 using TonSinOA.DAL;
 using Resources;
+using TonSinOA.Model;
 namespace TonSinOA.SystemManager
 {
     public partial class AddDept :BasePage
@@ -20,7 +21,7 @@ namespace TonSinOA.SystemManager
         protected void btnSave_Click(object sender, EventArgs e)
         {
             DepartmentDAL departDal = new DepartmentDAL();
-            Model.DepartmentInfo departInfo = new Model.DepartmentInfo();
+            DepartmentInfo departInfo = new DepartmentInfo();
             departInfo.DepName = txtDepName.Text;
             departInfo.Remark = txtRemark.Value;
 

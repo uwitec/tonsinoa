@@ -35,9 +35,9 @@ namespace TonSinOA.Model{
         /// </summary>
 		public int DutyID { get; set; }
         /// <summary>
-        /// 组号
+        /// 是否为系统管理员 1 是 0否
         /// </summary>
-        public int GroupID { get; set; }
+        public int IsAdmin { get; set; }
 		/// <summary>
         /// Remark
         /// </summary>
@@ -53,7 +53,7 @@ namespace TonSinOA.Model{
 		/// <summary>
         /// Created
         /// </summary>
-		public DateTime Created { get; set; }
+		public DateTime Created { get; set; } 
 		/// <summary>
         /// Creator
         /// </summary>

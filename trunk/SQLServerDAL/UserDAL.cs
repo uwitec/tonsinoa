@@ -13,7 +13,7 @@ namespace TonSinOA.DAL
    public class UserDAL
     {
        /// <summary>
-       /// 分页获取用户列表(包含部门信息、职务信息、组信息）
+       /// 分页获取用户列表(包含部门信息、职务信息）
        /// </summary>
        /// <param name="PageSize"></param>
        /// <param name="PageIndex"></param>
@@ -70,6 +70,16 @@ namespace TonSinOA.DAL
        /// <param name="FuncID">权限ID 支持多个</param>
        /// <returns></returns>
        public bool AddFuncsToUser(int UserID, List<int> FuncID)
+       {
+           return true;
+       }
+       /// <summary>
+       /// 添加组到用户
+       /// </summary>
+       /// <param name="UserID">用户ID</param>
+       /// <param name="GroupID">组ID 支持多个</param>
+       /// <returns></returns>
+       public bool AddGroupToUser(int UserID, List<int> GroupID)
        {
            return true;
        }
