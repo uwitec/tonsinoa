@@ -26,7 +26,7 @@ namespace TonSinOA.DAL
         /// <param name="DepID">新增时传0 </param>
         /// <param name="DepName"></param>
         /// <returns></returns>
-        public bool Exists(int DepID, int DepName)
+        public bool Exists(int DepID, string DepName)
         {
             string procName = "OA_SP_SM_Department_Exists";
             LogBuilder log = new LogBuilder();

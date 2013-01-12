@@ -117,8 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>取消</comment>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>下一页</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+    <comment>保存</comment>
   </data>
   <data name="TestKey" xml:space="preserve">
     <value>你发世界，我是测试值</value>

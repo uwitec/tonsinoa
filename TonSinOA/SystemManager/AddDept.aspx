@@ -4,19 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>添加部门</title>
+    <title><%=Resources.lang.AddDep %></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
-    <script src="../js/artDialog/iframeTools.source.js" type="text/javascript">
-        
+    <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/lang.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#btnSave").click(function () {
+                if ($("#txtDepName").val() == "") {
+                    alert(lang.module.system.depart.msg1);
+                    return false;
+                }
+            });
+        });
     </script>
-    <style type="text/css">
-        #TextArea1
-        {
-            height: 146px;
-            width: 288px;
-        }
-    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,37 +29,44 @@
                     <table border="0" cellpadding="3" cellspacing="1" style="width: 100%; background-color: #d6eef1">
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White">
-                                部门名称：
+                               <%=Resources.lang.DepName %>：
+                               <%--部门名称：--%>
 
                             </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtDepName" CssClass="BigInput" runat="server"></asp:TextBox>
                                 &nbsp;&nbsp;&nbsp;
                                
                             </td>
                         </tr>
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White;">
-                                上级部门：</td>
+                                <%=Resources.lang.ParentDep %>：
+                                <%--上级部门：--%>
+                                </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <asp:TextBox ID="TextBox2" runat="server" Width="115px"></asp:TextBox>
-                                <input id="Button1" type="button" value="选择" />
+                                <asp:TextBox ID="txtParent" runat="server" Width="115px"></asp:TextBox>
+                                <input id="hidparentID" runat="server" type="hidden" value="" />
+                                <input id="Button1" runat="server" type="button" value="<%$Resources:lang,Choice %>" />
                             </td>
                         </tr>
                         <tr>
                             <td align="right" style="white-space: nowrap; background-color: White; ">
-                                部门描述：</td>
+                                <%=Resources.lang.DepRemark %>：
+                               <%-- 部门描述：--%>
+                                </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <textarea id="TextArea1" name="S1"></textarea></td>
+                                <textarea id="txtRemark" class="BigInput" name="S1" runat="server" rows="10" cols="50"></textarea></td>
                         </tr>
                         <tr>
                             <td style="white-space: nowrap; background-color: White; ">
                                
                             </td>
                             <td align="left" style="white-space: nowrap; background-color: White; ">
-                                <asp:Button ID="Button2" runat="server" Text="保 存" CssClass="btnsubmit1" />
+                                <asp:Button ID="btnSave" runat="server" Text="<%$ Resources:lang,Save %>" 
+                                    CssClass="btnsubmit1" onclick="btnSave_Click" />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:Button ID="Button3" runat="server" Text="关 闭" CssClass="btnsubmit1" OnClientClick="art.dialog.close();return false;" />
+                                <asp:Button ID="btnClose" runat="server" Text="<%$ Resources:lang,Close %>" CssClass="btnsubmit1" OnClientClick="art.dialog.close();return false;" />
                             </td>
                         </tr>
                     </table>
