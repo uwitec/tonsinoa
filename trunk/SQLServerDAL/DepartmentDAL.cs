@@ -73,7 +73,7 @@ namespace TonSinOA.DAL
         /// <summary>
         ///  增加一条数据
         /// </summary>
-        public int Add(DepartmentInfo model)
+        public bool Add(DepartmentInfo model,out int DeptID)
         {
             string procName = "OA_SP_SM_Department_ADD";
             LogBuilder log = new LogBuilder();
@@ -86,7 +86,7 @@ namespace TonSinOA.DAL
 
             log.Append("DepartmentInfo", model);
             #endregion
-            int DeptID = 0;
+             DeptID = 0;
             try
             {
                 int rowsAffected;
@@ -124,7 +124,7 @@ namespace TonSinOA.DAL
             {
                 log.Debug();
             }
-            return DeptID;
+            return DeptID>0;
         }
 
         /// <summary>

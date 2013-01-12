@@ -36,8 +36,9 @@ namespace TonSinOA.SystemManager
             bool result = departDal.Exists(0, departInfo.DepName);
             if (result)
             {
-                int depID = departDal.Add(departInfo);
-                if (depID > 0)
+                int depID = 0;
+                result =departDal.Add(departInfo,out depID);
+                if (result)
                 {
                     TsOAPage.ShowMsgRefresh(this.Page, lang.SaveSuccess);
                     return;
