@@ -64,7 +64,7 @@ namespace TonSinOA.DAL
 		/// <summary>
 		///  增加一条数据
 		/// </summary>
-		public int Add(DutyInfo model)
+		public bool Add(DutyInfo model,out int DutyID)
 		{
             string procName = "OA_SP_SM_Duty_ADD";
             LogBuilder log = new LogBuilder();
@@ -77,7 +77,7 @@ namespace TonSinOA.DAL
 
             log.Append("DutyInfo", model);
             #endregion
-            int DutyID = 0;
+             DutyID = 0;
             try
             {
 			int rowsAffected;
@@ -116,7 +116,7 @@ namespace TonSinOA.DAL
             {
                 log.Debug();
             }
-            return DutyID;
+            return DutyID > 0;
 		}
 
 		/// <summary>

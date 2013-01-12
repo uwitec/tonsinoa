@@ -10,7 +10,7 @@ namespace TonSinOA.Model
     /// </summary>
     public class NoticeInfo
     {
-
+        public int RowId { get; set; }
         /// <summary>
         /// NoticeID
         /// </summary>
