@@ -148,8 +148,18 @@ namespace TonSinOA.DAL
            PostID = 0;
            return true;
        }
-
-      // public bool AddPoll(PostInfo postInfo,
+       /// <summary>
+       /// 发起投票
+       /// </summary>
+       /// <param name="postInfo"></param>
+       /// <param name="pollinfo"></param>
+       /// <param name="PostID"></param>
+       /// <returns></returns>
+       public bool AddPoll(PostInfo postInfo,PollInfo pollinfo,out int PostID)
+       {
+            PostID = 0;
+            return true;
+       }
        /// <summary>
        /// 删除帖子（同时回复表中数据一并删除）如果是投票则应表投票对应的信息也删除
        /// </summary>

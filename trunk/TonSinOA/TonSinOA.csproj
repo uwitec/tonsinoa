@@ -70,6 +70,7 @@
     <Content Include="Bbs\SubArea\AddSubArea.aspx" />
     <Content Include="Bbs\SubArea\EditSubArea.aspx" />
     <Content Include="Bbs\SubArea\ListSubArea.aspx" />
+    <Content Include="Calendar\AddEvent.aspx" />
     <Content Include="Calendar\Calendar.aspx" />
     <Content Include="css\easyui\default\accordion.css" />
     <Content Include="css\easyui\default\calendar.css" />
@@ -1111,6 +1112,13 @@
     </Compile>
     <Compile Include="Bbs\SubArea\ListSubArea.aspx.designer.cs">
       <DependentUpon>ListSubArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Calendar\Calendar.aspx.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>

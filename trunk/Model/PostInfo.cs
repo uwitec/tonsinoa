@@ -56,4 +56,5 @@ namespace TonSinOA.Model
        public int State { get; set; }
 
     }
+    
 }

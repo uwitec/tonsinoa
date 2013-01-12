@@ -73,6 +73,12 @@
                 dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
                 firstHour: 0, //默认是6，只对agenda视图有效果
                 // defaultEventMinutes: 120, //如果事件没有结束时间，默认120分钟长度 
+                loading: function (bool) {  //加载时提示进度
+                    if (bool) {
+                        
+                    }
+
+                },
                 //日程点击：添加日程
                 dayClick: function (date, allDay, jsEvent, view) {
                     //console.debug(date + allDay);
@@ -113,9 +119,11 @@
             });
             $(".prve-w").click(function () {
                 $('#calendar').fullCalendar('prev');
+                SetHeaderTitle();
             });
             $(".next-e").click(function () {
                 $('#calendar').fullCalendar('next');
+                SetHeaderTitle();
             });
             //            $('#Button1').click(function () {
             //                var obj = $("#calendar").fullCalendar('getView')
@@ -205,7 +213,7 @@
                         <div class="header-left">
                             <input type="hidden" name="BTN_OP" value="" />
                             <input type="hidden" name="OVER_STATUS" value="" />
-                            <a class="ToolBtn ToolBtn-active"><span id="spToday" title="转到今天">今天</span></a>
+                            <a class="ToolBtn"><span id="spToday" title="转到今天">今天</span></a>
                             <%--<!-------------- 年 ------------>
                             <a title="上一年" class="ArrowButtonL" href="javascript:set_year(-1);"></a>
                             <select onchange="My_Submit();" class="SmallSelect" name="YEAR">
@@ -296,9 +304,9 @@
                         <div class="header-center">
                             <%--<input id="Button1" type="button" value="上" />
                             <input id="Button2" type="button" value="下" />--%>
-                            <a class="prve-w"></a>
-                            <span id="HeaderTitle"></span>
-                            <a class="next-e"></a>
+                            <div class="prve-w"></div>
+                            <span id="HeaderTitle" style="vertical-align:middle"></span>
+                            <div class="next-e"></div>
                            <%-- <div class="fc-header-center">
                                 <span class="fc-button fc-button-prev fc-state-default fc-corner-left fc-corner-right">
                                     <span class="fc-button-inner"><span class="fc-button-content"><span class="triangle-w">
