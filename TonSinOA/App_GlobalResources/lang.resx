@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+    <comment>添加</comment>
+  </data>
   <data name="AddDep" xml:space="preserve">
     <value>添加部门</value>
     <comment>添加部门</comment>
@@ -133,6 +137,14 @@
     <value>关 闭</value>
     <comment>关 闭</comment>
   </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+    <comment>删除</comment>
+  </data>
+  <data name="DepList" xml:space="preserve">
+    <value>部门列表</value>
+    <comment>部门列表</comment>
+  </data>
   <data name="DepName" xml:space="preserve">
     <value>部门名称</value>
     <comment>部门名称</comment>
@@ -141,12 +153,28 @@
     <value>部门备注</value>
     <comment>部门备注</comment>
   </data>
+  <data name="DepSet" xml:space="preserve">
+    <value>部门设置</value>
+    <comment>部门设置</comment>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+    <comment>编辑</comment>
+  </data>
   <data name="NameExists" xml:space="preserve">
     <value>{0}已经存在！</value>
     <comment>某某名称已经存在</comment>
   </data>
   <data name="Next" xml:space="preserve">
     <value>下一页</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>操作</value>
+    <comment>操作</comment>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>序号</value>
+    <comment>序号</comment>
   </data>
   <data name="ParentDep" xml:space="preserve">
     <value>上级部门</value>

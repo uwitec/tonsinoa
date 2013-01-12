@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查找类似 添加 的本地化字符串。
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 添加部门 的本地化字符串。
         /// </summary>
         internal static string AddDep {
@@ -97,6 +106,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查找类似 删除 的本地化字符串。
+        /// </summary>
+        internal static string Del {
+            get {
+                return ResourceManager.GetString("Del", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 部门列表 的本地化字符串。
+        /// </summary>
+        internal static string DepList {
+            get {
+                return ResourceManager.GetString("DepList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 部门名称 的本地化字符串。
         /// </summary>
         internal static string DepName {
@@ -115,6 +142,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查找类似 部门设置 的本地化字符串。
+        /// </summary>
+        internal static string DepSet {
+            get {
+                return ResourceManager.GetString("DepSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 编辑 的本地化字符串。
+        /// </summary>
+        internal static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0}已经存在！ 的本地化字符串。
         /// </summary>
         internal static string NameExists {
@@ -129,6 +174,24 @@ namespace Resources {
         internal static string Next {
             get {
                 return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 操作 的本地化字符串。
+        /// </summary>
+        internal static string Operate {
+            get {
+                return ResourceManager.GetString("Operate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 序号 的本地化字符串。
+        /// </summary>
+        internal static string Order {
+            get {
+                return ResourceManager.GetString("Order", resourceCulture);
             }
         }
         

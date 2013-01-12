@@ -1,24 +1,23 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DepartManager.aspx.cs" Inherits="TonSinOA.SystemManager.DepartManger" %>
 
-<%@ Register assembly="AspNetPager" namespace="Wuqi.Webdiyer" tagprefix="webdiyer" %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>部门设置</title>
+    <title><%=Resources.lang.DepSet %></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    <script src="../js/lang.js" type="text/javascript"></script>
     <script type="text/javascript">
 
 
         function addDept() {
 
             art.dialog.open('SystemManager/AddDept.aspx', {
-                title: '添加部门',
+                title: lang.module.system.depart.adddep,
                 lock: true,
                 fixed: true //固定定位
             });
@@ -26,10 +25,13 @@
         function EditDept(id) {
 
             art.dialog.open('SystemManager/EditDept.aspx?ID='+id, {
-                title: '编辑部门',
+                title: lang.module.system.depart.editdep,
                 lock: true,
                 fixed: true //固定定位
             });
+        }
+        function delDept() {
+           return confirm(lang.module.system.depart.msg2);
         }
     </script>
 </head>
@@ -40,15 +42,15 @@
             <tr>
                 <td width="140">
                     <h1>
-                        部门设置</h1>
+                        <%= Resources.lang.DepSet %></h1>
                 </td>
                 <td class="actions" width="*">
                     <table cellspacing="0" cellpadding="0" border="0" align="right">
                         <tr>
                          
                        
-                            <td class="active">部门列表</td>
-                            <td><a href="#" onclick="javascript:addDept()">添加部门</a></td>
+                            <td class="active"><%= Resources.lang.DepList %></td>
+                            <td><a href="#" onclick="javascript:addDept()"><%= Resources.lang.AddDep %></a></td>
                         </tr>
                     </table>
                 </td>
@@ -76,14 +78,17 @@
                                                         <table width="100%" cellpadding="2" cellspacing="0" class="dataTable" align="center">
                                                             <tr class="dataTableHead" align="center">
                                                                 <td style="width: 60px">
-                                                                    序号
+                                                                    <%--序号--%>
+                                                                    <%= Resources.lang.Order %>
                                                                 </td>
                                                                 <td width="*">
-                                                                    部门名称
+                                                                    <%--部门名称--%>
+                                                                    <%= Resources.lang.DepName %>
                                                                 </td>
                                                                
                                                                 <td style="width: 190px">
-                                                                    操作
+                                                                    <%--操作--%>
+                                                                    <%= Resources.lang.Operate %>
                                                                 </td>
                                                             </tr>
                                                     </HeaderTemplate>
@@ -97,10 +102,10 @@
                                                             </td>
                                                           
                                                             <td align="center">
-                                                                <a href="#" onclick='<%# "EditDept("+ Eval("DepID")+")"%>'>编辑</a> |
+                                                                <a href="#" onclick='<%# "EditDept("+ Eval("DepID")+")"%>'> <%= Resources.lang.Edit %></a> |
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" BorderWidth="0" 
                                                 CausesValidation="false" CommandArgument='<%# Eval("DepID") %>' 
-                                                CommandName="Delete" OnClientClick="return confirm('您确定要删除此部门吗？')">删除</asp:LinkButton>
+                                                CommandName="Delete" OnClientClick="return delDept()"><%= Resources.lang.Del %></asp:LinkButton>
                                        
                                                             </td>
                                                         </tr>
