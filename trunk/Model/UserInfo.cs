@@ -34,6 +34,10 @@ namespace TonSinOA.Model{
         /// DutyID
         /// </summary>
 		public int DutyID { get; set; }
+        /// <summary>
+        /// 组号
+        /// </summary>
+        public int GroupID { get; set; }
 		/// <summary>
         /// Remark
         /// </summary>

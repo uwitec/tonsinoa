@@ -199,38 +199,4 @@ namespace TonSinOA.Utility
         }
     }
   
-    public class Parameter
-    {
-        //构造函数
-        public Parameter(string name, object value, ParamDirection iDirection)
-        {
-            _Name = name;
-            _Value = value;
-            _Direction = iDirection;
-        }
-        //参数名字
-        private string _Name = "";
-        [JsonDataMember(Name = "Name")]
-        public string Name
-        {
-            get { return _Name; }
-            set { _Name = value; }
-        }
-        //参数值
-        private object _Value = "";
-        [JsonDataMember(Name = "Value")]
-        public object Value
-        {
-            get { return _Value; }
-            set { _Value = value; }
-        }
-        //参数方向,0 输入参数(IN) 1 输出参数(OUT) 2 输入输出参数(INOUT)
-        private ParamDirection _Direction = 0;
-        [JsonDataMember(Name = "Direction")]
-        public ParamDirection Direction
-        {
-            get { return _Direction; }
-            set { _Direction = value; }
-        }
-    }
 }
