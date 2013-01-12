@@ -159,52 +159,11 @@
              },
              eventMouseout: function (event, jsEvent, view) {
                  $('#tip').remove();
-             },events: [
-				{
-					title: 'All Day Event',
-					start: new Date(y, m, 1)
-				},
-				{
-					title: 'Long Event',
-					start: new Date(y, m, d-5),
-					end: new Date(y, m, d-2)
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
-					allDay: false
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d+4, 16, 0),
-					allDay: false
-				},
-				{
-					title: 'Meeting',
-					start: new Date(y, m, d, 10, 30),
-					allDay: false
-				},
-				{
-					title: 'Lunch',
-					start: new Date(y, m, d, 12, 0),
-					end: new Date(y, m, d, 14, 0),
-					allDay: false
-				},
-				{
-					title: 'Birthday Party',
-					start: new Date(y, m, d+1, 19, 0),
-					end: new Date(y, m, d+1, 22, 30),
-					allDay: false
-				},
-				{
-					title: 'Click for Google',
-					start: new Date(y, m, 28),
-					end: new Date(y, m, 29),
-					url: 'http://google.com/'
-				}
-			],
+             },events:
+				[
+               
+                  {  title: "上午12点到2点开会", "start": "2013-01-09 12:30:00", "end": "2013-01-09 15:30:00", allDay: false, "textColor": "#ffffff", "backgroundColor": "yellow", "UserID": 1 }
+                  ],
              //日程点击：添加日程
              dayClick: function (date, allDay, jsEvent, view) {
                  var obj = new Object();
@@ -399,7 +358,7 @@
          if (obj.messagenotice == 1) str = "短信提醒时间：" + $.fullCalendar.formatDate(obj.remindertime, "yyyy-MM-dd HH:mm:ss");
          else { str = "短信提醒未启动"; }
          var eInfo = '<div id="tip"><ul>';
-         eInfo += '<li class="clock">' + '开始：' + $.fullCalendar.formatDate(obj.start, "yyyy-MM-dd HH:mm:ss") + '</br>结束：' + $.fullCalendar.formatDate(obj.end, "yyyy-MM-dd HH:mm:ss") + '</li>';
+         eInfo += '<li class="clock">' + '开始：' + obj.start+ '结束：' + $.fullCalendar.formatDate(obj.end, "yyyy-MM-dd HH:mm:ss") + '</li>';
          eInfo += '<li class="message">' + '日志：' + obj.description + '<br/> </li>';
          //eInfo += '<li>分类：' + obj.title + '</li>';
          eInfo += '<li class="postmessage">' + str + '<br/> </li>';

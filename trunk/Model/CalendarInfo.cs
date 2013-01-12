@@ -2,27 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Jayrock.Json.Conversion;
+using Newtonsoft.Json;
+
 namespace TonSinOA.Model
 {
     public class CalendarInfo
     {
         public  int Id { get; set; }
 
-        [JsonDataMember(Name = "title")]
+        [JsonProperty( "title")]
         public  string Name { get; set; }
 
-        [JsonDataMember(Name = "description")]
+        [JsonProperty( "description")]
         public string Description { get; set; }
 
-        [JsonDataMember(Name = "textColor")]
+        [JsonProperty( "textColor")]
         public  string TextColor { get; set; }
 
-        [JsonDataMember(Name = "backgroundColor")]
+        [JsonProperty( "backgroundColor")]
         public  string BackgroundColor { get; set; }
 
         public int UserID { get; set; }
-        [JsonDataMember(Name = "events")]
+        [JsonProperty( "events")]
        public IList<EventInfo> Events { get; set; }
 
     }

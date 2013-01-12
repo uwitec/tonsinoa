@@ -15,22 +15,21 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 
+
 namespace TonSinOA.Utility
 {
     public static class JsonHelper
     {
-        /// <summary>
-        /// 序列化对象成json
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        //public static string  SeriObject (object obj)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    Jayrock.Json.Conversion.JsonConvert.Export(obj, sb);
-        //    return sb.ToString();
-        //  //  return JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore });
-        //}
+        ///// <summary>
+        ///// 序列化对象成json
+        ///// </summary>
+        ///// <param name="obj"></param>
+        ///// <returns></returns>
+        public static string SeriObject(object obj)
+        {
+
+            return  Newtonsoft.Json.JsonConvert.SerializeObject(obj, Newtonsoft.Json.Formatting.Indented, new Newtonsoft.Json.JsonSerializerSettings() { NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore });
+        }
         /// <summary>
         /// 序列化对象成json
         /// </summary>
@@ -38,6 +37,7 @@ namespace TonSinOA.Utility
         /// <returns></returns>
         public static string SerializeObject(object obj)
         {
+          
             StringBuilder sb = new StringBuilder();
             Jayrock.Json.Conversion.JsonConvert.Export(obj, sb);
             return sb.ToString();
@@ -54,15 +54,15 @@ namespace TonSinOA.Utility
             return Jayrock.Json.Conversion.JsonConvert.Import<T>(json);
         }
         /// <summary>
-        ///// 序列化json对像
-        ///// </summary>
-        ///// <typeparam name="T"></typeparam>
-        ///// <param name="json"></param>
-        ///// <returns></returns>
-        //public static T DescObject<T>(string json)
-        //{
-        //    return Jayrock.Json.Conversion.JsonConvert.Import<T>(json);
-        //}
+        /// 序列化json对像
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="json"></param>
+        /// <returns></returns>
+        public static T DescObject<T>(string json)
+        {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
+        }
         /// <summary>   
         /// DataReader转换为Json   
         /// </summary>   

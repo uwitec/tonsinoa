@@ -2,51 +2,55 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Jayrock.Json.Conversion;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 namespace TonSinOA.Model
 {
    public class EventInfo
     {
-        [JsonDataMember(Name = "objectId")]
+        [JsonProperty("Id")]
         public string Id { get; set; }
 
-        [JsonDataMember(Name = "sourceId")]
-        public string CalendarId { get; set; }
+        [JsonProperty("calendartype")]
+       public string CalendarType { get; set; }
 
-        [JsonDataMember(Name = "title")]
+        [JsonProperty("title")]
         public string Name { get; set; }
 
-        [JsonDataMember(Name = "description")]
+        [JsonProperty("description")]
         public string Description { get; set; }
 
-        [JsonDataMember(Name = "start")]
-        public string StartDate { get; set; }
+        [JsonProperty("start")]
+        [JsonConverter(typeof(IsoDateTimeConverter))]
+        public DateTime StartDate { get; set; }
 
-        [JsonDataMember(Name = "end")]
-        public string EndDate { get; set; }
+        [JsonProperty("end")]
+        [JsonConverter(typeof(IsoDateTimeConverter))]
+        public DateTime EndDate { get; set; }
 
-      
-        [JsonDataMember(Name = "allDay")]
-        public string AllDayLong { get; set; }
 
-        [JsonDataMember(Name = "textColor")]
+        [JsonProperty("allDay")]
+        public bool AllDayLong { get; set; }
+
+        [JsonIgnore]
         public string TextColor { get; set; }
 
-        [JsonDataMember(Name = "backgroundColor")]
+        [JsonProperty( "backgroundColor")]
         public string BackgroundColor { get; set; }
        // public EventAlertType AlertType { get; set; }
        // public EventRepeatType RepeatType { get; set; }r
        /// <summary>
        /// 重复提醒次数
        /// </summary>
-       [JsonDataMember(Name = "repeattimes")]
+       [JsonProperty( "repeattimes")]
         public string RepeatTimes { get; set; }
        /// <summary>
        /// 重复提醒间隔
        /// </summary>
-       [JsonDataMember(Name = "repeatinterval")]
+       [JsonProperty( "repeatinterval")]
         public string RepeatInterval { get; set; }
-        
+        [JsonProperty("userid")]
         public int UserID { get; set; }
     }
 }
