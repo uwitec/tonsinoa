@@ -1158,7 +1158,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Global\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Global\Global.cs" />
+    <Compile Include="Global\TsOAPage.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1429,6 +1433,10 @@
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{5F0416E1-85E0-4920-A4C4-56DD5C9E6ED0}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServerDAL\SQLServerDAL.csproj">
+      <Project>{0EF10F5B-06F5-428D-BF95-9467AE30A299}</Project>
+      <Name>SQLServerDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utility\Utility.csproj">
       <Project>{C51D199C-8158-441A-930F-45FCC9BF0213}</Project>
