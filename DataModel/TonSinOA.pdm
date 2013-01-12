@@ -12,8 +12,8 @@
 <a:Code>TonSinOA</a:Code>
 <a:CreationDate>1356247230</a:CreationDate>
 <a:Creator>zhuxiang</a:Creator>
-<a:ModificationDate>1357824338</a:ModificationDate>
-<a:Modifier>zhuxiang</a:Modifier>
+<a:ModificationDate>1357971392</a:ModificationDate>
+<a:Modifier>jimlly</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
 [FolderOptions\Physical Objects]
@@ -8654,15 +8654,6 @@ End</a:Procedure.Text>
 <o:Key Ref="o361"/>
 </c:ClusterObject>
 </o:Table>
-<o:Table Id="o362">
-<a:ObjectID>5306E914-33F3-44D7-9603-FA896BDB5A82</a:ObjectID>
-<a:Name>OA_TB_Forum_PollResult(投票结果对应表)</a:Name>
-<a:Code>OA_TB_Forum_PollResult</a:Code>
-<a:CreationDate>1357487388</a:CreationDate>
-<a:Creator>jimlly</a:Creator>
-<a:ModificationDate>1357487429</a:ModificationDate>
-<a:Modifier>jimlly</a:Modifier>
-</o:Table>
 <o:Table Id="o51">
 <a:ObjectID>A6995186-D233-4C68-BB27-1A066581AEA7</a:ObjectID>
 <a:Name>OA_TB_SM_Functions(系统功能表)</a:Name>
@@ -8672,7 +8663,7 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357825550</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
-<o:Column Id="o363">
+<o:Column Id="o362">
 <a:ObjectID>186ECCE7-57EB-4B81-A381-D29DA1700D3C</a:ObjectID>
 <a:Name>功能编号</a:Name>
 <a:Code>FuncID</a:Code>
@@ -8687,7 +8678,7 @@ End</a:Procedure.Text>
 
 </a:ExtendedAttributesText>
 </o:Column>
-<o:Column Id="o364">
+<o:Column Id="o363">
 <a:ObjectID>AAC3D68A-37D5-4879-BE36-7B371CD777C0</a:ObjectID>
 <a:Name>功能名称</a:Name>
 <a:Code>FuncName</a:Code>
@@ -8698,7 +8689,7 @@ End</a:Procedure.Text>
 <a:DataType>varchar(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o365">
+<o:Column Id="o364">
 <a:ObjectID>66814B54-969D-49F7-9981-F76A9AC0B745</a:ObjectID>
 <a:Name>父级编号</a:Name>
 <a:Code>ParentID</a:Code>
@@ -8708,7 +8699,7 @@ End</a:Procedure.Text>
 <a:Modifier>zhuxiang</a:Modifier>
 <a:DataType>int</a:DataType>
 </o:Column>
-<o:Column Id="o366">
+<o:Column Id="o365">
 <a:ObjectID>E09EA04C-ABD7-47BB-9F69-7A34A9C58772</a:ObjectID>
 <a:Name>功能级别</a:Name>
 <a:Code>Level</a:Code>
@@ -8718,7 +8709,7 @@ End</a:Procedure.Text>
 <a:Modifier>zhuxiang</a:Modifier>
 <a:DataType>int</a:DataType>
 </o:Column>
-<o:Column Id="o367">
+<o:Column Id="o366">
 <a:ObjectID>87255ED2-955E-420B-9443-B88E2C764642</a:ObjectID>
 <a:Name>页面链接</a:Name>
 <a:Code>FuncUrl</a:Code>
@@ -8729,7 +8720,7 @@ End</a:Procedure.Text>
 <a:DataType>varchar(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o368">
+<o:Column Id="o367">
 <a:ObjectID>F38B1016-3C28-487E-B94F-337059DB51EF</a:ObjectID>
 <a:Name>图标名称</a:Name>
 <a:Code>FuncImage</a:Code>
@@ -8742,7 +8733,7 @@ End</a:Procedure.Text>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o369">
+<o:Key Id="o368">
 <a:ObjectID>B1D1945B-C5AE-4F5A-9063-045181286C89</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -8751,15 +8742,15 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824457</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o363"/>
+<o:Column Ref="o362"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o369"/>
+<o:Key Ref="o368"/>
 </c:PrimaryKey>
 <c:ClusterObject>
-<o:Key Ref="o369"/>
+<o:Key Ref="o368"/>
 </c:ClusterObject>
 </o:Table>
 <o:Table Id="o53">
@@ -8771,7 +8762,7 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824485</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
-<o:Column Id="o370">
+<o:Column Id="o369">
 <a:ObjectID>964A3812-640D-41A0-8DE5-B294FEF47B44</a:ObjectID>
 <a:Name>记录编号</a:Name>
 <a:Code>SysID</a:Code>
@@ -8786,7 +8777,7 @@ End</a:Procedure.Text>
 
 </a:ExtendedAttributesText>
 </o:Column>
-<o:Column Id="o371">
+<o:Column Id="o370">
 <a:ObjectID>F8DD7DDC-44FC-4006-8DBC-EB60AFADFC58</a:ObjectID>
 <a:Name>角色编号</a:Name>
 <a:Code>RoleID</a:Code>
@@ -8796,7 +8787,7 @@ End</a:Procedure.Text>
 <a:Modifier>zhuxiang</a:Modifier>
 <a:DataType>int</a:DataType>
 </o:Column>
-<o:Column Id="o372">
+<o:Column Id="o371">
 <a:ObjectID>B324B5F8-67D3-4192-BE95-F101B80A1C2F</a:ObjectID>
 <a:Name>功能编号</a:Name>
 <a:Code>FuncID</a:Code>
@@ -8808,7 +8799,7 @@ End</a:Procedure.Text>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o373">
+<o:Key Id="o372">
 <a:ObjectID>F088A3EC-B990-4B3D-9707-ED018BC62CA1</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -8817,15 +8808,15 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824485</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o370"/>
+<o:Column Ref="o369"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o373"/>
+<o:Key Ref="o372"/>
 </c:PrimaryKey>
 <c:ClusterObject>
-<o:Key Ref="o373"/>
+<o:Key Ref="o372"/>
 </c:ClusterObject>
 </o:Table>
 <o:Table Id="o55">
@@ -8837,7 +8828,7 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357825643</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
-<o:Column Id="o374">
+<o:Column Id="o373">
 <a:ObjectID>6DCDBA77-022C-42E7-B41D-2CBDE1CEC215</a:ObjectID>
 <a:Name>角色编号</a:Name>
 <a:Code>RoleID</a:Code>
@@ -8852,7 +8843,7 @@ End</a:Procedure.Text>
 
 </a:ExtendedAttributesText>
 </o:Column>
-<o:Column Id="o375">
+<o:Column Id="o374">
 <a:ObjectID>F95404C3-FCD6-4C9C-8AB2-BA5C9BAC1C72</a:ObjectID>
 <a:Name>角色名称</a:Name>
 <a:Code>RoleName</a:Code>
@@ -8863,7 +8854,7 @@ End</a:Procedure.Text>
 <a:DataType>varchar(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
-<o:Column Id="o376">
+<o:Column Id="o375">
 <a:ObjectID>111DA6C9-7B88-4E35-B7D6-4B4A3236B785</a:ObjectID>
 <a:Name>备注</a:Name>
 <a:Code>Remark</a:Code>
@@ -8874,7 +8865,7 @@ End</a:Procedure.Text>
 <a:DataType>varchar(200)</a:DataType>
 <a:Length>200</a:Length>
 </o:Column>
-<o:Column Id="o377">
+<o:Column Id="o376">
 <a:ObjectID>99FDB58C-C32B-4E98-8221-C64A3DDE04E8</a:ObjectID>
 <a:Name>创建时间</a:Name>
 <a:Code>Created</a:Code>
@@ -8885,7 +8876,7 @@ End</a:Procedure.Text>
 <a:DefaultValue>getdate()</a:DefaultValue>
 <a:DataType>datetime</a:DataType>
 </o:Column>
-<o:Column Id="o378">
+<o:Column Id="o377">
 <a:ObjectID>17508A98-8C7A-4F92-AEB3-BF0BD8F20767</a:ObjectID>
 <a:Name>创建人</a:Name>
 <a:Code>Creator</a:Code>
@@ -8897,7 +8888,7 @@ End</a:Procedure.Text>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o379">
+<o:Key Id="o378">
 <a:ObjectID>23548DE8-8B91-48E3-A049-FCC39A0ECFE2</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -8906,15 +8897,15 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824493</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o374"/>
+<o:Column Ref="o373"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o379"/>
+<o:Key Ref="o378"/>
 </c:PrimaryKey>
 <c:ClusterObject>
-<o:Key Ref="o379"/>
+<o:Key Ref="o378"/>
 </c:ClusterObject>
 </o:Table>
 <o:Table Id="o57">
@@ -8926,7 +8917,7 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824530</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
-<o:Column Id="o380">
+<o:Column Id="o379">
 <a:ObjectID>863102C4-0D34-4740-9A3D-C7D4C45258BC</a:ObjectID>
 <a:Name>用户编号</a:Name>
 <a:Code>UserID</a:Code>
@@ -8937,7 +8928,7 @@ End</a:Procedure.Text>
 <a:DataType>int</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
-<o:Column Id="o381">
+<o:Column Id="o380">
 <a:ObjectID>8863CEC1-5D08-489A-9724-AD85D5C2F2C8</a:ObjectID>
 <a:Name>角色编号</a:Name>
 <a:Code>RoleID</a:Code>
@@ -8949,7 +8940,7 @@ End</a:Procedure.Text>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o382">
+<o:Key Id="o381">
 <a:ObjectID>42688658-7A18-4F91-AA6A-79206230A2E2</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -8958,15 +8949,15 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824530</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o380"/>
+<o:Column Ref="o379"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o382"/>
+<o:Key Ref="o381"/>
 </c:PrimaryKey>
 <c:ClusterObject>
-<o:Key Ref="o382"/>
+<o:Key Ref="o381"/>
 </c:ClusterObject>
 </o:Table>
 <o:Table Id="o59">
@@ -8978,7 +8969,7 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357825910</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Columns>
-<o:Column Id="o383">
+<o:Column Id="o382">
 <a:ObjectID>0F0BF2D3-842E-4F2C-93CA-0298FC230FB4</a:ObjectID>
 <a:Name>记录编号</a:Name>
 <a:Code>SysID</a:Code>
@@ -8993,7 +8984,7 @@ End</a:Procedure.Text>
 
 </a:ExtendedAttributesText>
 </o:Column>
-<o:Column Id="o384">
+<o:Column Id="o383">
 <a:ObjectID>04717C3A-3963-4B65-A0DB-3C5D9C9B222B</a:ObjectID>
 <a:Name>用户编号</a:Name>
 <a:Code>UserID</a:Code>
@@ -9003,7 +8994,7 @@ End</a:Procedure.Text>
 <a:Modifier>zhuxiang</a:Modifier>
 <a:DataType>int</a:DataType>
 </o:Column>
-<o:Column Id="o385">
+<o:Column Id="o384">
 <a:ObjectID>FCA1016B-AA3B-4CC6-A1B1-A2597412A11C</a:ObjectID>
 <a:Name>功能编号</a:Name>
 <a:Code>FuncID</a:Code>
@@ -9015,7 +9006,7 @@ End</a:Procedure.Text>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o386">
+<o:Key Id="o385">
 <a:ObjectID>E8EFAF7D-BCE7-40CD-8CA0-F25C52E1B2EC</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -9024,20 +9015,20 @@ End</a:Procedure.Text>
 <a:ModificationDate>1357824543</a:ModificationDate>
 <a:Modifier>zhuxiang</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o383"/>
+<o:Column Ref="o382"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o386"/>
+<o:Key Ref="o385"/>
 </c:PrimaryKey>
 <c:ClusterObject>
-<o:Key Ref="o386"/>
+<o:Key Ref="o385"/>
 </c:ClusterObject>
 </o:Table>
 </c:Tables>
 <c:DefaultGroups>
-<o:Group Id="o387">
+<o:Group Id="o386">
 <a:ObjectID>6CA37E94-D7EF-4230-A84B-DBA0BC746B23</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -9048,7 +9039,7 @@ End</a:Procedure.Text>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o388">
+<o:TargetModel Id="o387">
 <a:ObjectID>2C86A08D-2CFA-4701-BCFC-971F6FA0A77F</a:ObjectID>
 <a:Name>Microsoft SQL Server 2005</a:Name>
 <a:Code>MSSQLSRV2005</a:Code>
