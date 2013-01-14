@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BbsGroupInfo.cs" />
+    <Compile Include="LoginInfo.cs" />
     <Compile Include="PollInfo.cs" />
     <Compile Include="BbsSectionInfo.cs" />
     <Compile Include="CalendarInfo.cs" />

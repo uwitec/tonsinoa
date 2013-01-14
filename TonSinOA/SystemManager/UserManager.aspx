@@ -4,21 +4,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>用户管理</title>
+    <title><%= Resources.lang.UserManager %></title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <link href="../js/artDialog/skins/default.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery.js" type="text/javascript"></script>
     <script src="../js/artDialog/artDialog.source.js" type="text/javascript"></script>
     <script src="../js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    <script src="../js/lang.js" type="text/javascript"></script>
     <script type="text/javascript">
 
 
         function addUser() {
 
             art.dialog.open('SystemManager/AddUser.aspx', {
-                title: '添加员工',
-                width: 500,
-                height:400,
+                title: lang.module.system.user.adduser,
+              
                 lock: true,
                 fixed: true //固定定位
             });
@@ -26,12 +26,16 @@
         function EditUser(id) {
 
             art.dialog.open('SystemManager/EditUser.aspx?ID=' + id, {
-                title: '编辑员工',
+                title: lang.module.system.user.edituser,
                 lock: true,
                 fixed: true //固定定位
             });
         }
+        function delUser() {
+            return confirm(lang.module.system.user.msg2);
+        }
     </script>
+     
 </head>
 <body>
     <form id="form1" runat="server">
@@ -40,16 +44,16 @@
             <tr>
                 <td width="140">
                     <h1>
-                        用户管理</h1>
+                        <%= Resources.lang.UserManager %></h1>
                 </td>
                 <td class="actions" width="*">
                     <table cellspacing="0" cellpadding="0" border="0" align="right">
                         <tr>
                             <td class="active">
-                                员工列表
+                                <%= Resources.lang.UserList %>
                             </td>
                             <td>
-                                <a href="#" onclick="javascript:addUser()">添加员工</a>
+                                <a href="#" onclick="javascript:addUser()"><%= Resources.lang.AddUser %></a>
                             </td>
                         </tr>
                     </table>
@@ -78,28 +82,28 @@
                                                         <table width="100%" cellpadding="2" cellspacing="0" class="dataTable" align="center">
                                                             <tr class="dataTableHead" align="center">
                                                                 <td style="width: 60px">
-                                                                    选择
+                                                                    <%= Resources.lang.Choice %>
                                                                 </td>
                                                                 <td style="width: 60px">
-                                                                    状态
+                                                                    <%= Resources.lang.State %>
                                                                 </td>
                                                                 <td style="width: 60px">
-                                                                    部门
+                                                                    <%= Resources.lang.Dep %>
                                                                 </td>
                                                                 <td style="width: 60px">
-                                                                    职务
+                                                                    <%= Resources.lang.Duty %>
                                                                 </td>
                                                                 <td style="width: 80px">
-                                                                    账号
+                                                                    <%= Resources.lang.UserAccount %>
                                                                 </td>
                                                                 <td style="width: 80px">
-                                                                    姓名
+                                                                    <%= Resources.lang.UserName %>
                                                                 </td>
                                                                 <td style="width: 80px">
-                                                                    备注
+                                                                    <%= Resources.lang.Remark %>
                                                                 </td>
                                                                 <td style="width: 190px">
-                                                                    操作
+                                                                    <%= Resources.lang.Operate %>
                                                                 </td>
                                                             </tr>
                                                     </HeaderTemplate>
@@ -127,9 +131,9 @@
                                                                 <%# Eval("Remark")%>
                                                             </td>
                                                             <td align="center">
-                                                                <a href="#" onclick='<%# "EditUser("+ Eval("UserID")+")"%>'>编辑</a> |
+                                                                <a href="#" onclick='<%# "EditUser("+ Eval("UserID")+")"%>'><%= Resources.lang.Edit %></a> |
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" BorderWidth="0" CausesValidation="false"
-                                                                    CommandArgument='<%# Eval("UserID") %>' CommandName="Delete" OnClientClick="return confirm('您确定要删除此职务吗？')">删除</asp:LinkButton>
+                                                                    CommandArgument='<%# Eval("UserID") %>' CommandName="Delete" OnClientClick="return delUser()"><%= Resources.lang.Del %></asp:LinkButton>
                                                             </td>
                                                         </tr>
                                                     </ItemTemplate>
@@ -145,13 +149,13 @@
                                                 <table width="100%" cellpadding="0" cellspacing="0">
                                                     <tr>
                                                         <td align="center" style="width: 100px">
-                                                            <input id="Checkbox1" type="checkbox" />全选
+                                                            <input id="ChkAll" type="checkbox" /><%= Resources.lang.CheckAll %>  
                                                         </td>
-                                                        <td  align="left"><input id="Button1" type="button" value="批量删除" class="btnsubmit1" />
+                                                        <td  align="left"><input id="Button1" type="button" runat="server" value="<%$ Resources:lang,BatchDel %>"  class="btnsubmit1" />
                                                         </td>
                                                         <td align="center">
                                                             <webdiyer:AspNetPager ID="AspNetPager1" runat="server" NumericButtonCount="20" OnPageChanged="AspNetPager1_PageChanged"
-                                                                PageSize="20" FirstPageText="首页" LastPageText="尾页" NextPageText="下一页" PrevPageText="上一页"
+                                                                PageSize="20" FirstPageText="<%$ Resources:lang,Frist %>" LastPageText="<%$ Resources:lang,Last %>" NextPageText="<%$ Resources:lang,Next %>" PrevPageText="<%$ Resources:lang,Prev %>"
                                                                 ShowPageIndex="False" AlwaysShow="True" ShowInputBox="Always">
                                                             </webdiyer:AspNetPager>
                                                         </td>

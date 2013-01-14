@@ -2,11 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using TonSinOA.Model;
+
 
 namespace TonSinOA
 {
     public class BasePage:System.Web.UI.Page
     {
+        /// <summary>
+        /// 用户信息
+        /// </summary>
+        private LoginInfo m_Login;
+
+        public LoginInfo LoginSession
+        {
+            get { return m_Login; }
+            private set { m_Login = value; }
+        }
         protected override void OnInit(EventArgs e)
         {
 
@@ -16,7 +28,14 @@ namespace TonSinOA
 
         protected void BasePage_Load(object sender, EventArgs e)
         {
-          
+            TonSinOA.Authorization objAuthor = new Authorization();
+            m_Login = objAuthor.GetLoginSession();
+            if (m_Login == null)
+            {
+                //
+                TsOAPage.ReturnNoPessionPage(this);
+            }
+           
 
             
         }

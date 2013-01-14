@@ -11,11 +11,8 @@ namespace TonSinOA.DAL
 {
     public class DutyDAL
     {
-        MssqlDatabase Mssql = null;
-        public DutyDAL()
-        {
-            Mssql = new MssqlDatabase();
-        }
+       
+       
         #region  Method
 		/// <summary>
 		/// 是否存在该记录
@@ -24,7 +21,7 @@ namespace TonSinOA.DAL
         {
             string procName = "OA_SP_SM_Duty_Exists";
             LogBuilder log = new LogBuilder();
-
+            MssqlDatabase Mssql = null;
             #region 日志信息
             log.Desc = "检查职位是否已经存在";
 
@@ -37,6 +34,7 @@ namespace TonSinOA.DAL
 
             try
             {
+                Mssql = new MssqlDatabase();
                 int rowsAffected;
                 SqlParameter[] parameters = {
 					new SqlParameter("@DutyID", SqlDbType.Int,4)
@@ -57,6 +55,10 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
+                if (Mssql != null)
+                {
+                    Mssql.Close();
+                }
             }
             return false;
         }
@@ -68,6 +70,7 @@ namespace TonSinOA.DAL
 		{
             string procName = "OA_SP_SM_Duty_ADD";
             LogBuilder log = new LogBuilder();
+            MssqlDatabase Mssql = null;
             #region 日志信息
             log.Desc = "添加职务";
 
@@ -80,6 +83,7 @@ namespace TonSinOA.DAL
              DutyID = 0;
             try
             {
+                Mssql = new MssqlDatabase();
 			int rowsAffected;
 			SqlParameter[] parameters = {
 					new SqlParameter("@DutyID", SqlDbType.Int,4),
@@ -115,6 +119,10 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
+                if (Mssql != null)
+                {
+                    Mssql.Close();
+                }
             }
             return DutyID > 0;
 		}
@@ -126,7 +134,7 @@ namespace TonSinOA.DAL
 		{
             string procName = "OA_SP_SM_Duty_Update";
             LogBuilder log = new LogBuilder();
-
+            MssqlDatabase Mssql = null;
             #region 日志信息
             log.Desc = "更新职位";
 
@@ -139,6 +147,7 @@ namespace TonSinOA.DAL
 
             try
             {
+                Mssql = new MssqlDatabase();
 			int rowsAffected=0;
 			SqlParameter[] parameters = {
 					new SqlParameter("@DutyID", SqlDbType.Int,4),
@@ -171,6 +180,10 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
+                if (Mssql != null)
+                {
+                    Mssql.Close();
+                }
             }
             return false;
 		}
@@ -182,7 +195,7 @@ namespace TonSinOA.DAL
 		{
             string procName = "OA_SP_SM_Duty_Delete";
             LogBuilder log = new LogBuilder();
-
+            MssqlDatabase Mssql = null;
             #region 日志信息
             log.Desc = "删除职位";
 
@@ -195,6 +208,7 @@ namespace TonSinOA.DAL
 
             try
             {
+                Mssql = new MssqlDatabase();
 			int rowsAffected=0;
 			SqlParameter[] parameters = {
 					new SqlParameter("@DutyID", SqlDbType.Int,4)
@@ -216,6 +230,10 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
+                if (Mssql != null)
+                {
+                    Mssql.Close();
+                }
             }
             return false;
 		}
@@ -229,7 +247,7 @@ namespace TonSinOA.DAL
             DutyInfo model = null;
             string procName = "OA_SP_SM_Duty_GetModel";
             LogBuilder log = new LogBuilder();
-
+            MssqlDatabase Mssql = null;
             #region 日志信息
             log.Desc = "获取职位信息";
 
@@ -242,6 +260,7 @@ namespace TonSinOA.DAL
 
             try
             {
+                Mssql = new MssqlDatabase();
 			SqlParameter[] parameters = {
 					new SqlParameter("@DutyID", SqlDbType.Int,4)
 			};
@@ -268,6 +287,10 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
+                if (Mssql != null)
+                {
+                    Mssql.Close();
+                }
             }
             return null;
 		}
@@ -287,11 +310,12 @@ namespace TonSinOA.DAL
             List<DutyInfo> DutyList = null;
             DutyInfo ui = null;
             totalRows = 0;
-            MssqlDatabase database = null;
+            string procName = "OA_SP_SM_Duty_GetList";
+            MssqlDatabase Mssql = null;
             LogBuilder log = new LogBuilder();
             try
             {
-                string procName = "OA_SP_SM_Duty_GetList";
+                Mssql = new MssqlDatabase();
                 #region 日志信息
                 log.Desc = "查询职位列表";
 
@@ -307,13 +331,13 @@ namespace TonSinOA.DAL
                 SqlParameter[] param ={
                                            
                 
-                  database.MakeInParam("@PageSize", SqlDbType.Int,4, pageSize),                             
-                  database.MakeInParam("@PageIndex", SqlDbType.Int,4,pageIndex),           
+                  Mssql.MakeInParam("@PageSize", SqlDbType.Int,4, pageSize),                             
+                  Mssql.MakeInParam("@PageIndex", SqlDbType.Int,4,pageIndex),           
                   	
-                  database.MakeOutParam("@TotalRows",SqlDbType.Int,4)         
+                  Mssql.MakeOutParam("@TotalRows",SqlDbType.Int,4)         
                 };
                 DataTable dt = null;
-                database.ExecuteProc(procName, param, out dt);
+                Mssql.ExecuteProc(procName, param, out dt);
                 totalRows = SqlComponents.ReaderGetInt32(param[3].Value);
 
                 log.Append("TotalRows", totalRows.ToString(), ParamDirection.INOUT);
@@ -343,9 +367,9 @@ namespace TonSinOA.DAL
             finally
             {
                 log.Debug();
-                if (database != null)
+                if (Mssql != null)
                 {
-                    database.Close();
+                    Mssql.Close();
                 }
             }
             return null;
