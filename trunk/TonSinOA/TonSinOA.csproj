@@ -1158,6 +1158,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Global\Authorization.cs" />
     <Compile Include="Global\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

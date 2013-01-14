@@ -18,6 +18,13 @@ lang.module = {
 //系统设置
 lang.module.system = {
     //todo
+    user: {
+    adduser:'添加用户',
+    edituser:'编辑用户',
+    usermanager:'用户管理',
+    msg1: '用户名称不能为空！',
+    msg2: '您确定要删除此用户吗？'
+    },
     depart: {
         adddep: '添加部门',
         editdep: '编辑部门',
