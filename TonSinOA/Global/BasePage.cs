@@ -30,7 +30,7 @@ namespace TonSinOA
 
         protected void BasePage_Load(object sender, EventArgs e)
         {
-            TonSinOA.Authorization objAuthor = new Authorization();
+            Authorization objAuthor = new Authorization();
             m_Login = objAuthor.GetLoginSession();
             if (m_Login == null)
             {

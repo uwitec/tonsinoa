@@ -283,7 +283,7 @@
            var CreateMenuPanel = function (title, TypeID, icons, iconcls) {
                return new Ext.Panel(
         {
-            title: title, layout: 'fit', border: false,frame:true, iconCls: iconcls, items: [
+            title: title, layout: 'fit', border: false, iconCls: iconcls, items: [
             {
                 xtype: 'treepanel', singleExpand: true, animate: true, autoScroll: true, containerScroll: true,
                 border: false, layout: 'fit', rootVisible: false, autoHeight: false, lines: true,

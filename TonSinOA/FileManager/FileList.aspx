@@ -18,7 +18,7 @@
     <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
         <tr valign="top">
             <td style="white-space: nowrap" valign="top" align="left">
-                 <asp:DataList ID="dataListMapPath" runat="server" RepeatDirection="Horizontal">
+           <%--      <asp:DataList ID="dataListMapPath" runat="server" RepeatDirection="Horizontal">
                                 <ItemTemplate>
                                     <asp:LinkButton ID="btnMapTo" runat="server" CommandArgument='<%# Eval("CommandArgument") %>'
                                         CommandName="MapTo" Text='<%# Eval("LinkText")  %>'></asp:LinkButton>
@@ -26,30 +26,37 @@
                                   <SeparatorTemplate>
                                     <asp:Label ID="Label1" runat="server" Text=">"></asp:Label>
                                 </SeparatorTemplate>
-                                </asp:DataList>
+                                </asp:DataList>--%>
+                                <div  style="margin-top:10px;margin-bottom:10px">
+                                <asp:Label ID="lbTypeName" CssClass="big3" runat="server" Text="图书馆"></asp:Label>
+                                </div>
             </td>
         </tr>
         <tr>
             <td style="white-space: nowrap" valign="middle" align="left">   
             <div>
-            <asp:Repeater ID="dgTypeView" runat="server">
-            <ItemTemplate>
-            <div style="float:left;width:400px">
+          <%--  <asp:Repeater ID="dgTypeView" runat="server">
+            <ItemTemplate>--%>
+            <div style="float:left;width:400px;margin-bottom:10px;height:30px">
            
-                        <div>
-                            <div>
-                                <span id="spTypeName" runat="server" class="big1"><%# Eval("TypeName") %></span></div>
-                            <div>
-                            <span class="discreet"><%# Eval("Remark") %></span>
+                        
+                            <div style="float:left;">
+                                当前文件夹：<asp:DropDownList ID="drpDir" 
+                                    runat="server" AutoPostBack="True" 
+                                    onselectedindexchanged="drpDir_SelectedIndexChanged">
+                                </asp:DropDownList>
                             </div>
-                        </div>
+                            <div style="float:left;margin-left:10px">
+                            <span class="discreet"></span>
+                            </div>
+                        
                      </div>
                 <div  style="float:right;width:100px;margin-bottom:10px">
                 <a class="ToolBtn" title="上传文件" href='UpLoad.aspx?ID=<%# Eval("TypeID") %>'><span>上传文件</span></a>
                 </div>
                
-               </ItemTemplate>
-           </asp:Repeater>
+           <%--    </ItemTemplate>
+           </asp:Repeater>--%>
                  </div>   
             </td>
         </tr>
@@ -100,7 +107,7 @@
                                         <%#  Eval("Subject") %>
                                 </td>--%>
                                 <td style="height: 25px; white-space: nowrap;" align="center">
-                                <%# Convert.ToInt32(Eval("TypeID")) == 1 ? "<a href='FileList.aspx?TypeID=" + Eval("DocID") + "&SuperID=" + Eval("ParentID") + "'>" + Eval("FileName") + "</a>" : "<a href='javascript:' onclick=gotoView('"+Eval("DocID")+"')>" + Eval("FileName") + "</a>"%>
+                                <%# Convert.ToInt32(Eval("TypeID")) == 1 ? "<a href='FileList.aspx?TypeID=" + Eval("DocID") + "&SuperID=" + Eval("ParentID") + "&name=" + Eval("FileName") + "'>" + Eval("FileName") + "</a>" : "<a href='javascript:' onclick=gotoView('" + Eval("DocID") + "')>" + Eval("FileName") + "</a>"%>
                                     
                                 </td>
                                 <td style="height: 25px; white-space: nowrap;" align="center">

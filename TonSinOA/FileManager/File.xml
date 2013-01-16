@@ -66,6 +66,38 @@
     <ModfityTime></ModfityTime>
   </Table>
   <Table>
+    <RowId>2</RowId>
+    <DocID>6</DocID>
+    <State></State>
+    <FileName>
+      学习心得
+    </FileName>
+    <TypeID>1</TypeID>
+    <FileExt></FileExt>
+    <Vesion></Vesion>
+    <ParentID>2</ParentID>
+    <CreatUser> </CreatUser>
+    <ModfityUser></ModfityUser>
+    <UserID>1</UserID>
+    <ModfityTime></ModfityTime>
+  </Table>
+  <Table>
+    <RowId>2</RowId>
+    <DocID>7</DocID>
+    <State></State>
+    <FileName>
+      课程资料
+    </FileName>
+    <TypeID>1</TypeID>
+    <FileExt></FileExt>
+    <Vesion></Vesion>
+    <ParentID>2</ParentID>
+    <CreatUser> </CreatUser>
+    <ModfityUser></ModfityUser>
+    <UserID>1</UserID>
+    <ModfityTime></ModfityTime>
+  </Table>
+  <Table>
     <RowId>3</RowId>
     <DocID>3</DocID>
     <State></State>
@@ -145,6 +177,26 @@
     <FileExt>xls</FileExt>
     <Vesion>v1.1</Vesion>
     <ParentID>1</ParentID>
+    <CreatUser>
+      张三
+    </CreatUser>
+    <ModfityUser>李明</ModfityUser>
+    <UserID>1</UserID>
+    <ModfityTime>2012-12-01 12:12:30</ModfityTime>
+  </Table>
+  <Table>
+    <RowId>3</RowId>
+    <DocID>3</DocID>
+    <State>
+      开放
+    </State>
+    <FileName>
+      如何快速提高口语水平1
+    </FileName>
+    <TypeID>2</TypeID>
+    <FileExt>xls</FileExt>
+    <Vesion>v1.1</Vesion>
+    <ParentID>2</ParentID>
     <CreatUser>
       张三
     </CreatUser>
