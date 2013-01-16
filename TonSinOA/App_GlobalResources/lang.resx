@@ -185,6 +185,10 @@
     <value>编辑</value>
     <comment>编辑</comment>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>邮箱</value>
+    <comment>邮箱</comment>
+  </data>
   <data name="Enabled" xml:space="preserve">
     <value>启用</value>
     <comment>启用</comment>

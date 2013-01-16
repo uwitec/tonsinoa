@@ -107,7 +107,7 @@
                                                 <script type="text/javascript">
 
                                                     var fp = new FlexPaperViewer(
-						 '../js/reader',
+						 '../js/FlexPaperViewer',
 						 'viewerPlaceHolder', { config: {
 						     SwfFile: escape('1_5.swf'),
 						     Scale: 1,

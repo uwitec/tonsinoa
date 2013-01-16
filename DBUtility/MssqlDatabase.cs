@@ -15,6 +15,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Configuration;
+using TonSinOA.Utility;
 namespace TonSinOA.DBUtility
 {
    
@@ -32,7 +33,7 @@ namespace TonSinOA.DBUtility
         public static string GetConnectString(string key)
         {
             ConnectionStringSettings cs = ConfigurationManager.ConnectionStrings[key];
-            if(cs!=null) return cs.ConnectionString;
+            if(cs!=null) return CryptoHelper.Decrypt( cs.ConnectionString);
             return string.Empty;
         }
 

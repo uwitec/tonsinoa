@@ -13,7 +13,9 @@ namespace TonSinOA
         /// 用户信息
         /// </summary>
         private LoginInfo m_Login;
-
+        /// <summary>
+        /// 登录用户Session信息
+        /// </summary>
         public LoginInfo LoginSession
         {
             get { return m_Login; }

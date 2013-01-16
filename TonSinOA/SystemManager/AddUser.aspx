@@ -35,7 +35,8 @@
                             <td align="right" >
                                 <%= Resources.lang.State %>:</td>
                             <td align="left" >
-                                <input id="radEnabled" type="radio" name="radState" runat="server" /><%= Resources.lang.Enabled %> <input id="radDisabled" type="radio" name="radState" runat="server"  />禁用</td>
+                                <input id="radEnabled" type="radio" name="radState"  runat="server" 
+                                    checked="true" /><%= Resources.lang.Enabled %> <input id="radDisabled" type="radio" name="radState" runat="server"  />禁用</td>
                         </tr>
                         <tr>
                             <td align="right" >
@@ -72,6 +73,12 @@
 
                         <tr>
                             <td align="right" >
+                                <%= Resources.lang.Email %>:</td>
+                            <td align="left" >
+                                
+                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                            </td>
+                            <td align="right" >
                                 <%= Resources.lang.TheGroup %>:</td>
                             <td align="left" >
                                 <asp:DropDownList ID="drpGroup" runat="server" Width="120px">
@@ -79,12 +86,7 @@
                                     <asp:ListItem>销售部</asp:ListItem>
                                     <asp:ListItem>客服部</asp:ListItem>
                                     <asp:ListItem>技术部</asp:ListItem>
-                                </asp:DropDownList>
-                            </td>
-                            <td align="right" >
-                                &nbsp;</td>
-                            <td align="left" >
-                                 &nbsp;</td>
+                                </asp:DropDownList></td>
                         </tr>
 
                         <tr>
