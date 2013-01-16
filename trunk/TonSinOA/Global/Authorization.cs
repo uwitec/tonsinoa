@@ -8,8 +8,8 @@ namespace TonSinOA
 {
     public class Authorization
     {
-        private const string SessionKeyTag = "IBCOMUSER";
-        private const string SessionPrevTag = "PREVTAG";
+        private const string SessionKey = "logininfo";
+       
         private LoginInfo m_user;
         public Authorization()
         {
@@ -21,7 +21,7 @@ namespace TonSinOA
             //UserEntity u = null;
             if (Session != null)
             {
-                Object o = Session[SessionKeyTag];
+                Object o = Session[SessionKey];
                 if (o != null)
                 {
                     return (LoginInfo)o;

@@ -430,6 +430,7 @@
     <div id="container"><div style="background-color:#9bb845;color:#000000" class="fc-event-inner fc-event-skin"><span class="fc-event-title">明天中午去趟肯得鸡</span><input 
             id="Button1" runat="server" type="button" value="<%$Resources:lang,TestKey %>" /><asp:Button ID="Button2" 
             runat="server" Text="<%$Resources:lang,Next %>" />
+        <asp:Button ID="Button3" runat="server" onclick="Button3_Click" Text="Button" />
         </div>
 		<div id='selectdate'></div>
 		<div id='calendar'></div>	
