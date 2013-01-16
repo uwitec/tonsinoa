@@ -129,6 +129,8 @@
                         </tr>
                     </table>
     </div>
+                                <asp:HiddenField ID="hidGroup" runat="server" />
+                                <asp:HiddenField ID="hidFuns" runat="server" />
     </form>
 </body>
 </html>
