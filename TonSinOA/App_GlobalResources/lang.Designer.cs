@@ -214,6 +214,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查找类似 编辑用户 的本地化字符串。
+        /// </summary>
+        internal static string EditUser {
+            get {
+                return ResourceManager.GetString("EditUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 邮箱 的本地化字符串。
         /// </summary>
         internal static string Email {
