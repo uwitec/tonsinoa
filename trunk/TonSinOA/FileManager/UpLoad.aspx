@@ -111,6 +111,7 @@
 			$.fn.zTree.init($("#tree"), setting);
 		});
 		//-->
+       
       </script>
 </head>
 <body>
@@ -123,8 +124,10 @@
      
  <td align="left">
  <input id="DirTypeID" type="hidden" />
+ <div style="float:left">
  上传目录： <a onclick="showMenu();" class="dropdown" href="javascript:;" id="DirName"><span>
-                                选择目录</span></a><%--<input id="DirName" type="text" onclick="showMenu(); return false;"/>--%>
+                                选择目录</span></a></div><%--<input id="DirName" type="text" onclick="showMenu(); return false;"/>--%>
+                                <div style="float:right"><a href="javascript:history.back()">返回</a></div>
  </td>
  </tr>
  <tr>

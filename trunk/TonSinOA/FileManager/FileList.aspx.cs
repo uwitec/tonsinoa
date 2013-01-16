@@ -15,15 +15,49 @@ namespace TonSinOA.FileManager
         {
             string strTypeID = StringHelper.GetRequest("TypeID");// Request.QueryString["TypeID"] + string.Empty;
             string strSuperTypeID = StringHelper.GetRequest("SuperID");// Request.QueryString["SuperID"] + string.Empty;
-            string strTypeName = StringHelper.GetRequest("name");// Request.QueryString["SuperID"] + string.Empty;
+            string strTypeName = Server.UrlDecode( StringHelper.GetRequest("name"));// Request.QueryString["SuperID"] + string.Empty;
+            
            // spTypeName.InnerHtml = strTypeName;
             if (!IsPostBack)
             {
-                BindTypeName(strTypeID);
-                Bind(strTypeID);
+                ViewState["TypeID"] = strTypeID;
+                ViewState["TypeName"] = strTypeName;
+                BindDir(strTypeID);
+               // BindTypeName(strTypeID);
+                Bind(strTypeID,strTypeName);
             }
 
             
+        }
+
+        private void BindDir(string strTypeID)
+        {
+            DataSet ds = new DataSet();
+            ds.ReadXml(Server.MapPath("~/SystemManager/Document.xml"));
+            DataTable dt = ds.Tables[0].Clone();
+            DataRow[] drs = null;
+            drs = ds.Tables[0].Select("ParentID='" + strTypeID + "'");
+
+            drpDir.Items.Clear();
+            drpDir.Items.Add(new ListItem("/", ViewState["TypeID"].ToString()));
+            if (drs.Length > 0)
+            {
+                foreach (DataRow dr in drs)
+                {
+                    //dt.Rows.Add(dr.ItemArray);
+
+                    ListItem item = new ListItem("/" + dr["TypeName"].ToString(), dr["TypeID"].ToString());
+                    drpDir.Items.Add(item);
+                }
+            }
+
+            drpDir.SelectedValue = "0";
+            //dt.AcceptChanges();
+
+            //drpDir.DataSource = dt;
+            //drpDir.DataTextField = "TypeName";
+            //drpDir.DataValueField="TypeID";
+            //drpDir.DataBind();
         }
         private void BindTypeName(string strTypeID)
         {
@@ -50,10 +84,10 @@ namespace TonSinOA.FileManager
             }
            
            
-            this.dgTypeView.DataSource = dt;
-            this.dgTypeView.DataBind();
+           // this.dgTypeView.DataSource = dt;
+           // this.dgTypeView.DataBind();
         }
-        private void Bind(string strTypeID)
+        private void Bind(string strTypeID,string strTypeName="")
         {
             DataSet ds = new DataSet();
             ds.ReadXml(Server.MapPath("~/FileManager/File.xml"));
@@ -74,6 +108,23 @@ namespace TonSinOA.FileManager
             dt.AcceptChanges();
             this.dgDocView.DataSource = dt;
             this.dgDocView.DataBind();
+            ViewState["TypeID"] = strTypeID;
+            ViewState["TypeName"] = strTypeName;
+            lbTypeName.Text = strTypeName;
+        }
+
+        protected void drpDir_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string strTypeID = drpDir.SelectedValue;
+             string strTypeName = drpDir.SelectedItem.Text.Replace("/","");
+            if(strTypeName=="")
+            {
+                strTypeName =  ViewState["TypeName"].ToString();
+            }
+           // Response.Redirect("FileList.aspx?TypeID=" + strTypeID + "&name=" + Server.UrlEncode(strTypeName));
+           Bind(strTypeID, strTypeName);
+           
+            
         }
     }
 }

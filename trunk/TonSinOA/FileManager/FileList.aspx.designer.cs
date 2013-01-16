@@ -22,22 +22,22 @@ namespace TonSinOA.FileManager {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// dataListMapPath 控件。
+        /// lbTypeName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dataListMapPath;
+        protected global::System.Web.UI.WebControls.Label lbTypeName;
         
         /// <summary>
-        /// dgTypeView 控件。
+        /// drpDir 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater dgTypeView;
+        protected global::System.Web.UI.WebControls.DropDownList drpDir;
         
         /// <summary>
         /// dgDocView 控件。

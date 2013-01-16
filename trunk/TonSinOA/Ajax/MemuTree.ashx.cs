@@ -38,9 +38,9 @@ namespace TonSinOA.Ajax
                  switch (node)
                  {
                      case"1":
-                         nodes.Add(new ExtTreeNode { TypeTitle = "图书馆", TypeEName = "图书馆", text = "图书馆",TypeID="101",id="101",IsRoot=false,leaf=true,PID=node ,action="FileManager/FileIndex.aspx"});
-                         nodes.Add(new ExtTreeNode { TypeTitle = "资料库", TypeEName = "资料库", text = "资料库", TypeID = "102", id = "102", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileIndex.aspx" });
-                         nodes.Add(new ExtTreeNode { TypeTitle = "共享文档", TypeEName = "共享文档", text = "共享文档", TypeID = "103", id = "103", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileIndex.aspx" });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "图书馆", TypeEName = "图书馆", text = "图书馆", TypeID = "101", id = "101", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileList.aspx?TypeID=1&name="+context.Server.UrlEncode("图书馆") });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "资料库", TypeEName = "资料库", text = "资料库", TypeID = "102", id = "102", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileList.aspx?TypeID=2&name="+context.Server.UrlEncode("资料库") });
+                         nodes.Add(new ExtTreeNode { TypeTitle = "共享文档", TypeEName = "共享文档", text = "共享文档", TypeID = "103", id = "103", IsRoot = false, leaf = true, PID = node, action = "FileManager/FileList.aspx?TypeID=3&name="+context.Server.UrlEncode("共享文档") });
                          break;
                      case "2":
                          nodes.Add(new ExtTreeNode { TypeTitle = "新建报告", TypeEName = "新建报告", text = "新建报告", TypeID = "202", id = "202", IsRoot = false, leaf = true, PID = node, action = "workReport/AddWork.aspx" });

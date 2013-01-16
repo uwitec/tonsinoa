@@ -32,10 +32,7 @@
     <div class="dv">
         <table border="0" cellpadding="3" cellspacing="1" style="width: 100%" class="tableground">
             <tr>
-                <td style="height: 10px" align="left">
-                    <a href="FileList.aspx?ID=1">返回</a>
-                </td>
-                <td style="height: 10px" align="left">
+             <td style="height: 10px" align="left">
                     <span class="big1">图书管</span>
                     <%-- <asp:DataList ID="dataListMapPath" runat="server" RepeatDirection="Horizontal">
                         <ItemTemplate>
@@ -47,36 +44,13 @@
                         </SeparatorTemplate>
                     </asp:DataList>--%>
                 </td>
+                <td style="height: 10px" align="left">
+                    <a href="FileList.aspx?TypeID=1&name=图书馆">返回</a>
+                </td>
+               
             </tr>
             <tr>
-                <td style="width: 150px" align="center" valign="top">
-                    <div class="dv">
-                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                            <tr>
-                                <td align="left">
-                                    <a class="ToolBtn" title="提交新版本"><span onclick="SubNewVersion()";>提交新版本</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left">
-                                    历史版本
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="left">
-                                    <div>
-                                        V2.0戴维2012-12-08定稿</div>
-                                    <div>
-                                        V1.2张三2012-12-05修改</div>
-                                    <div>
-                                        V1.1高明二2012-12-03修改</div>
-                                    <div>
-                                        V1.0高明二2012-12-02创建</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
+               
                 <td>
                     <div class="dv">
                         <asp:Repeater ID="dgDocView" runat="server">
@@ -114,8 +88,7 @@
 						     ZoomTransition: 'easeOut',
 						     ZoomTime: 0.5,
 						     ZoomInterval: 0.2,
-						     FitPageOnLoad: true,
-						     FitWidthOnLoad: false,
+						    
 						     PrintEnabled: true,
 						     FullScreenAsMaxWindow: false,
 						     ProgressiveLoading: false,
@@ -143,11 +116,37 @@
                         </asp:Repeater>
                     </div>
                 </td>
+                 <td style="width: 150px" align="center" valign="top">
+                    <div class="dv">
+                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                            <tr>
+                                <td align="left">
+                                    <a class="ToolBtn" title="提交新版本"><span onclick="SubNewVersion()";>提交新版本</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    历史版本
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <div>
+                                        V2.0戴维2012-12-08定稿</div>
+                                    <div>
+                                        V1.2张三2012-12-05修改</div>
+                                    <div>
+                                        V1.1高明二2012-12-03修改</div>
+                                    <div>
+                                        V1.0高明二2012-12-02创建</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
             </tr>
             <tr>
-                <td style="width: 150px" align="center" valign="top">
-                    &nbsp;
-                </td>
+               
                 <td>
                     <div class="dv">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -196,6 +195,9 @@
                             </tr>
                         </table>
                     </div>
+                </td>
+                 <td style="width: 150px" align="center" valign="top">
+                    &nbsp;
                 </td>
             </tr>
         </table>
